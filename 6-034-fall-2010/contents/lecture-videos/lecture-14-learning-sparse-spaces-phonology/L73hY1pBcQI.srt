@@ -1,0 +1,4159 @@
+1
+00:00:10,560 --> 00:00:15,220
+PATRICK WINSTON: So today we're
+gonna talk about a few
+
+2
+00:00:15,220 --> 00:00:19,980
+miracles of learning in the
+context of the theme that
+
+3
+00:00:19,980 --> 00:00:21,930
+we're developing here
+in the class.
+
+4
+00:00:24,990 --> 00:00:31,900
+We started off with
+a discussion
+
+5
+00:00:31,900 --> 00:00:33,260
+of some basic methods.
+
+6
+00:00:33,260 --> 00:00:35,610
+We talked about nearest
+neighbors.
+
+7
+00:00:35,610 --> 00:00:39,250
+And we talked about
+identification trees.
+
+8
+00:00:39,250 --> 00:00:41,560
+And those are kind of basic
+things that have been around
+
+9
+00:00:41,560 --> 00:00:42,740
+for a long time.
+
+10
+00:00:42,740 --> 00:00:43,690
+Still useful.
+
+11
+00:00:43,690 --> 00:00:46,250
+Still the right things to do
+when you're faced with a
+
+12
+00:00:46,250 --> 00:00:50,840
+learning problem and you're not
+sure what method to try.
+
+13
+00:00:50,840 --> 00:00:55,870
+Then we went on to talk about
+some naive biological mimicry.
+
+14
+00:00:55,870 --> 00:01:00,700
+We talked about neural nets.
+
+15
+00:01:00,700 --> 00:01:05,650
+And we talked about genetic
+algorithms.
+
+16
+00:01:05,650 --> 00:01:08,270
+And you look at those things and
+you think and reflect back
+
+17
+00:01:08,270 --> 00:01:09,440
+on what we talked about.
+
+18
+00:01:09,440 --> 00:01:12,010
+And you have to say
+to yourself, are
+
+19
+00:01:12,010 --> 00:01:14,039
+these nugatory ideas?
+
+20
+00:01:14,039 --> 00:01:15,760
+Perhaps pistareens?
+
+21
+00:01:15,760 --> 00:01:19,300
+Or are they supererogatory
+ideas that deserve to be
+
+22
+00:01:19,300 --> 00:01:20,550
+center stage?
+
+23
+00:01:24,570 --> 00:01:27,770
+Does anybody know what
+those words mean?
+
+24
+00:01:27,770 --> 00:01:28,780
+A pistareen?
+
+25
+00:01:28,780 --> 00:01:32,000
+Well, a pistareen is
+a Spanish coin.
+
+26
+00:01:32,000 --> 00:01:32,900
+It was so small.
+
+27
+00:01:32,900 --> 00:01:35,130
+It was of little worth.
+
+28
+00:01:35,130 --> 00:01:43,460
+These ideas like neural nets,
+genetic algorithms, I classify
+
+29
+00:01:43,460 --> 00:01:47,820
+them as pistareens because
+getting them to do something
+
+30
+00:01:47,820 --> 00:01:51,610
+is rather like getting a dog
+to walk on its hind legs.
+
+31
+00:01:51,610 --> 00:01:54,700
+You can make it happen, but they
+never do it very well.
+
+32
+00:01:54,700 --> 00:01:57,000
+And you have to think it took a
+lot of trickery and training
+
+33
+00:01:57,000 --> 00:01:58,250
+to make it happen.
+
+34
+00:02:00,795 --> 00:02:08,150
+So not too personally
+high on those ideas.
+
+35
+00:02:08,150 --> 00:02:10,620
+But we teach them to you anyway
+because, of course, we
+
+36
+00:02:10,620 --> 00:02:14,250
+only editorialize part of time
+and part of time we like to
+
+37
+00:02:14,250 --> 00:02:17,310
+cover what's in the field.
+
+38
+00:02:17,310 --> 00:02:22,460
+Today we're starting a couple
+of discussions of mechanisms
+
+39
+00:02:22,460 --> 00:02:26,940
+or ideas or things
+to know about
+
+40
+00:02:26,940 --> 00:02:27,690
+that are quite different.
+
+41
+00:02:27,690 --> 00:02:29,690
+Because now we're going to focus
+on the problem rather
+
+42
+00:02:29,690 --> 00:02:31,930
+than on the mechanism.
+
+43
+00:02:31,930 --> 00:02:34,120
+And then a later on we're
+going to talk about deep
+
+44
+00:02:34,120 --> 00:02:37,005
+theory, FIOS, for
+its own sake.
+
+45
+00:02:37,005 --> 00:02:38,560
+But this week I want
+to talk about
+
+46
+00:02:38,560 --> 00:02:42,090
+mechanisms that were devised.
+
+47
+00:02:42,090 --> 00:02:45,760
+I want to talk about research
+that was done.
+
+48
+00:02:45,760 --> 00:02:47,020
+Let me not say mechanisms.
+
+49
+00:02:47,020 --> 00:02:53,530
+Let me say research that was
+done to attempt an account of
+
+50
+00:02:53,530 --> 00:02:56,040
+some of the things that
+we humans do well.
+
+51
+00:02:56,040 --> 00:03:00,460
+Sometimes without even knowing
+that we do it.
+
+52
+00:03:00,460 --> 00:03:03,110
+Now Krishna here tells me his
+first language was Telugu.
+
+53
+00:03:05,750 --> 00:03:06,790
+Telugu.
+
+54
+00:03:06,790 --> 00:03:08,270
+I once had another student
+whose first
+
+55
+00:03:08,270 --> 00:03:10,160
+language was Telugu.
+
+56
+00:03:10,160 --> 00:03:12,100
+I said to him, that must
+be one of those
+
+57
+00:03:12,100 --> 00:03:14,480
+obscure Indian languages.
+
+58
+00:03:14,480 --> 00:03:15,470
+And he said, yes.
+
+59
+00:03:15,470 --> 00:03:18,570
+It's spoken by 56
+million people.
+
+60
+00:03:18,570 --> 00:03:19,756
+French is spoken by 52.
+
+61
+00:03:19,756 --> 00:03:22,202
+[LAUGHTER]
+
+62
+00:03:22,202 --> 00:03:24,650
+PATRICK WINSTON: He's going to
+be our experimental subject.
+
+63
+00:03:24,650 --> 00:03:28,040
+Krishna, if I pluralize words--
+you know what it means
+
+64
+00:03:28,040 --> 00:03:30,120
+to pluralize a word.
+
+65
+00:03:30,120 --> 00:03:35,595
+So if I say for example, horse,
+then if I ask you for
+
+66
+00:03:35,595 --> 00:03:38,220
+the plural you'll say horses.
+
+67
+00:03:38,220 --> 00:03:42,500
+So if I say dog, what's
+the plural?
+
+68
+00:03:42,500 --> 00:03:44,380
+STUDENT: Then dogs.
+
+69
+00:03:44,380 --> 00:03:45,222
+Or in my language?
+
+70
+00:03:45,222 --> 00:03:45,730
+PATRICK WINSTON: No, no, no.
+
+71
+00:03:45,730 --> 00:03:46,680
+In English.
+
+72
+00:03:46,680 --> 00:03:47,680
+STUDENT: Oh, dogs.
+
+73
+00:03:47,680 --> 00:03:48,977
+PATRICK WINSTON: Well,
+what about cat?
+
+74
+00:03:48,977 --> 00:03:49,771
+STUDENT: Cats.
+
+75
+00:03:49,771 --> 00:03:50,950
+PATRICK WINSTON: And
+he got it right.
+
+76
+00:03:50,950 --> 00:03:52,250
+Isn't that a miracle?
+
+77
+00:03:52,250 --> 00:03:54,570
+When did you start
+speaking English?
+
+78
+00:03:54,570 --> 00:03:55,560
+STUDENT: Second grade.
+
+79
+00:03:55,560 --> 00:03:56,190
+PATRICK WINSTON: Second grade.
+
+80
+00:03:56,190 --> 00:03:57,600
+But he still got it right.
+
+81
+00:03:57,600 --> 00:04:00,740
+But he never learned that he's
+actually pluralizing those
+
+82
+00:04:00,740 --> 00:04:02,790
+words differently.
+
+83
+00:04:02,790 --> 00:04:05,320
+But he is.
+
+84
+00:04:05,320 --> 00:04:08,090
+So when you pluralize
+dog, what's the
+
+85
+00:04:08,090 --> 00:04:10,600
+sound that comes after?
+
+86
+00:04:10,600 --> 00:04:11,770
+It's a z sound.
+
+87
+00:04:11,770 --> 00:04:12,870
+Zzzzzz.
+
+88
+00:04:12,870 --> 00:04:14,710
+Dogzzz.
+
+89
+00:04:14,710 --> 00:04:16,902
+If you stick your fingers up
+here you can probably feel
+
+90
+00:04:16,902 --> 00:04:18,428
+your vocal cords vibrating.
+
+91
+00:04:18,428 --> 00:04:21,040
+If you stick a piece of paper in
+front of your mouth you'll
+
+92
+00:04:21,040 --> 00:04:23,000
+see it vibrate.
+
+93
+00:04:23,000 --> 00:04:26,260
+But when you say cats,
+the pluralizing sound
+
+94
+00:04:26,260 --> 00:04:28,710
+is sss, like that.
+
+95
+00:04:28,710 --> 00:04:29,920
+No vocalizing.
+
+96
+00:04:29,920 --> 00:04:32,113
+No vibration of the
+vocal cords.
+
+97
+00:04:32,113 --> 00:04:35,510
+And old Krishna here learned
+that rule, as did all of you
+
+98
+00:04:35,510 --> 00:04:38,330
+other non-native speakers of
+English, effortlessly and
+
+99
+00:04:38,330 --> 00:04:39,190
+without noticing it.
+
+100
+00:04:39,190 --> 00:04:40,335
+You learned it.
+
+101
+00:04:40,335 --> 00:04:41,650
+Buy you always get it right.
+
+102
+00:04:41,650 --> 00:04:44,170
+How can that possibly be?
+
+103
+00:04:44,170 --> 00:04:47,250
+Well, be the end of hour you'll
+know how that might be.
+
+104
+00:04:47,250 --> 00:04:54,060
+And you'll experience a case
+study in how questions of that
+
+105
+00:04:54,060 --> 00:04:55,909
+sort can be approached
+with a sort of
+
+106
+00:04:55,909 --> 00:04:57,159
+engineering point of view.
+
+107
+00:04:57,159 --> 00:04:59,680
+You can say, what if God
+were an engineer?
+
+108
+00:04:59,680 --> 00:05:04,730
+Or alternatively, what if I were
+God and I am an engineer?
+
+109
+00:05:04,730 --> 00:05:07,810
+Think about how it might
+happen that way.
+
+110
+00:05:07,810 --> 00:05:13,150
+So we want to understand how it
+might be that the machine
+
+111
+00:05:13,150 --> 00:05:14,700
+could learn rules like that.
+
+112
+00:05:14,700 --> 00:05:15,690
+Phonological rules.
+
+113
+00:05:15,690 --> 00:05:19,200
+Not just that one, but all the
+phonological rules you'd
+
+114
+00:05:19,200 --> 00:05:21,540
+acquire in a course
+on phonology.
+
+115
+00:05:21,540 --> 00:05:27,990
+That part of speaking that deals
+with those syllabic and
+
+116
+00:05:27,990 --> 00:05:30,740
+sub-syllabic sounds.
+
+117
+00:05:30,740 --> 00:05:32,970
+The phones of the language.
+
+118
+00:05:32,970 --> 00:05:37,890
+So when Yip and Sussman
+undertook to solve this
+
+119
+00:05:37,890 --> 00:05:41,950
+engineering problem, both being
+dedicated engineers, the
+
+120
+00:05:41,950 --> 00:05:44,560
+first thing they did was
+learn the science.
+
+121
+00:05:44,560 --> 00:05:47,840
+So they went to sit at the
+foot of Morris Halle, who
+
+122
+00:05:47,840 --> 00:05:51,510
+would develop-- was largely
+responsible for the
+
+123
+00:05:51,510 --> 00:05:53,280
+development theories of
+
+124
+00:05:53,280 --> 00:05:54,940
+so-called distinctive features.
+
+125
+00:05:54,940 --> 00:05:57,200
+And here's how all that works.
+
+126
+00:05:57,200 --> 00:06:01,030
+You start off with a person who
+wants to say something.
+
+127
+00:06:03,900 --> 00:06:09,650
+And out that person's mouth
+comes some sort of acoustic
+
+128
+00:06:09,650 --> 00:06:11,670
+pressure wave.
+
+129
+00:06:11,670 --> 00:06:14,780
+And if I say, hello, George.
+
+130
+00:06:14,780 --> 00:06:16,560
+And you say hello, George.
+
+131
+00:06:16,560 --> 00:06:19,120
+Everybody will understand that
+we said the same thing.
+
+132
+00:06:19,120 --> 00:06:21,540
+But that acoustic waveform won't
+look anything alike.
+
+133
+00:06:21,540 --> 00:06:24,790
+It'll be very different
+for all of us.
+
+134
+00:06:24,790 --> 00:06:29,310
+So it's a miracle that words
+can be understood.
+
+135
+00:06:29,310 --> 00:06:32,240
+In any case, it goes
+into an ear.
+
+136
+00:06:32,240 --> 00:06:34,240
+And it's processed.
+
+137
+00:06:34,240 --> 00:06:42,325
+And out comes a sequence
+of distinctive feature.
+
+138
+00:06:51,440 --> 00:06:52,690
+Vectors.
+
+139
+00:06:58,120 --> 00:07:04,170
+A distinctive feature is a
+binary variable like is the
+
+140
+00:07:04,170 --> 00:07:05,880
+phone voices or not.
+
+141
+00:07:05,880 --> 00:07:07,830
+That is to say, are your
+vocal cords vibrating
+
+142
+00:07:07,830 --> 00:07:08,840
+when you say it?
+
+143
+00:07:08,840 --> 00:07:11,970
+If so, then that's
+plus voiced.
+
+144
+00:07:11,970 --> 00:07:14,360
+If not, it's minus voiced.
+
+145
+00:07:14,360 --> 00:07:19,440
+So according to the original
+distinctive feature theory and
+
+146
+00:07:19,440 --> 00:07:22,650
+consistent with most of the
+theories that have been
+
+147
+00:07:22,650 --> 00:07:25,740
+derived since the original one,
+there are on the order of
+
+148
+00:07:25,740 --> 00:07:29,300
+14 of these distinctive features
+that determine which
+
+149
+00:07:29,300 --> 00:07:32,090
+phone you're saying.
+
+150
+00:07:32,090 --> 00:07:35,260
+So if you say ah, that's
+one combination of
+
+151
+00:07:35,260 --> 00:07:36,715
+these binary features.
+
+152
+00:07:36,715 --> 00:07:40,659
+If you say tuh, that's another
+combination of
+
+153
+00:07:40,659 --> 00:07:42,659
+these binary features.
+
+154
+00:07:42,659 --> 00:07:45,040
+14 of them.
+
+155
+00:07:45,040 --> 00:07:48,909
+So how many sounds does that
+mean, in principle, there
+
+156
+00:07:48,909 --> 00:07:50,770
+could be in a language?
+
+157
+00:07:50,770 --> 00:07:52,165
+SEBASTIAN: 2 to the 14th.
+
+158
+00:07:52,165 --> 00:07:58,300
+PATRICK WINSTON: And what's
+2 the 14th, Sebastian?
+
+159
+00:07:58,300 --> 00:08:01,920
+Well, it ought to be about
+16,000, don't you think?
+
+160
+00:08:01,920 --> 00:08:03,350
+2 to the 10th is 1,000.
+
+161
+00:08:03,350 --> 00:08:05,310
+2 the fourth is 16.
+
+162
+00:08:05,310 --> 00:08:09,480
+So there are about 16,000
+possible combination.
+
+163
+00:08:09,480 --> 00:08:14,100
+But no language on Earth has
+more than 100 phones.
+
+164
+00:08:14,100 --> 00:08:14,910
+That's strange, isn't it?
+
+165
+00:08:14,910 --> 00:08:18,670
+Because some of those choices
+are probably excluded on
+
+166
+00:08:18,670 --> 00:08:19,390
+physical ground.
+
+167
+00:08:19,390 --> 00:08:20,730
+But most of them are not.
+
+168
+00:08:20,730 --> 00:08:23,870
+So we could have a lot more
+phones in our language than we
+
+169
+00:08:23,870 --> 00:08:24,780
+actually do.
+
+170
+00:08:24,780 --> 00:08:27,630
+English is about 40.
+
+171
+00:08:27,630 --> 00:08:32,070
+So the sequence of distinctive
+features could be viewed as
+
+172
+00:08:32,070 --> 00:08:41,090
+then producing meaning after,
+perhaps, a long series of
+
+173
+00:08:41,090 --> 00:08:42,620
+operations.
+
+174
+00:08:42,620 --> 00:08:46,730
+But in the end, those operations
+feedback in here
+
+175
+00:08:46,730 --> 00:08:48,560
+because many of the distinctive
+features are
+
+176
+00:08:48,560 --> 00:08:50,560
+actually hallucinated.
+
+177
+00:08:50,560 --> 00:08:52,320
+We think we heard them,
+but they're not there.
+
+178
+00:08:52,320 --> 00:08:55,480
+Or they're not even in the
+acoustic waveform.
+
+179
+00:08:55,480 --> 00:08:57,345
+They're there for the
+convenience of the phonologist
+
+180
+00:08:57,345 --> 00:09:01,210
+who make rules out of them.
+
+181
+00:09:01,210 --> 00:09:10,670
+It's remarkable how much of this
+feedback there is, and
+
+182
+00:09:10,670 --> 00:09:14,570
+even injection from
+other modalities.
+
+183
+00:09:14,570 --> 00:09:17,730
+Many of you may have heard
+about the McGurk Effect.
+
+184
+00:09:17,730 --> 00:09:20,310
+Here's who the McGurk
+Effect works.
+
+185
+00:09:20,310 --> 00:09:25,270
+Look at me while I say ga,
+ga, ga, ga, ga, ga.
+
+186
+00:09:25,270 --> 00:09:25,580
+OK.
+
+187
+00:09:25,580 --> 00:09:27,120
+I said, g-a.
+
+188
+00:09:27,120 --> 00:09:30,050
+Now how about ba, ba, ba, ba.
+
+189
+00:09:30,050 --> 00:09:30,460
+OK.
+
+190
+00:09:30,460 --> 00:09:35,130
+I said ba like a sheep.
+
+191
+00:09:35,130 --> 00:09:40,730
+But if I take the sound I make
+when I say ba and play it
+
+192
+00:09:40,730 --> 00:09:44,730
+while you're taking video of
+me saying ga, what do you
+
+193
+00:09:44,730 --> 00:09:46,840
+think you hear?
+
+194
+00:09:46,840 --> 00:09:48,000
+You don't hear ba.
+
+195
+00:09:48,000 --> 00:09:53,030
+Some people report that they
+hear a d-a sound like da.
+
+196
+00:09:53,030 --> 00:09:56,200
+When I look at it, I can't
+make any sense out of it.
+
+197
+00:09:56,200 --> 00:09:58,270
+It looks like there's a
+disconnection between the
+
+198
+00:09:58,270 --> 00:10:01,470
+speech and the video.
+
+199
+00:10:01,470 --> 00:10:03,916
+But it does not sound like ba.
+
+200
+00:10:03,916 --> 00:10:07,740
+But if I shut my eyes and say
+ba, ba, it's absolutely clear
+
+201
+00:10:07,740 --> 00:10:10,350
+that it's b-a.
+
+202
+00:10:10,350 --> 00:10:17,280
+So what you see has a large
+influence on what you hear.
+
+203
+00:10:17,280 --> 00:10:18,600
+It's also interesting--
+
+204
+00:10:18,600 --> 00:10:20,690
+although a side issue-- it's
+also interesting to note that
+
+205
+00:10:20,690 --> 00:10:23,350
+it's very difficult pronounced
+things correctly if you don't
+
+206
+00:10:23,350 --> 00:10:25,230
+see the speaker.
+
+207
+00:10:25,230 --> 00:10:27,360
+So many people wonder when they
+learn foreign languages
+
+208
+00:10:27,360 --> 00:10:29,600
+why they can't speak
+like a native.
+
+209
+00:10:29,600 --> 00:10:31,020
+And the answer is, they're
+not watching the
+
+210
+00:10:31,020 --> 00:10:33,160
+mouth of the speaker.
+
+211
+00:10:33,160 --> 00:10:35,665
+I was talking to a German friend
+once and said, you
+
+212
+00:10:35,665 --> 00:10:39,796
+know, I just can't say the
+damned umlaut right.
+
+213
+00:10:39,796 --> 00:10:42,470
+And he said, oh, the trouble
+with you Americans is you
+
+214
+00:10:42,470 --> 00:10:47,080
+don't realize that American
+cows say moo but
+
+215
+00:10:47,080 --> 00:10:48,530
+German cows say muu.
+
+216
+00:10:48,530 --> 00:10:48,910
+[LAUGHTER]
+
+217
+00:10:48,910 --> 00:10:51,130
+PATRICK WINSTON: And, of
+course, I got instantly
+
+218
+00:10:51,130 --> 00:10:53,410
+because I could see that the
+umlaut sounds are produced
+
+219
+00:10:53,410 --> 00:10:57,290
+with protruding lips, which we
+don't have any sounds an
+
+220
+00:10:57,290 --> 00:10:59,766
+English that require that.
+
+221
+00:10:59,766 --> 00:11:03,180
+Ah, but back to what we know
+from the phonologists about
+
+222
+00:11:03,180 --> 00:11:04,450
+all this stuff.
+
+223
+00:11:04,450 --> 00:11:06,740
+If you talk to Morris
+Halle, he will tell
+
+224
+00:11:06,740 --> 00:11:09,490
+you that over here--
+
+225
+00:11:09,490 --> 00:11:12,100
+I like to think of it
+as a marionette.
+
+226
+00:11:12,100 --> 00:11:13,860
+There are five pieces
+of meat down here.
+
+227
+00:11:21,270 --> 00:11:23,330
+And the combination of
+distinctive features that
+
+228
+00:11:23,330 --> 00:11:27,250
+you're trying to utter are
+like the control of a
+
+229
+00:11:27,250 --> 00:11:29,320
+marionette on those five
+pieces of meat.
+
+230
+00:11:29,320 --> 00:11:32,020
+So if you want to say an a
+sound, the marionette control
+
+231
+00:11:32,020 --> 00:11:36,310
+goes into a position that
+produces that combination.
+
+232
+00:11:36,310 --> 00:11:36,970
+So let's see.
+
+233
+00:11:36,970 --> 00:11:41,110
+What does that distinctive
+feature sequence look like for
+
+234
+00:11:41,110 --> 00:11:41,920
+typical word?
+
+235
+00:11:41,920 --> 00:11:44,020
+Well, here's a word.
+
+236
+00:11:44,020 --> 00:11:45,270
+A-e-p-l.
+
+237
+00:11:48,250 --> 00:11:50,340
+Apples.
+
+238
+00:11:50,340 --> 00:11:56,580
+And we can talk about what
+distinctive features are
+
+239
+00:11:56,580 --> 00:12:01,380
+arrayed in that particular
+combination of phones.
+
+240
+00:12:01,380 --> 00:12:03,040
+So one of the features
+that they like to
+
+241
+00:12:03,040 --> 00:12:05,580
+talk about is syllabic.
+
+242
+00:12:05,580 --> 00:12:06,830
+Syllabic.
+
+243
+00:12:09,950 --> 00:12:13,240
+That roughly means, can that
+sound form the sort of core of
+
+244
+00:12:13,240 --> 00:12:14,710
+a syllable?
+
+245
+00:12:14,710 --> 00:12:18,930
+And the answer is a can,
+buy these can't.
+
+246
+00:12:18,930 --> 00:12:22,060
+So it's plus, minus,
+minus, minus.
+
+247
+00:12:22,060 --> 00:12:29,040
+Down here a little ways you'll
+run into the voiced feature.
+
+248
+00:12:29,040 --> 00:12:30,735
+And for the voiced feature,
+well, we can do
+
+249
+00:12:30,735 --> 00:12:32,160
+the experiment ourselves.
+
+250
+00:12:32,160 --> 00:12:33,500
+Ahh.
+
+251
+00:12:33,500 --> 00:12:35,540
+Sounds like it's voices to me.
+
+252
+00:12:35,540 --> 00:12:36,340
+Pa.
+
+253
+00:12:36,340 --> 00:12:36,790
+No.
+
+254
+00:12:36,790 --> 00:12:37,970
+That's not voiced.
+
+255
+00:12:37,970 --> 00:12:38,390
+Oo.
+
+256
+00:12:38,390 --> 00:12:39,080
+Yep.
+
+257
+00:12:39,080 --> 00:12:40,540
+Zzz.
+
+258
+00:12:40,540 --> 00:12:43,180
+We already said that
+was voiced.
+
+259
+00:12:43,180 --> 00:12:46,940
+So that's the combination you
+see when you utter apples for
+
+260
+00:12:46,940 --> 00:12:48,670
+the voiced feature.
+
+261
+00:12:48,670 --> 00:12:50,540
+Then another one is the
+continuent one.
+
+262
+00:12:54,190 --> 00:12:57,290
+That roughly says is your
+vocal apparatus open?
+
+263
+00:12:57,290 --> 00:13:00,370
+Is there no obstruction?
+
+264
+00:13:00,370 --> 00:13:04,750
+And so ahh plus pa
+is constricted.
+
+265
+00:13:04,750 --> 00:13:06,100
+Oo, open.
+
+266
+00:13:06,100 --> 00:13:07,960
+Zzz, open.
+
+267
+00:13:07,960 --> 00:13:09,960
+So that one happens to run right
+along with voiced in
+
+268
+00:13:09,960 --> 00:13:12,040
+that particular word.
+
+269
+00:13:12,040 --> 00:13:13,640
+Oh, and there are
+14 altogether.
+
+270
+00:13:13,640 --> 00:13:16,510
+But let me just write
+down one more.
+
+271
+00:13:16,510 --> 00:13:17,760
+The strident one.
+
+272
+00:13:21,980 --> 00:13:25,000
+That says, do you use your
+tongue to form a
+
+273
+00:13:25,000 --> 00:13:26,800
+little jet of air?
+
+274
+00:13:26,800 --> 00:13:30,735
+So you don't on aa, pa, oo.
+
+275
+00:13:30,735 --> 00:13:33,220
+Buy you do on z.
+
+276
+00:13:33,220 --> 00:13:35,600
+So that gets a plus.
+
+277
+00:13:35,600 --> 00:13:39,530
+So that's a glimpse through a
+soda straw of what it would
+
+278
+00:13:39,530 --> 00:13:43,980
+like to represent the word
+apples as a set of distinctive
+
+279
+00:13:43,980 --> 00:13:46,350
+features all arranged
+in a sequence.
+
+280
+00:13:46,350 --> 00:13:49,760
+So it's a matrix of features.
+
+281
+00:13:49,760 --> 00:13:52,750
+Going down in the columns we
+have our distinctive features.
+
+282
+00:13:52,750 --> 00:13:56,250
+And going across we have time.
+
+283
+00:13:56,250 --> 00:14:01,230
+So as the first thing Sussman
+and Yip did in their effort to
+
+284
+00:14:01,230 --> 00:14:04,610
+understand how phonological
+rules could be learned is to
+
+285
+00:14:04,610 --> 00:14:11,880
+design a machine that would
+interpret words and sounds and
+
+286
+00:14:11,880 --> 00:14:16,260
+things that you see so
+as to produce the
+
+287
+00:14:16,260 --> 00:14:18,470
+sounds of the language.
+
+288
+00:14:18,470 --> 00:14:21,820
+So they imagined the following
+kind of machine.
+
+289
+00:14:21,820 --> 00:14:27,320
+The machine has some kind of
+mystery apparatus over here
+
+290
+00:14:27,320 --> 00:14:31,290
+that looks out into the world
+and sees what's there.
+
+291
+00:14:31,290 --> 00:14:34,570
+So I'm looking out in the world
+and I see two apples.
+
+292
+00:14:34,570 --> 00:14:39,090
+So what this machine might do
+then is, at some point, decide
+
+293
+00:14:39,090 --> 00:14:41,490
+that there are two
+apples out there.
+
+294
+00:14:41,490 --> 00:14:44,340
+Then, thinking in terms of
+these guys as computer
+
+295
+00:14:44,340 --> 00:14:50,460
+engineers, they think in terms
+of a set of registers that
+
+296
+00:14:50,460 --> 00:14:58,700
+hold values for concepts like
+noun and verb and plural.
+
+297
+00:15:02,500 --> 00:15:05,130
+And we've not done anything
+with the machine yet.
+
+298
+00:15:05,130 --> 00:15:07,520
+We've provided no input.
+
+299
+00:15:07,520 --> 00:15:12,260
+So those registers
+are all empty.
+
+300
+00:15:12,260 --> 00:15:16,135
+Then, up in here, we have
+a set of words.
+
+301
+00:15:20,763 --> 00:15:23,470
+And they're all kinds
+of words.
+
+302
+00:15:23,470 --> 00:15:24,720
+Apple is one of them.
+
+303
+00:15:29,290 --> 00:15:34,540
+And those words up there know
+about how the concept is
+
+304
+00:15:34,540 --> 00:15:37,990
+rendered as a sequence of a
+phones, that is to say a
+
+305
+00:15:37,990 --> 00:15:41,430
+sequence of distinct features.
+
+306
+00:15:41,430 --> 00:15:46,450
+Then, over here, most
+importantly, they have a set
+
+307
+00:15:46,450 --> 00:15:47,700
+of constraints.
+
+308
+00:15:55,660 --> 00:15:58,050
+So we'll talk about a particular
+constrain, the
+
+309
+00:15:58,050 --> 00:15:59,300
+plural constraint.
+
+310
+00:16:01,690 --> 00:16:05,380
+Plural constraint number one.
+
+311
+00:16:05,380 --> 00:16:08,040
+And it's going to reach around
+and connect itself to some
+
+312
+00:16:08,040 --> 00:16:10,570
+other parts of the machine.
+
+313
+00:16:10,570 --> 00:16:17,470
+Finally, there's a buffer
+of phones to be uttered.
+
+314
+00:16:17,470 --> 00:16:20,650
+And they're going to flow out
+this way to the speaker's
+
+315
+00:16:20,650 --> 00:16:26,770
+mouth and get translated into
+a acoustic wave form.
+
+316
+00:16:26,770 --> 00:16:29,680
+So those are the elements
+of the machine.
+
+317
+00:16:29,680 --> 00:16:34,380
+Now how are the elements
+connected together?
+
+318
+00:16:34,380 --> 00:16:47,460
+Well, the words are connected,
+of course, into the buffer
+
+319
+00:16:47,460 --> 00:16:51,550
+that is used to generate
+the sound over
+
+320
+00:16:51,550 --> 00:16:54,360
+here on the far left.
+
+321
+00:16:54,360 --> 00:16:58,150
+The plural register is
+connected to what
+
+322
+00:16:58,150 --> 00:17:00,080
+you see in the world.
+
+323
+00:17:00,080 --> 00:17:02,580
+What you see in the world is
+connected not only to plural
+
+324
+00:17:02,580 --> 00:17:08,530
+register, but to all of the
+objects in the word
+
+325
+00:17:08,530 --> 00:17:09,780
+repertoire.
+
+326
+00:17:12,530 --> 00:17:15,950
+This plural constraint here
+deserves extra attention
+
+327
+00:17:15,950 --> 00:17:21,868
+because it's going to be
+desirous of actuating itself
+
+328
+00:17:21,868 --> 00:17:23,839
+in the event but the
+thing observed in
+
+329
+00:17:23,839 --> 00:17:25,630
+the world is plural.
+
+330
+00:17:25,630 --> 00:17:28,520
+There are lots of them.
+
+331
+00:17:28,520 --> 00:17:32,285
+So it's going to be connected
+then to the plural port.
+
+332
+00:17:35,430 --> 00:17:40,050
+There's going to be a z sound
+port down here connecting to
+
+333
+00:17:40,050 --> 00:17:41,650
+that file element
+in the buffer.
+
+334
+00:17:46,710 --> 00:17:53,430
+And finally, over here is going
+to be a plussed voiced
+
+335
+00:17:53,430 --> 00:17:58,370
+port, which is going to be
+connected to the second
+
+336
+00:17:58,370 --> 00:18:01,270
+phoneme in the sequence.
+
+337
+00:18:01,270 --> 00:18:04,130
+That's how the machine is
+going to be arranged.
+
+338
+00:18:04,130 --> 00:18:07,630
+An of course, this is just
+one of many constraints.
+
+339
+00:18:07,630 --> 00:18:12,410
+But it's a constraint that has
+a very peculiar property.
+
+340
+00:18:12,410 --> 00:18:16,410
+Information can flow through
+it in multiple ways.
+
+341
+00:18:16,410 --> 00:18:18,430
+So we think of most programs
+as having an
+
+342
+00:18:18,430 --> 00:18:21,430
+input and an output.
+
+343
+00:18:21,430 --> 00:18:24,630
+But I try to be careful
+to draw circles
+
+344
+00:18:24,630 --> 00:18:25,560
+here instead of arrows.
+
+345
+00:18:25,560 --> 00:18:29,170
+Because these are ports and
+information can flow in any
+
+346
+00:18:29,170 --> 00:18:30,890
+direction along them.
+
+347
+00:18:30,890 --> 00:18:33,240
+What I want to do now is to
+show you how this machine
+
+348
+00:18:33,240 --> 00:18:37,540
+would react if I suddenly
+present it with a pair of
+
+349
+00:18:37,540 --> 00:18:40,570
+apples like so.
+
+350
+00:18:40,570 --> 00:18:44,740
+So the assumption is that the
+vision apparatus comes in and
+
+351
+00:18:44,740 --> 00:18:51,140
+produces the notion, the
+concept, of two apples.
+
+352
+00:18:51,140 --> 00:18:54,690
+So once that has happened--
+
+353
+00:18:54,690 --> 00:18:56,530
+that's operation number one--
+
+354
+00:18:59,370 --> 00:19:04,850
+then information flows from that
+meaning register up here
+
+355
+00:19:04,850 --> 00:19:06,810
+to the apple word.
+
+356
+00:19:06,810 --> 00:19:11,700
+So that's part of stage
+number two.
+
+357
+00:19:11,700 --> 00:19:14,240
+Another part of stage number two
+is information flows along
+
+358
+00:19:14,240 --> 00:19:21,200
+this wire and marks that
+as plus plural.
+
+359
+00:19:21,200 --> 00:19:25,290
+So operation number one is the
+activity of the vision system.
+
+360
+00:19:25,290 --> 00:19:28,770
+Activity number two is the flow
+of information from that
+
+361
+00:19:28,770 --> 00:19:33,010
+vision system into the
+word lexicon and
+
+362
+00:19:33,010 --> 00:19:35,090
+into this plural register.
+
+363
+00:19:37,690 --> 00:19:38,900
+So far so good.
+
+364
+00:19:38,900 --> 00:19:42,560
+Here's activity number three.
+
+365
+00:19:42,560 --> 00:19:49,850
+This word is also connected
+to the registers.
+
+366
+00:19:49,850 --> 00:19:53,900
+And information flows along
+those wires so as to indicate
+
+367
+00:19:53,900 --> 00:19:56,860
+that it's a noun
+but not a verb.
+
+368
+00:19:56,860 --> 00:20:00,640
+That's part of part
+number three.
+
+369
+00:20:00,640 --> 00:20:05,050
+At the same time, part number
+three, information flows down
+
+370
+00:20:05,050 --> 00:20:11,000
+this wire and writes a-p-l
+into those are
+
+371
+00:20:11,000 --> 00:20:12,322
+elements of the buffer.
+
+372
+00:20:15,940 --> 00:20:20,490
+Now this constraint up here,
+this box, says, well, I can
+
+373
+00:20:20,490 --> 00:20:22,480
+now see some stuff in
+that buffer that
+
+374
+00:20:22,480 --> 00:20:24,430
+wasn't there before.
+
+375
+00:20:24,430 --> 00:20:28,410
+So it says, do I see enough
+stuff on my ports to get
+
+376
+00:20:28,410 --> 00:20:33,300
+excited about expressing
+values on other ports?
+
+377
+00:20:33,300 --> 00:20:33,730
+Well, let's see.
+
+378
+00:20:33,730 --> 00:20:34,780
+What has it got?
+
+379
+00:20:34,780 --> 00:20:38,890
+It's got the elements
+in this buffer.
+
+380
+00:20:38,890 --> 00:20:42,270
+Also up here in step three
+flow the plural thing.
+
+381
+00:20:42,270 --> 00:20:44,400
+So it know that the
+word is plural.
+
+382
+00:20:44,400 --> 00:20:45,670
+So it says, is this voiced?
+
+383
+00:20:48,330 --> 00:20:50,130
+P is pa.
+
+384
+00:20:50,130 --> 00:20:51,920
+That's not voiced.
+
+385
+00:20:51,920 --> 00:20:53,180
+Is this a z sound.
+
+386
+00:20:53,180 --> 00:20:55,410
+No, that's not as z sound.
+
+387
+00:20:55,410 --> 00:20:59,930
+So it sees what it likes on only
+one of its three ports.
+
+388
+00:20:59,930 --> 00:21:01,750
+So it says, I'm not going
+to do anything.
+
+389
+00:21:01,750 --> 00:21:03,500
+I'm [INAUDIBLE].
+
+390
+00:21:03,500 --> 00:21:07,370
+I'm not in this particular
+combat.
+
+391
+00:21:07,370 --> 00:21:08,440
+So far so good.
+
+392
+00:21:08,440 --> 00:21:10,460
+What happens next?
+
+393
+00:21:10,460 --> 00:21:15,100
+What happens next is that
+some time passes.
+
+394
+00:21:15,100 --> 00:21:18,780
+And the elements of the buffer
+flow to the left toward the
+
+395
+00:21:18,780 --> 00:21:20,820
+speaker's mouth.
+
+396
+00:21:20,820 --> 00:21:24,720
+So we get an a, p, l.
+
+397
+00:21:24,720 --> 00:21:27,700
+Same as we had before,
+but shifted over.
+
+398
+00:21:27,700 --> 00:21:28,950
+Now what happens?
+
+399
+00:21:31,110 --> 00:21:35,870
+Now what happens is that
+the l is now in
+
+400
+00:21:35,870 --> 00:21:37,680
+the penultimate position.
+
+401
+00:21:37,680 --> 00:21:40,100
+So information flows up here.
+
+402
+00:21:40,100 --> 00:21:43,860
+Item number four-- oh, I guess
+that's item number five.
+
+403
+00:21:43,860 --> 00:21:48,290
+Item number four is the leftward
+flow of the word.
+
+404
+00:21:48,290 --> 00:21:51,360
+So in phase number five, the
+p is witnessed by this
+
+405
+00:21:51,360 --> 00:21:52,990
+constraint.
+
+406
+00:21:52,990 --> 00:21:54,210
+p is--
+
+407
+00:21:54,210 --> 00:21:55,990
+sorry, l is witnessed
+by this constraint.
+
+408
+00:21:55,990 --> 00:21:57,950
+We moved it over one.
+
+409
+00:21:57,950 --> 00:21:58,850
+L is lll.
+
+410
+00:21:58,850 --> 00:22:00,570
+L is voiced.
+
+411
+00:22:00,570 --> 00:22:03,940
+So we have some flow
+up here like that.
+
+412
+00:22:03,940 --> 00:22:06,470
+That's number five.
+
+413
+00:22:06,470 --> 00:22:10,640
+Now we have voiced and
+we have plural.
+
+414
+00:22:10,640 --> 00:22:12,940
+And we have nothing here.
+
+415
+00:22:12,940 --> 00:22:16,340
+So there's a great desire of
+this buffer to have something
+
+416
+00:22:16,340 --> 00:22:17,500
+written into it.
+
+417
+00:22:17,500 --> 00:22:21,370
+So now there's a flow
+down in there, of z,
+
+418
+00:22:21,370 --> 00:22:23,170
+as item number six.
+
+419
+00:22:23,170 --> 00:22:26,730
+So that's how the machine would
+work in expressing the
+
+420
+00:22:26,730 --> 00:22:29,580
+idea that there are apples
+in the field of view.
+
+421
+00:22:35,196 --> 00:22:36,610
+Mmm.
+
+422
+00:22:36,610 --> 00:22:37,720
+Real apples.
+
+423
+00:22:37,720 --> 00:22:38,970
+Not plastic imitations.
+
+424
+00:22:42,870 --> 00:22:46,140
+So that's how the
+machine works.
+
+425
+00:22:46,140 --> 00:22:47,505
+But all those connections
+are reversible.
+
+426
+00:22:51,100 --> 00:22:56,545
+So if I hear apples then I get
+the machine running backwards
+
+427
+00:22:56,545 --> 00:23:00,025
+and my visual apparatus
+can imagine that there
+
+428
+00:23:00,025 --> 00:23:01,692
+are apples out there.
+
+429
+00:23:01,692 --> 00:23:04,030
+That's how it works.
+
+430
+00:23:04,030 --> 00:23:07,090
+That's just by way of background
+the machine that
+
+431
+00:23:07,090 --> 00:23:10,490
+they could see it for using the
+phonological rules once
+
+432
+00:23:10,490 --> 00:23:11,880
+they're learned.
+
+433
+00:23:11,880 --> 00:23:15,400
+All the phonological rules
+are expressed in these
+
+434
+00:23:15,400 --> 00:23:17,710
+constraints.
+
+435
+00:23:17,710 --> 00:23:20,270
+But since these constraints are
+such that information can
+
+436
+00:23:20,270 --> 00:23:22,990
+flow in any direction, they
+deserve to be called
+
+437
+00:23:22,990 --> 00:23:24,240
+propagators.
+
+438
+00:23:30,290 --> 00:23:33,760
+And in the good old days when
+everyone took 6.001, they
+
+439
+00:23:33,760 --> 00:23:37,370
+learned about propagators as
+a kind of architecture for
+
+440
+00:23:37,370 --> 00:23:40,380
+building complex systems.
+
+441
+00:23:40,380 --> 00:23:43,060
+But in any event, there's
+the Sussman-Yip machine.
+
+442
+00:23:43,060 --> 00:23:44,600
+And now comes the
+big question.
+
+443
+00:23:44,600 --> 00:23:49,010
+How do you learn rule
+rules like that?
+
+444
+00:23:49,010 --> 00:23:52,120
+Well, what we need is we need
+some positive examples and
+
+445
+00:23:52,120 --> 00:23:53,370
+some negative examples.
+
+446
+00:23:56,910 --> 00:24:00,210
+And for the simple classroom
+example I've chosen the same
+
+447
+00:24:00,210 --> 00:24:03,780
+challenge that I presented
+to Krishna.
+
+448
+00:24:03,780 --> 00:24:06,730
+We're gonna have
+cats and dogs.
+
+449
+00:24:06,730 --> 00:24:10,340
+So we're gonna look at the
+distinctive features that are
+
+450
+00:24:10,340 --> 00:24:11,620
+associated with those words.
+
+451
+00:24:15,220 --> 00:24:17,020
+Syllabic.
+
+452
+00:24:17,020 --> 00:24:18,270
+Voiced.
+
+453
+00:24:20,050 --> 00:24:21,300
+Continuent.
+
+454
+00:24:25,510 --> 00:24:26,760
+And strident.
+
+455
+00:24:30,740 --> 00:24:34,130
+Just four of the 14 features
+that are associated with each
+
+456
+00:24:34,130 --> 00:24:35,940
+of the sounds on those words.
+
+457
+00:24:35,940 --> 00:24:37,370
+Could you close the
+laptop, please?
+
+458
+00:24:40,680 --> 00:24:47,375
+Just for the distinctive
+features that are arrayed in
+
+459
+00:24:47,375 --> 00:24:51,160
+those words by way
+of illustration.
+
+460
+00:24:51,160 --> 00:24:52,410
+So here we have k-a-t-z.
+
+461
+00:24:56,450 --> 00:24:57,700
+Phonetically spelled.
+
+462
+00:25:04,050 --> 00:25:06,810
+And if we work that
+out, let's see.
+
+463
+00:25:06,810 --> 00:25:08,460
+What is syllabic?
+
+464
+00:25:08,460 --> 00:25:08,900
+That's not.
+
+465
+00:25:08,900 --> 00:25:09,450
+That is.
+
+466
+00:25:09,450 --> 00:25:11,060
+That is.
+
+467
+00:25:11,060 --> 00:25:14,090
+That's not.
+
+468
+00:25:14,090 --> 00:25:14,610
+Voiced?
+
+469
+00:25:14,610 --> 00:25:15,170
+Ka.
+
+470
+00:25:15,170 --> 00:25:16,204
+Nope.
+
+471
+00:25:16,204 --> 00:25:16,648
+Ah.
+
+472
+00:25:16,648 --> 00:25:17,980
+Yep.
+
+473
+00:25:17,980 --> 00:25:19,570
+T. Nope.
+
+474
+00:25:19,570 --> 00:25:21,540
+Z. Yes.
+
+475
+00:25:21,540 --> 00:25:22,660
+That can't be right.
+
+476
+00:25:22,660 --> 00:25:25,070
+Cats.
+
+477
+00:25:25,070 --> 00:25:26,610
+I misspelled it.
+
+478
+00:25:26,610 --> 00:25:27,225
+Because cats.
+
+479
+00:25:27,225 --> 00:25:28,310
+Sss.
+
+480
+00:25:28,310 --> 00:25:31,590
+His a hissing sound but
+there's no voicing.
+
+481
+00:25:31,590 --> 00:25:32,910
+So that's not as z sound.
+
+482
+00:25:32,910 --> 00:25:35,780
+That's an s sound.
+
+483
+00:25:35,780 --> 00:25:36,960
+So that's not plus voiced.
+
+484
+00:25:36,960 --> 00:25:38,860
+It's minused voiced.
+
+485
+00:25:38,860 --> 00:25:40,980
+Continuent.
+
+486
+00:25:40,980 --> 00:25:41,670
+Let's see.
+
+487
+00:25:41,670 --> 00:25:43,180
+Is my mouth open when I say k?
+
+488
+00:25:43,180 --> 00:25:44,120
+No.
+
+489
+00:25:44,120 --> 00:25:44,420
+Ah?
+
+490
+00:25:44,420 --> 00:25:45,790
+Yes.
+
+491
+00:25:45,790 --> 00:25:46,280
+T?
+
+492
+00:25:46,280 --> 00:25:47,660
+No.
+
+493
+00:25:47,660 --> 00:25:48,110
+S?
+
+494
+00:25:48,110 --> 00:25:49,860
+Yes.
+
+495
+00:25:49,860 --> 00:25:50,870
+And strident.
+
+496
+00:25:50,870 --> 00:25:53,120
+Minus, minus, minus, plus.
+
+497
+00:25:53,120 --> 00:25:56,650
+It's only with the s sound that
+I have that kind of jet
+
+498
+00:25:56,650 --> 00:25:59,270
+forming with my tongue.
+
+499
+00:25:59,270 --> 00:26:00,520
+Now we can look at dogs.
+
+500
+00:26:11,950 --> 00:26:16,450
+And now we have the z sound
+as the pluralization.
+
+501
+00:26:16,450 --> 00:26:18,230
+We know that because when
+we say it, dogzz.
+
+502
+00:26:18,230 --> 00:26:18,700
+Yep.
+
+503
+00:26:18,700 --> 00:26:20,450
+There it comes out as a--
+
+504
+00:26:20,450 --> 00:26:23,770
+we're only gonna look at the
+last two columns because
+
+505
+00:26:23,770 --> 00:26:25,640
+they're the only ones that are
+going to matter to us.
+
+506
+00:26:25,640 --> 00:26:27,960
+So that's plus.
+
+507
+00:26:27,960 --> 00:26:30,906
+And that's minus.
+
+508
+00:26:30,906 --> 00:26:32,156
+Gu, gu, gu, gu.
+
+509
+00:26:36,330 --> 00:26:37,240
+That's plussed.
+
+510
+00:26:37,240 --> 00:26:38,220
+And that's plussed.
+
+511
+00:26:38,220 --> 00:26:39,230
+They're both voiced.
+
+512
+00:26:39,230 --> 00:26:39,730
+Is that right?
+
+513
+00:26:39,730 --> 00:26:41,800
+Dogu?
+
+514
+00:26:41,800 --> 00:26:42,700
+Gu.
+
+515
+00:26:42,700 --> 00:26:43,170
+Gu.
+
+516
+00:26:43,170 --> 00:26:44,430
+Is g sound voiced?
+
+517
+00:26:51,430 --> 00:26:53,156
+Yeah, I didn't think so.
+
+518
+00:26:53,156 --> 00:26:54,630
+G sound is voiced?
+
+519
+00:27:03,420 --> 00:27:04,223
+Look-- oh.
+
+520
+00:27:04,223 --> 00:27:08,072
+Oh, it is voiced buy it's
+not a continuent.
+
+521
+00:27:08,072 --> 00:27:10,400
+Just like that.
+
+522
+00:27:10,400 --> 00:27:11,270
+Yeah.
+
+523
+00:27:11,270 --> 00:27:12,280
+Cat, dogu zz.
+
+524
+00:27:12,280 --> 00:27:12,645
+Yeah.
+
+525
+00:27:12,645 --> 00:27:13,760
+It is voiced.
+
+526
+00:27:13,760 --> 00:27:16,276
+And it has to be for my
+example to work out.
+
+527
+00:27:16,276 --> 00:27:20,390
+And that's minus, minus,
+minus, plus.
+
+528
+00:27:20,390 --> 00:27:22,870
+So what we're interested in is,
+how come one word gets an
+
+529
+00:27:22,870 --> 00:27:25,020
+s sound and how come the other
+words gets a z sound?
+
+530
+00:27:28,080 --> 00:27:31,290
+Well, it's a pretty sparse
+space out there.
+
+531
+00:27:31,290 --> 00:27:34,670
+We've already decided that
+there are 14,000 possible
+
+532
+00:27:34,670 --> 00:27:37,640
+phonemes and there are only
+40 in the language.
+
+533
+00:27:37,640 --> 00:27:40,310
+So that's one thing
+we can consider.
+
+534
+00:27:40,310 --> 00:27:44,800
+The other thing that we can
+think is that, well, maybe
+
+535
+00:27:44,800 --> 00:27:46,100
+this is a logical problem.
+
+536
+00:27:46,100 --> 00:27:47,556
+Like the kind of problem
+you'd face if you
+
+537
+00:27:47,556 --> 00:27:49,470
+were designing a computer.
+
+538
+00:27:49,470 --> 00:27:51,870
+And so Sussman and Yip got
+stuck for three months
+
+539
+00:27:51,870 --> 00:27:54,250
+thinking about the
+problem that way.
+
+540
+00:27:54,250 --> 00:27:56,050
+Couldn't make any progress
+whatsoever.
+
+541
+00:27:56,050 --> 00:27:58,920
+And that happens a lot when
+you're doing a search.
+
+542
+00:27:58,920 --> 00:28:01,940
+You think you've got a way
+of approaching it.
+
+543
+00:28:01,940 --> 00:28:03,210
+Try to make it work.
+
+544
+00:28:03,210 --> 00:28:05,300
+You stay up all night.
+
+545
+00:28:05,300 --> 00:28:06,550
+Stay up all night again.
+
+546
+00:28:06,550 --> 00:28:08,310
+Still can't make it work.
+
+547
+00:28:08,310 --> 00:28:11,222
+Eventually, you abandon ship
+and try something else.
+
+548
+00:28:11,222 --> 00:28:14,820
+So then they began to say,
+well, let's see.
+
+549
+00:28:14,820 --> 00:28:18,880
+All we care about is the stuff
+before the two ending sounds.
+
+550
+00:28:18,880 --> 00:28:22,580
+We care about that part
+of the matrix.
+
+551
+00:28:22,580 --> 00:28:25,250
+And we care about that
+part of the matrix.
+
+552
+00:28:25,250 --> 00:28:29,730
+And we can ask, in what ways
+are those things different?
+
+553
+00:28:29,730 --> 00:28:31,150
+And they're different
+all over the place.
+
+554
+00:28:31,150 --> 00:28:33,090
+That's why they're
+different words.
+
+555
+00:28:33,090 --> 00:28:34,730
+We can ask the question a
+little bit differently.
+
+556
+00:28:34,730 --> 00:28:38,380
+And we can say, what can
+we not care about?
+
+557
+00:28:38,380 --> 00:28:41,860
+And still retain enough of an
+understanding of how the words
+
+558
+00:28:41,860 --> 00:28:46,990
+are different so as to put the
+proper plural ending on them.
+
+559
+00:28:46,990 --> 00:28:49,075
+And they worried about
+that for a long time.
+
+560
+00:28:49,075 --> 00:28:50,250
+Couldn't find a solution.
+
+561
+00:28:50,250 --> 00:28:52,840
+The search space was too big.
+
+562
+00:28:52,840 --> 00:28:57,160
+And then they said, maybe what
+we ought to do is we ought to
+
+563
+00:28:57,160 --> 00:29:00,550
+think about generalizing this
+guy here so that we
+
+564
+00:29:00,550 --> 00:29:03,640
+don't care about it.
+
+565
+00:29:03,640 --> 00:29:06,080
+So now we don't care
+about that guy.
+
+566
+00:29:06,080 --> 00:29:09,220
+And then he went down through
+here saying, well, let's see
+
+567
+00:29:09,220 --> 00:29:11,740
+when we have to stop
+generalizing.
+
+568
+00:29:11,740 --> 00:29:15,790
+Because we've screwed everything
+up and we can no
+
+569
+00:29:15,790 --> 00:29:19,200
+longer keep the z sound
+words separated
+
+570
+00:29:19,200 --> 00:29:22,470
+from the s sound words.
+
+571
+00:29:22,470 --> 00:29:24,240
+So that eventually distilled
+itself down to
+
+572
+00:29:24,240 --> 00:29:25,490
+the following algorithm.
+
+573
+00:29:29,710 --> 00:29:37,010
+First thing they did was
+to collect positive
+
+574
+00:29:37,010 --> 00:29:38,485
+and negative examples.
+
+575
+00:29:43,760 --> 00:29:46,870
+And there's a positive example
+and a negative example.
+
+576
+00:29:46,870 --> 00:29:48,250
+That's not enough
+to do it right.
+
+577
+00:29:48,250 --> 00:29:51,960
+But that's enough to illustrate
+the idea.
+
+578
+00:29:51,960 --> 00:29:55,060
+So the next thing they did was
+something that's extremely
+
+579
+00:29:55,060 --> 00:29:57,930
+common in learning anything.
+
+580
+00:29:57,930 --> 00:30:01,950
+And that is to pick a positive
+example to start from.
+
+581
+00:30:01,950 --> 00:30:05,900
+It's actually not a bad idea in
+learning anything to start
+
+582
+00:30:05,900 --> 00:30:08,650
+with a positive example.
+
+583
+00:30:08,650 --> 00:30:10,480
+So they picked a positive
+example and they
+
+584
+00:30:10,480 --> 00:30:11,730
+called that a seed.
+
+585
+00:30:20,990 --> 00:30:26,070
+So in our particular case, cats
+is going to be our seed.
+
+586
+00:30:26,070 --> 00:30:29,700
+And the question we're going to
+ask is, what are the words
+
+587
+00:30:29,700 --> 00:30:34,530
+that get pluralized like cat?
+
+588
+00:30:34,530 --> 00:30:37,350
+So we've got a positive
+and negative example.
+
+589
+00:30:37,350 --> 00:30:38,890
+We've picked a seed.
+
+590
+00:30:38,890 --> 00:30:41,385
+And now, the next step
+is to generalize.
+
+591
+00:30:47,370 --> 00:30:50,360
+And what I mean by generalize is
+you pick some places in the
+
+592
+00:30:50,360 --> 00:30:54,160
+phoneme matrix that you
+just don't care about.
+
+593
+00:30:54,160 --> 00:30:56,710
+So you may pick a positive
+example.
+
+594
+00:30:56,710 --> 00:30:58,100
+And you don't care about it.
+
+595
+00:30:58,100 --> 00:31:01,960
+So you change it to an asterisk
+or, as demonstrated
+
+596
+00:31:01,960 --> 00:31:04,600
+in the program I'm about
+show you, a ball.
+
+597
+00:31:04,600 --> 00:31:08,820
+Or you pick one that's
+negative and you
+
+598
+00:31:08,820 --> 00:31:10,240
+turn it to a ball.
+
+599
+00:31:10,240 --> 00:31:11,630
+Bo.
+
+600
+00:31:11,630 --> 00:31:15,210
+So cats, this seed,
+becomes a pattern.
+
+601
+00:31:15,210 --> 00:31:18,470
+And in order to pluralize the
+word this way, you have to
+
+602
+00:31:18,470 --> 00:31:20,100
+match all the stuff in here.
+
+603
+00:31:20,100 --> 00:31:22,390
+But now what we're going to do
+is we're going to gradually
+
+604
+00:31:22,390 --> 00:31:28,860
+turn some of those elements into
+don't care symbols until
+
+605
+00:31:28,860 --> 00:31:32,910
+we get to a point where we've
+not cared about so much stuff
+
+606
+00:31:32,910 --> 00:31:34,470
+that we think that we
+pluralize that one
+
+607
+00:31:34,470 --> 00:31:37,200
+with an s sound too.
+
+608
+00:31:37,200 --> 00:31:46,100
+So we keep generalizing until
+we cover, that is to say we
+
+609
+00:31:46,100 --> 00:31:50,561
+admit or match, a negative
+example.
+
+610
+00:31:50,561 --> 00:31:53,070
+So that's how it works.
+
+611
+00:31:53,070 --> 00:31:54,980
+So we generalize like crazy.
+
+612
+00:31:54,980 --> 00:31:58,830
+And as soon as we cover a
+negative example, we quit.
+
+613
+00:32:01,910 --> 00:32:08,410
+Otherwise, we just go back up
+here and generalize some more.
+
+614
+00:32:08,410 --> 00:32:12,670
+And now we've got to pick a
+search technique to decide
+
+615
+00:32:12,670 --> 00:32:14,790
+which of these guys to actually
+generalize when.
+
+616
+00:32:18,130 --> 00:32:20,940
+We could pick one at random.
+
+617
+00:32:20,940 --> 00:32:21,870
+And they tried that.
+
+618
+00:32:21,870 --> 00:32:23,641
+It didn't work.
+
+619
+00:32:23,641 --> 00:32:26,440
+So what they decided is that the
+thing that influences the
+
+620
+00:32:26,440 --> 00:32:29,740
+pluralization most is the
+adjacent phoneme.
+
+621
+00:32:29,740 --> 00:32:32,240
+And if that isn't the thing that
+solves the problem, it'll
+
+622
+00:32:32,240 --> 00:32:33,760
+be the one next to that.
+
+623
+00:32:33,760 --> 00:32:35,837
+So in other words, the closer
+you are, the more likely you
+
+624
+00:32:35,837 --> 00:32:37,800
+are to determine the outcome.
+
+625
+00:32:37,800 --> 00:32:41,770
+So these guys over here are
+least likely to matter.
+
+626
+00:32:41,770 --> 00:32:43,530
+And those are the ones that
+are generalized first.
+
+627
+00:32:46,390 --> 00:32:50,390
+So if we do that,
+what happens?
+
+628
+00:32:50,390 --> 00:32:53,050
+Looks like we're going to come
+in here and see that there's a
+
+629
+00:32:53,050 --> 00:32:58,025
+big difference between the
+non-voiced t and the voiced g.
+
+630
+00:32:58,025 --> 00:33:00,130
+But that's only a guess because
+I've only shown you a
+
+631
+00:33:00,130 --> 00:33:04,900
+fraction of the 14 distinctive
+features that are involved.
+
+632
+00:33:04,900 --> 00:33:07,952
+So I suppose you like to
+see a demonstration.
+
+633
+00:33:07,952 --> 00:33:09,202
+Yeah.
+
+634
+00:33:25,180 --> 00:33:27,590
+So there's our 14 features.
+
+635
+00:33:27,590 --> 00:33:31,350
+And that's our seed there,
+sitting prominently in the
+
+636
+00:33:31,350 --> 00:33:35,260
+display with pluses and minuses
+indicating the values
+
+637
+00:33:35,260 --> 00:33:36,860
+of the distinctive features
+for all three
+
+638
+00:33:36,860 --> 00:33:38,460
+of the phones involved.
+
+639
+00:33:38,460 --> 00:33:40,120
+That funny left bracket
+isn't a mistake.
+
+640
+00:33:40,120 --> 00:33:46,060
+That's just one convention for
+rendering the ah sound in cat.
+
+641
+00:33:50,510 --> 00:33:53,190
+So it's pretty hard to tell from
+just that matrix what's
+
+642
+00:33:53,190 --> 00:33:57,400
+going to be the determining
+feature that separates the
+
+643
+00:33:57,400 --> 00:33:59,630
+positive examples from the
+negative examples.
+
+644
+00:33:59,630 --> 00:34:01,460
+You notice that there
+are actually two
+
+645
+00:34:01,460 --> 00:34:02,250
+examples down here.
+
+646
+00:34:02,250 --> 00:34:04,460
+There's cat and duck.
+
+647
+00:34:04,460 --> 00:34:06,510
+Is ducks got an s sound?
+
+648
+00:34:06,510 --> 00:34:06,930
+Ducks?
+
+649
+00:34:06,930 --> 00:34:08,650
+Yep.
+
+650
+00:34:08,650 --> 00:34:11,420
+So dogs and ducks.
+
+651
+00:34:11,420 --> 00:34:14,400
+They both get pluralized
+with an s sound.
+
+652
+00:34:14,400 --> 00:34:15,449
+And then we have
+beach doesn't.
+
+653
+00:34:15,449 --> 00:34:17,840
+That's beaches.
+
+654
+00:34:17,840 --> 00:34:18,489
+Dog.
+
+655
+00:34:18,489 --> 00:34:20,389
+We know that's a z.
+
+656
+00:34:20,389 --> 00:34:21,040
+Gun.
+
+657
+00:34:21,040 --> 00:34:22,310
+Gunz.
+
+658
+00:34:22,310 --> 00:34:25,070
+So that's not in the group.
+
+659
+00:34:25,070 --> 00:34:26,900
+So we can run this experiment.
+
+660
+00:34:26,900 --> 00:34:27,699
+Now here we go.
+
+661
+00:34:27,699 --> 00:34:29,130
+We're generalizing like crazy.
+
+662
+00:34:29,130 --> 00:34:30,690
+Generalizing, generalizing,
+generalizing
+
+663
+00:34:30,690 --> 00:34:33,150
+from left to right.
+
+664
+00:34:33,150 --> 00:34:35,810
+So nothing in the first
+two columns matters.
+
+665
+00:34:35,810 --> 00:34:38,489
+Now we get to the t.
+
+666
+00:34:38,489 --> 00:34:39,440
+Wow.
+
+667
+00:34:39,440 --> 00:34:40,540
+There it is.
+
+668
+00:34:40,540 --> 00:34:43,489
+So it looks like you pluralize
+with a s sound.
+
+669
+00:34:43,489 --> 00:34:45,780
+The sss.
+
+670
+00:34:45,780 --> 00:34:51,830
+If, and only if, you're not
+voiced and you're not strident
+
+671
+00:34:51,830 --> 00:34:54,940
+in the second to the last--
+
+672
+00:34:54,940 --> 00:34:56,330
+in the last phone
+of the word that
+
+673
+00:34:56,330 --> 00:34:59,400
+you're trying to pluralize.
+
+674
+00:34:59,400 --> 00:35:00,950
+So that's one phonological
+rule that
+
+675
+00:35:00,950 --> 00:35:01,910
+the system has learned.
+
+676
+00:35:01,910 --> 00:35:02,330
+And guess what?
+
+677
+00:35:02,330 --> 00:35:03,520
+It's the same rule
+that's found in
+
+678
+00:35:03,520 --> 00:35:05,636
+phonological textbooks.
+
+679
+00:35:05,636 --> 00:35:07,225
+So now we can try another
+experiment.
+
+680
+00:35:13,290 --> 00:35:16,312
+So this time we're trying to
+deal with dog and gun.
+
+681
+00:35:16,312 --> 00:35:19,630
+And our negatives are what was
+previously positive plus
+
+682
+00:35:19,630 --> 00:35:23,016
+beach, which is still in there
+as a negative example.
+
+683
+00:35:23,016 --> 00:35:24,320
+So let's see how
+that one works.
+
+684
+00:35:32,050 --> 00:35:36,500
+Nothing matters except for the
+last column, the last phone.
+
+685
+00:35:36,500 --> 00:35:41,390
+And now we find out that if the
+last sound is voiced, then
+
+686
+00:35:41,390 --> 00:35:46,550
+the pluralization gets the z
+sound, a voiced determinator.
+
+687
+00:35:46,550 --> 00:35:49,500
+And finally, just to
+deal with beaches.
+
+688
+00:35:49,500 --> 00:35:51,710
+That's beach in it's funny
+phonetic spelling.
+
+689
+00:36:04,410 --> 00:36:10,650
+So now, if the final sound in
+the word is strident, if its
+
+690
+00:36:10,650 --> 00:36:12,430
+got this jetty sound--
+
+691
+00:36:12,430 --> 00:36:13,640
+beach.
+
+692
+00:36:13,640 --> 00:36:15,530
+Beach.
+
+693
+00:36:15,530 --> 00:36:18,840
+Then it gets the ea sound.
+
+694
+00:36:18,840 --> 00:36:21,570
+So let's go back to experiment
+number one.
+
+695
+00:36:21,570 --> 00:36:24,620
+Because I want to point out one
+small thing about the way
+
+696
+00:36:24,620 --> 00:36:26,180
+this works.
+
+697
+00:36:26,180 --> 00:36:28,190
+You'll notice that it talks
+about coverage and excluded
+
+698
+00:36:28,190 --> 00:36:30,670
+down here in the lower
+left-hand corner.
+
+699
+00:36:30,670 --> 00:36:33,180
+Excluded, well, there are three
+negative examples, so
+
+700
+00:36:33,180 --> 00:36:34,630
+they better all be excluded.
+
+701
+00:36:34,630 --> 00:36:36,940
+You don't want to cover
+any of the negatives.
+
+702
+00:36:36,940 --> 00:36:39,220
+But it says coverage,
+two and two.
+
+703
+00:36:39,220 --> 00:36:42,120
+That's because it actually
+is doing--
+
+704
+00:36:42,120 --> 00:36:44,530
+and now we have the vocabulary
+to say it quickly--
+
+705
+00:36:44,530 --> 00:36:47,340
+it's doing a beam search
+through this space.
+
+706
+00:36:47,340 --> 00:36:48,870
+So it's not just doing
+a depth first search.
+
+707
+00:36:48,870 --> 00:36:52,840
+It's doing a beam search so as
+to reduce the possibility of
+
+708
+00:36:52,840 --> 00:36:54,700
+overlooking a solution.
+
+709
+00:36:54,700 --> 00:36:56,980
+So it says, oh, the coverage.
+
+710
+00:36:56,980 --> 00:37:01,950
+Both of the beam search elements
+cover both of the
+
+711
+00:37:01,950 --> 00:37:02,950
+positive examples.
+
+712
+00:37:02,950 --> 00:37:04,080
+And they, in fact, have
+
+713
+00:37:04,080 --> 00:37:06,850
+converged to the same solution.
+
+714
+00:37:06,850 --> 00:37:10,920
+So that's how the Sussman
+and Yip thing worked.
+
+715
+00:37:10,920 --> 00:37:12,470
+And then the next question
+to ask is, of
+
+716
+00:37:12,470 --> 00:37:16,136
+course, why did it work?
+
+717
+00:37:16,136 --> 00:37:20,610
+And so the answer,
+as articulated
+
+718
+00:37:20,610 --> 00:37:23,270
+by Sussman and Yip--
+
+719
+00:37:23,270 --> 00:37:24,816
+or rather more by Sussman.
+
+720
+00:37:24,816 --> 00:37:28,290
+Or rather more by Yip and a
+little bit less by Sussman.
+
+721
+00:37:28,290 --> 00:37:31,840
+Yip thinks that it worked
+because it's a sparse space.
+
+722
+00:37:31,840 --> 00:37:35,110
+And when you have a high
+dimensional sparse space, it's
+
+723
+00:37:35,110 --> 00:37:39,660
+easy to put a hyperplane into
+the space to separate one set
+
+724
+00:37:39,660 --> 00:37:42,100
+of examples for another
+set of examples.
+
+725
+00:37:42,100 --> 00:37:44,255
+So let's consider the
+following situation.
+
+726
+00:37:51,390 --> 00:37:57,670
+Suppose we have a
+one-dimensional situation.
+
+727
+00:37:57,670 --> 00:38:02,320
+And we have two white
+examples and we
+
+728
+00:38:02,320 --> 00:38:05,670
+have two purple examples.
+
+729
+00:38:05,670 --> 00:38:09,700
+Well, too bad for us you
+can't separate them.
+
+730
+00:38:09,700 --> 00:38:13,150
+Now suppose that this is
+actually the projection of a
+
+731
+00:38:13,150 --> 00:38:17,280
+two-dimensional space that
+looks like this.
+
+732
+00:38:17,280 --> 00:38:20,280
+Here are the white examples
+down here.
+
+733
+00:38:20,280 --> 00:38:24,910
+And here are the purple
+examples up here.
+
+734
+00:38:24,910 --> 00:38:27,390
+Now it's easy to see that you
+can separate them with just a
+
+735
+00:38:27,390 --> 00:38:29,810
+line that goes across
+like that.
+
+736
+00:38:29,810 --> 00:38:34,420
+Now let's take this one more
+step and suppose that this is
+
+737
+00:38:34,420 --> 00:38:37,326
+actually a projection of a
+three-dimensional space.
+
+738
+00:38:37,326 --> 00:38:38,610
+It looks like this.
+
+739
+00:38:41,610 --> 00:38:43,240
+This will be dimension one.
+
+740
+00:38:43,240 --> 00:38:46,630
+This'll be two going
+back there.
+
+741
+00:38:46,630 --> 00:38:49,900
+And this will be
+three up here.
+
+742
+00:38:49,900 --> 00:38:53,560
+And suppose that the positive
+examples are right
+
+743
+00:38:53,560 --> 00:38:54,810
+here on this line.
+
+744
+00:39:01,120 --> 00:39:03,980
+Let's say this is-- well, we're
+gonna draw a little old
+
+745
+00:39:03,980 --> 00:39:05,960
+cube like so.
+
+746
+00:39:05,960 --> 00:39:10,420
+Those are purple examples
+that are up there.
+
+747
+00:39:10,420 --> 00:39:13,150
+How many ways are there of
+partitioning the space along
+
+748
+00:39:13,150 --> 00:39:13,830
+those axes?
+
+749
+00:39:13,830 --> 00:39:16,510
+Well, now they're not
+even just two.
+
+750
+00:39:16,510 --> 00:39:17,940
+They're three.
+
+751
+00:39:17,940 --> 00:39:23,620
+So one way to separate the
+purple from the white is to
+
+752
+00:39:23,620 --> 00:39:28,290
+draw a hyperplane-- or in this
+case it's a three dimension,
+
+753
+00:39:28,290 --> 00:39:29,190
+so a plane--
+
+754
+00:39:29,190 --> 00:39:33,160
+through here on the
+number three axis.
+
+755
+00:39:33,160 --> 00:39:36,010
+You could also put a plane
+in on that axis.
+
+756
+00:39:36,010 --> 00:39:38,100
+Or you could do both.
+
+757
+00:39:38,100 --> 00:39:43,458
+So in one case your dividing
+line would be--
+
+758
+00:39:43,458 --> 00:39:44,210
+let's see.
+
+759
+00:39:44,210 --> 00:39:47,240
+On the first axis that
+would be 1/2.
+
+760
+00:39:47,240 --> 00:39:49,220
+And then the don't care.
+
+761
+00:39:49,220 --> 00:39:50,670
+Don't care.
+
+762
+00:39:50,670 --> 00:39:53,580
+Another solution that
+would be don't care.
+
+763
+00:39:53,580 --> 00:39:57,830
+And then we divide on the number
+2 axis with a plane at
+
+764
+00:39:57,830 --> 00:40:00,430
+1/2 and don't care.
+
+765
+00:40:00,430 --> 00:40:07,405
+Or we could do it with 1/2,
+1/2, and don't care.
+
+766
+00:40:07,405 --> 00:40:10,990
+So the higher the dimension of
+the space, the easier it is
+
+767
+00:40:10,990 --> 00:40:13,750
+sometimes to put in a plane
+that separates the data.
+
+768
+00:40:13,750 --> 00:40:17,210
+That's why Sussman and Yip think
+that we use so little of
+
+769
+00:40:17,210 --> 00:40:18,510
+possible phoneme space.
+
+770
+00:40:18,510 --> 00:40:20,910
+Because it makes the
+thing learnable.
+
+771
+00:40:20,910 --> 00:40:23,920
+That's one possibility.
+
+772
+00:40:23,920 --> 00:40:30,090
+So one explanation for sparse
+space is learnability.
+
+773
+00:40:30,090 --> 00:40:33,790
+There's another interesting
+possibility, and that is that
+
+774
+00:40:33,790 --> 00:40:37,500
+if you have a sparse space, high
+dimensional space with 14
+
+775
+00:40:37,500 --> 00:40:42,850
+dimensions, and if the 40 points
+of your language are
+
+776
+00:40:42,850 --> 00:40:46,260
+spread evenly throughout
+that space--
+
+777
+00:40:46,260 --> 00:40:47,490
+now let me say it
+the other way.
+
+778
+00:40:47,490 --> 00:40:51,050
+If they are placed at random in
+that space, then according
+
+779
+00:40:51,050 --> 00:40:53,190
+to the central limit theorem,
+then they'll be about equally
+
+780
+00:40:53,190 --> 00:40:55,320
+distant from each other.
+
+781
+00:40:55,320 --> 00:40:59,050
+So it ensures that the phonemes
+are easily separated
+
+782
+00:40:59,050 --> 00:41:01,870
+when you speak.
+
+783
+00:41:01,870 --> 00:41:06,480
+But if you go to ask a linguist
+if that's true, they
+
+784
+00:41:06,480 --> 00:41:07,220
+don't know.
+
+785
+00:41:07,220 --> 00:41:08,240
+Because they're not looking
+at it from a
+
+786
+00:41:08,240 --> 00:41:09,865
+computational point of view.
+
+787
+00:41:09,865 --> 00:41:12,840
+Well, we can look at it from a
+computational point of view.
+
+788
+00:41:12,840 --> 00:41:14,860
+So I did that.
+
+789
+00:41:14,860 --> 00:41:16,940
+After Sussman and Yip published
+their paper.
+
+790
+00:41:16,940 --> 00:41:18,190
+And here's the result.
+
+791
+00:41:21,330 --> 00:41:26,690
+This is a diagram that shows all
+of the phonemes that are
+
+792
+00:41:26,690 --> 00:41:30,170
+separated by exactly one
+distinctive feature.
+
+793
+00:41:30,170 --> 00:41:32,505
+So if you look over in this
+corner here, you'll see that
+
+794
+00:41:32,505 --> 00:41:34,640
+the constants-- w and x--
+
+795
+00:41:34,640 --> 00:41:38,520
+are separated by exactly one
+distinctive feature.
+
+796
+00:41:38,520 --> 00:41:43,110
+So they're not exactly distant
+from each other in the space.
+
+797
+00:41:43,110 --> 00:41:45,020
+On the other hand, they are
+pretty easy to separate
+
+798
+00:41:45,020 --> 00:41:46,960
+relative to the vowels.
+
+799
+00:41:46,960 --> 00:41:49,650
+Which are here in this
+part of the diagram.
+
+800
+00:41:49,650 --> 00:41:52,230
+Which are all tangled up and
+the vowels are all close to
+
+801
+00:41:52,230 --> 00:41:52,670
+each other.
+
+802
+00:41:52,670 --> 00:41:54,380
+So guess what?
+
+803
+00:41:54,380 --> 00:41:57,450
+Vowels are much harder to
+separate than constants.
+
+804
+00:41:57,450 --> 00:42:00,710
+Not surprisingly, because there
+are many pairs of them
+
+805
+00:42:00,710 --> 00:42:01,650
+that are different.
+
+806
+00:42:01,650 --> 00:42:04,914
+And only one distinctive
+feature.
+
+807
+00:42:04,914 --> 00:42:05,580
+All right.
+
+808
+00:42:05,580 --> 00:42:07,380
+So now you back up and
+you say, well, gosh.
+
+809
+00:42:07,380 --> 00:42:08,590
+That's all been sort
+of interesting.
+
+810
+00:42:08,590 --> 00:42:11,180
+But what does it teach
+us about how to
+
+811
+00:42:11,180 --> 00:42:13,062
+do science and stuff?
+
+812
+00:42:13,062 --> 00:42:14,990
+And what it teaches us is--
+
+813
+00:42:14,990 --> 00:42:17,320
+this is an example.
+
+814
+00:42:17,320 --> 00:42:18,570
+Ow.
+
+815
+00:42:24,360 --> 00:42:27,850
+This is an example which we can
+use to illuminate some of
+
+816
+00:42:27,850 --> 00:42:30,030
+thoughts of David Marr, who
+I spoke of in a previous
+
+817
+00:42:30,030 --> 00:42:32,882
+lecture, connection
+with vision.
+
+818
+00:42:32,882 --> 00:42:36,560
+But here's Marr's catechism.
+
+819
+00:42:36,560 --> 00:42:38,930
+I can't spell very well so I
+won't try to respell it.
+
+820
+00:42:38,930 --> 00:42:41,260
+But this is Marr's catechism.
+
+821
+00:42:41,260 --> 00:42:43,910
+So what Marr said is, when
+you're dealing with an AI
+
+822
+00:42:43,910 --> 00:42:45,785
+problem, first thing to do is
+to specify the problem.
+
+823
+00:42:48,425 --> 00:42:51,380
+Gee, that sounds
+awfully normal.
+
+824
+00:42:51,380 --> 00:42:57,410
+The next thing is to devise
+a representation
+
+825
+00:42:57,410 --> 00:42:58,660
+suited to the problem.
+
+826
+00:43:02,660 --> 00:43:06,130
+The third thing to do,
+vocabulary varies, but it's
+
+827
+00:43:06,130 --> 00:43:07,980
+something like determine
+an approach.
+
+828
+00:43:11,660 --> 00:43:14,395
+Sometimes thought
+of as a method.
+
+829
+00:43:17,080 --> 00:43:28,048
+And then four, pick a mechanism
+
+830
+00:43:28,048 --> 00:43:29,380
+or devise an algorithm.
+
+831
+00:43:36,210 --> 00:43:38,710
+And, finally, five,
+experiment.
+
+832
+00:43:45,840 --> 00:43:48,930
+And of course, it never goes
+linearly like that.
+
+833
+00:43:48,930 --> 00:43:51,900
+You start with the problem and
+then you go through a lot of
+
+834
+00:43:51,900 --> 00:43:52,570
+loops up here.
+
+835
+00:43:52,570 --> 00:43:54,215
+Sometimes even changing
+the problem.
+
+836
+00:43:56,740 --> 00:43:58,320
+But that's just the scientific
+method, right?
+
+837
+00:43:58,320 --> 00:43:59,950
+You start with the problem
+and you end up with the
+
+838
+00:43:59,950 --> 00:44:01,250
+experiment.
+
+839
+00:44:01,250 --> 00:44:05,820
+But that's not what people in
+AI, over the bulk of its
+
+840
+00:44:05,820 --> 00:44:09,050
+existence, have tended to do.
+
+841
+00:44:09,050 --> 00:44:13,300
+What they tended to do is to
+fall in love with particular
+
+842
+00:44:13,300 --> 00:44:15,170
+mechanisms.
+
+843
+00:44:15,170 --> 00:44:16,470
+And then they attempt
+to apply those
+
+844
+00:44:16,470 --> 00:44:18,690
+mechanisms to every problem.
+
+845
+00:44:18,690 --> 00:44:21,680
+So you might say, well, gee,
+neural nets are so cool.
+
+846
+00:44:21,680 --> 00:44:24,545
+I think all of human
+intelligence can be explained
+
+847
+00:44:24,545 --> 00:44:27,170
+with a suitable neural net.
+
+848
+00:44:27,170 --> 00:44:28,645
+That's not the right
+way to do it.
+
+849
+00:44:28,645 --> 00:44:30,130
+Because that's mechanism envy.
+
+850
+00:44:30,130 --> 00:44:31,275
+You fall in love
+with mechanism.
+
+851
+00:44:31,275 --> 00:44:34,760
+You try to apply it where it
+isn't the right thing.
+
+852
+00:44:34,760 --> 00:44:38,350
+This is example starting with
+the problem and bringing to
+
+853
+00:44:38,350 --> 00:44:40,880
+the problem the right
+representations, gosh,
+
+854
+00:44:40,880 --> 00:44:42,840
+distinctive features.
+
+855
+00:44:42,840 --> 00:44:45,630
+Once we've got the right
+representation, then the
+
+856
+00:44:45,630 --> 00:44:48,520
+constraints emerge, which
+enable us to devise an
+
+857
+00:44:48,520 --> 00:44:51,100
+approach, write an algorithm,
+and do an experiment.
+
+858
+00:44:51,100 --> 00:44:52,830
+As they did.
+
+859
+00:44:52,830 --> 00:44:58,560
+So this Sussman-Yip thing is an
+example of doing AI stuff
+
+860
+00:44:58,560 --> 00:45:02,700
+in a way that's congruent with
+the Marr's catechism.
+
+861
+00:45:02,700 --> 00:45:04,650
+Which I highly recommend.
+
+862
+00:45:04,650 --> 00:45:08,040
+They could have come in here and
+said, well, we're devotees
+
+863
+00:45:08,040 --> 00:45:10,980
+of the idea of neural nets.
+
+864
+00:45:10,980 --> 00:45:14,480
+Let's see if we can make a
+machine that will properly
+
+865
+00:45:14,480 --> 00:45:17,650
+pluralize words using
+a neural net.
+
+866
+00:45:17,650 --> 00:45:19,370
+That's a loser.
+
+867
+00:45:19,370 --> 00:45:22,140
+Because it doesn't match the
+problem to the mechanism.
+
+868
+00:45:22,140 --> 00:45:25,450
+It tries to force fit the
+mechanism into some
+
+869
+00:45:25,450 --> 00:45:28,840
+Procrustean bed where
+it doesn't
+
+870
+00:45:28,840 --> 00:45:31,820
+actually work very well.
+
+871
+00:45:31,820 --> 00:45:34,350
+So what this leaves open, of
+course, is the question of,
+
+872
+00:45:34,350 --> 00:45:39,140
+well, what is a good
+representation?
+
+873
+00:45:39,140 --> 00:45:41,910
+And here's the other half
+Marr's catechism.
+
+874
+00:45:41,910 --> 00:45:45,300
+Characteristic number one
+is that it makes the
+
+875
+00:45:45,300 --> 00:45:46,550
+right things explicit.
+
+876
+00:45:49,540 --> 00:45:51,280
+So in this particular
+case, it makes
+
+877
+00:45:51,280 --> 00:45:54,750
+distinctive features explicit.
+
+878
+00:45:54,750 --> 00:45:59,340
+Another thing that Marr was
+noted for was stereo vision.
+
+879
+00:45:59,340 --> 00:46:05,830
+So in that particular world,
+discontinuities in the image,
+
+880
+00:46:05,830 --> 00:46:07,420
+when you go across an
+edge with the things
+
+881
+00:46:07,420 --> 00:46:10,160
+that were made explicit.
+
+882
+00:46:10,160 --> 00:46:12,020
+Once you've got to a
+representation that makes the
+
+883
+00:46:12,020 --> 00:46:15,850
+right things explicit, you can
+say, does it also expose
+
+884
+00:46:15,850 --> 00:46:17,100
+constraint?
+
+885
+00:46:25,730 --> 00:46:27,320
+And if you have a representation
+that exposes
+
+886
+00:46:27,320 --> 00:46:28,450
+constraint, then you're
+off and running.
+
+887
+00:46:28,450 --> 00:46:30,690
+Because it's constraint that
+you need in order to do the
+
+888
+00:46:30,690 --> 00:46:35,050
+processing that leads
+to a solution.
+
+889
+00:46:35,050 --> 00:46:36,055
+So don't have the right
+representation.
+
+890
+00:46:36,055 --> 00:46:38,080
+If it doesn't expose
+constraints, you're not going
+
+891
+00:46:38,080 --> 00:46:40,930
+to be able to make a very
+good model out of it.
+
+892
+00:46:40,930 --> 00:46:46,475
+And finally, there's a kind
+of localness criteria.
+
+893
+00:46:49,730 --> 00:46:52,990
+If you have a representation in
+which you can see the right
+
+894
+00:46:52,990 --> 00:46:55,780
+answer by looking at
+descriptions through soda
+
+895
+00:46:55,780 --> 00:46:57,800
+straw, that's probably a better
+representation than one
+
+896
+00:46:57,800 --> 00:46:59,700
+that's all spread out.
+
+897
+00:46:59,700 --> 00:47:01,185
+It's true with programs,
+right?
+
+898
+00:47:01,185 --> 00:47:03,360
+If you can see how they work
+by looking through a soda
+
+899
+00:47:03,360 --> 00:47:06,450
+straw, you're in much better
+situation to understand
+
+900
+00:47:06,450 --> 00:47:08,770
+something if you have to look
+here and there and on the next
+
+901
+00:47:08,770 --> 00:47:11,560
+page and in the next file.
+
+902
+00:47:11,560 --> 00:47:15,510
+So all this is basically
+common sense.
+
+903
+00:47:15,510 --> 00:47:18,560
+But this is kind of common sense
+that makes you smarter
+
+904
+00:47:18,560 --> 00:47:20,200
+as an engineer and scientist.
+
+905
+00:47:20,200 --> 00:47:23,080
+Especially as a scientist
+because if you go into a
+
+906
+00:47:23,080 --> 00:47:27,850
+problem with mechanism envy,
+you're apt to study mechanisms
+
+907
+00:47:27,850 --> 00:47:32,280
+in a naive way and never reach
+a solution that will be
+
+908
+00:47:32,280 --> 00:47:33,530
+satisfactory.

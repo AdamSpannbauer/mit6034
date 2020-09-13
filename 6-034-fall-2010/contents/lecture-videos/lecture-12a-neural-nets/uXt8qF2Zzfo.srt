@@ -1,0 +1,4164 @@
+1
+00:00:00,040 --> 00:00:02,410
+The following content is
+provided under a Creative
+
+2
+00:00:02,410 --> 00:00:03,790
+Commons license.
+
+3
+00:00:03,790 --> 00:00:06,030
+Your support will help
+MIT OpenCourseWare
+
+4
+00:00:06,030 --> 00:00:10,100
+continue to offer high-quality
+educational resources for free.
+
+5
+00:00:10,100 --> 00:00:12,680
+To make a donation or to
+view additional materials
+
+6
+00:00:12,680 --> 00:00:16,590
+from hundreds of MIT courses,
+visit MIT OpenCourseWare
+
+7
+00:00:16,590 --> 00:00:18,270
+at fsae@mit.edu.
+
+8
+00:00:37,340 --> 00:00:42,313
+PATRICK WINSTON: It was in
+2010, yes, that's right.
+
+9
+00:00:42,313 --> 00:00:44,630
+It was in 2010.
+
+10
+00:00:44,630 --> 00:00:46,590
+We were having our
+annual discussion
+
+11
+00:00:46,590 --> 00:00:49,970
+about what we would dump fro
+6034 in order to make room
+
+12
+00:00:49,970 --> 00:00:51,720
+for some other stuff.
+
+13
+00:00:51,720 --> 00:00:54,540
+And we almost killed
+off neural nets.
+
+14
+00:00:54,540 --> 00:00:58,010
+That might seem strange
+because our heads
+
+15
+00:00:58,010 --> 00:00:59,860
+are stuffed with neurons.
+
+16
+00:00:59,860 --> 00:01:02,000
+If you open up your skull
+and pluck them all out,
+
+17
+00:01:02,000 --> 00:01:03,870
+you don't think anymore.
+
+18
+00:01:03,870 --> 00:01:07,914
+So it would seem
+that neural nets
+
+19
+00:01:07,914 --> 00:01:12,610
+would be a fundamental
+and unassailable topic.
+
+20
+00:01:12,610 --> 00:01:16,710
+But many of us felt that
+the neural models of the day
+
+21
+00:01:16,710 --> 00:01:23,380
+weren't much in the way
+of faithful models of what
+
+22
+00:01:23,380 --> 00:01:25,476
+actually goes on
+inside our heads.
+
+23
+00:01:25,476 --> 00:01:26,850
+And besides that,
+nobody had ever
+
+24
+00:01:26,850 --> 00:01:30,270
+made a neural net that was
+worth a darn for doing anything.
+
+25
+00:01:30,270 --> 00:01:33,070
+So we almost killed it off.
+
+26
+00:01:33,070 --> 00:01:34,694
+But then we said,
+well, everybody
+
+27
+00:01:34,694 --> 00:01:36,360
+would feel cheated
+if they take a course
+
+28
+00:01:36,360 --> 00:01:38,060
+in artificial intelligence,
+don't learn anything
+
+29
+00:01:38,060 --> 00:01:39,334
+about neural nets,
+and then they'll
+
+30
+00:01:39,334 --> 00:01:40,640
+go off and invent
+them themselves.
+
+31
+00:01:40,640 --> 00:01:42,240
+And they'll waste
+all sorts of time.
+
+32
+00:01:42,240 --> 00:01:44,740
+So we kept the subject in.
+
+33
+00:01:44,740 --> 00:01:48,420
+Then two years
+later, Jeff Hinton
+
+34
+00:01:48,420 --> 00:01:52,070
+from the University of
+Toronto stunned the world
+
+35
+00:01:52,070 --> 00:01:56,450
+with some neural network
+he had done on recognizing
+
+36
+00:01:56,450 --> 00:01:58,810
+and classifying pictures.
+
+37
+00:01:58,810 --> 00:02:00,610
+And he published
+a paper from which
+
+38
+00:02:00,610 --> 00:02:04,910
+I am now going to show
+you a couple of examples.
+
+39
+00:02:04,910 --> 00:02:08,289
+Jeff's neural net, by the
+way, had 60 million parameters
+
+40
+00:02:08,289 --> 00:02:09,389
+in it.
+
+41
+00:02:09,389 --> 00:02:15,110
+And its purpose was to determine
+which of 1,000 categories
+
+42
+00:02:15,110 --> 00:02:17,087
+best characterized a picture.
+
+43
+00:02:22,900 --> 00:02:24,010
+So there it is.
+
+44
+00:02:24,010 --> 00:02:31,280
+There's a sample of things
+that the Toronto neural net
+
+45
+00:02:31,280 --> 00:02:35,416
+was able to recognize
+or make mistakes on.
+
+46
+00:02:35,416 --> 00:02:37,040
+I'm going to blow
+that up a little bit.
+
+47
+00:02:37,040 --> 00:02:38,623
+I think I'm going
+to look particularly
+
+48
+00:02:38,623 --> 00:02:42,930
+at the example labeled
+container ship.
+
+49
+00:02:42,930 --> 00:02:47,140
+So what you see here is that
+the program returned its best
+
+50
+00:02:47,140 --> 00:02:51,630
+estimate of what it was
+ranked, first five, according
+
+51
+00:02:51,630 --> 00:02:55,090
+to the likelihood,
+probability, or the certainty
+
+52
+00:02:55,090 --> 00:02:59,240
+that it felt that a
+particular class was
+
+53
+00:02:59,240 --> 00:03:01,030
+characteristic of the picture.
+
+54
+00:03:01,030 --> 00:03:03,420
+And so you can see this
+one is extremely confident
+
+55
+00:03:03,420 --> 00:03:06,260
+that it's a container ship.
+
+56
+00:03:06,260 --> 00:03:09,920
+It also was fairly
+moved by the idea
+
+57
+00:03:09,920 --> 00:03:13,590
+that it might be a lifeboat.
+
+58
+00:03:13,590 --> 00:03:17,390
+Now, I'm not sure about you,
+but I don't think this looks
+
+59
+00:03:17,390 --> 00:03:18,666
+much like a lifeboat.
+
+60
+00:03:18,666 --> 00:03:20,290
+But it does look like
+a container ship.
+
+61
+00:03:20,290 --> 00:03:23,450
+So if I look at only the best
+choice, it looks pretty good.
+
+62
+00:03:23,450 --> 00:03:25,760
+Here are the other things
+they did pretty well,
+
+63
+00:03:25,760 --> 00:03:27,980
+got the right answer
+is the first choice--
+
+64
+00:03:27,980 --> 00:03:30,257
+is this first choice.
+
+65
+00:03:30,257 --> 00:03:31,840
+So over on the left,
+you see that it's
+
+66
+00:03:31,840 --> 00:03:35,280
+decided that the picture
+is a picture of a mite.
+
+67
+00:03:35,280 --> 00:03:37,700
+The mite is not anywhere near
+the center of the picture,
+
+68
+00:03:37,700 --> 00:03:41,440
+but somehow it managed to find
+it-- the container ship again.
+
+69
+00:03:41,440 --> 00:03:44,110
+There is a motor scooter, a
+couple of people sitting on it.
+
+70
+00:03:44,110 --> 00:03:48,490
+But it correctly characterized
+the picture as a motor scooter.
+
+71
+00:03:48,490 --> 00:03:50,160
+And then on the
+right, a Leopard.
+
+72
+00:03:50,160 --> 00:03:52,450
+And everything else
+is a cat of some sort.
+
+73
+00:03:52,450 --> 00:03:54,280
+So it seems to be
+doing pretty well.
+
+74
+00:03:54,280 --> 00:03:56,930
+In fact, it does do pretty well.
+
+75
+00:03:56,930 --> 00:03:59,124
+But anyone who does
+this kind of work
+
+76
+00:03:59,124 --> 00:04:00,540
+has an obligation
+to show you some
+
+77
+00:04:00,540 --> 00:04:03,110
+of the stuff that
+doesn't work so well on
+
+78
+00:04:03,110 --> 00:04:04,670
+or doesn't get quite right.
+
+79
+00:04:04,670 --> 00:04:10,010
+And so these pictures also
+occurred in Hinton's paper.
+
+80
+00:04:10,010 --> 00:04:12,840
+So the first one is
+characterized as a grill.
+
+81
+00:04:12,840 --> 00:04:15,910
+But the right answer was
+supposed to be convertible.
+
+82
+00:04:15,910 --> 00:04:19,480
+Oh, no, yes, yeah, right
+answer was convertible.
+
+83
+00:04:19,480 --> 00:04:22,430
+In the second case,
+the characterization
+
+84
+00:04:22,430 --> 00:04:24,560
+is of a mushroom.
+
+85
+00:04:24,560 --> 00:04:28,320
+And the alleged right
+answer is agaric.
+
+86
+00:04:28,320 --> 00:04:29,740
+Is that pronounced right?
+
+87
+00:04:29,740 --> 00:04:33,730
+It turns out that's a kind of
+mushroom-- so no problem there.
+
+88
+00:04:33,730 --> 00:04:36,280
+In the next case, it
+said it was a cherry.
+
+89
+00:04:36,280 --> 00:04:37,930
+But it was supposed
+to be a dalmatian.
+
+90
+00:04:37,930 --> 00:04:41,200
+Now, I think a dalmatian is
+a perfectly legitimate answer
+
+91
+00:04:41,200 --> 00:04:44,620
+for that particular picture--
+so hard to fault it for that.
+
+92
+00:04:44,620 --> 00:04:47,640
+And the last case,
+the correct answer
+
+93
+00:04:47,640 --> 00:04:50,700
+was not in any of the top five.
+
+94
+00:04:50,700 --> 00:04:53,100
+I'm not sure if you've
+ever seen a Madagascar cap.
+
+95
+00:04:53,100 --> 00:04:54,720
+But that's a picture of one.
+
+96
+00:04:54,720 --> 00:04:56,220
+And it's interesting
+to compare that
+
+97
+00:04:56,220 --> 00:04:58,970
+with the first choice of the
+program, the squirrel monkey.
+
+98
+00:04:58,970 --> 00:05:02,160
+This is the two side by side.
+
+99
+00:05:02,160 --> 00:05:04,190
+So in a way, it's not
+surprising that it
+
+100
+00:05:04,190 --> 00:05:06,330
+thought that the
+Madagascar cat was
+
+101
+00:05:06,330 --> 00:05:10,790
+a picture of a squirrel
+monkey-- so pretty impressive.
+
+102
+00:05:10,790 --> 00:05:12,050
+It blew away the competition.
+
+103
+00:05:12,050 --> 00:05:16,225
+It did so much better the
+second place wasn't even close.
+
+104
+00:05:16,225 --> 00:05:18,600
+And for the first time, it
+demonstrated that a neural net
+
+105
+00:05:18,600 --> 00:05:20,350
+could actually do something.
+
+106
+00:05:20,350 --> 00:05:23,810
+And since that time, in the
+three years since that time,
+
+107
+00:05:23,810 --> 00:05:26,150
+there's been an enormous
+amount of effort
+
+108
+00:05:26,150 --> 00:05:31,470
+put into neural net technology,
+which some say is the answer.
+
+109
+00:05:31,470 --> 00:05:34,440
+So what we're going to
+do today and tomorrow
+
+110
+00:05:34,440 --> 00:05:39,130
+is have a look at this stuff
+and ask ourselves why it works,
+
+111
+00:05:39,130 --> 00:05:41,560
+when it might not work,
+what needs to be done,
+
+112
+00:05:41,560 --> 00:05:43,790
+what has been done, and all
+those kinds of questions
+
+113
+00:05:43,790 --> 00:05:44,470
+will emerge.
+
+114
+00:05:51,520 --> 00:05:55,640
+So I guess the first thing to
+do is think about what it is
+
+115
+00:05:55,640 --> 00:05:57,970
+that we are being inspired by.
+
+116
+00:05:57,970 --> 00:06:00,980
+We're being inspired
+by those things that
+
+117
+00:06:00,980 --> 00:06:04,650
+are inside our head-- all
+10 to the 11th of them.
+
+118
+00:06:04,650 --> 00:06:09,755
+And so if we take one of those
+10 to the 11th and look at it,
+
+119
+00:06:09,755 --> 00:06:12,700
+you know from 700 something
+or other approximately
+
+120
+00:06:12,700 --> 00:06:14,570
+what a neuron looks like.
+
+121
+00:06:14,570 --> 00:06:17,760
+And by the way, I'm going
+to teach you in this lecture
+
+122
+00:06:17,760 --> 00:06:20,230
+how to answer questions
+about neurobiology
+
+123
+00:06:20,230 --> 00:06:23,170
+with an 80% probability that
+you will give the same answer
+
+124
+00:06:23,170 --> 00:06:25,470
+as a neurobiologist.
+
+125
+00:06:25,470 --> 00:06:28,310
+So let's go.
+
+126
+00:06:28,310 --> 00:06:30,140
+So here's a neuron.
+
+127
+00:06:30,140 --> 00:06:31,930
+It's got a cell body.
+
+128
+00:06:31,930 --> 00:06:33,530
+And there is a nucleus.
+
+129
+00:06:33,530 --> 00:06:36,350
+And then out here is
+a long thingamajigger
+
+130
+00:06:36,350 --> 00:06:41,230
+which divides maybe a
+little bit, but not much.
+
+131
+00:06:41,230 --> 00:06:42,395
+And we call that the axon.
+
+132
+00:06:46,080 --> 00:06:50,100
+So then over here, we've got
+this much more branching type
+
+133
+00:06:50,100 --> 00:06:54,572
+of structure that looks
+maybe a little bit like so.
+
+134
+00:07:02,144 --> 00:07:04,550
+Maybe like that-- and this
+stuff branches a whole lot.
+
+135
+00:07:04,550 --> 00:07:06,520
+And that part is called
+the dendritic tree.
+
+136
+00:07:15,400 --> 00:07:17,310
+Now, there are a
+couple of things
+
+137
+00:07:17,310 --> 00:07:21,350
+we can note about this is that
+these guys are connected axon
+
+138
+00:07:21,350 --> 00:07:22,640
+to dendrite.
+
+139
+00:07:22,640 --> 00:07:28,430
+So over here, they'll be
+a so-called pre-synaptic
+
+140
+00:07:28,430 --> 00:07:29,640
+thickening.
+
+141
+00:07:29,640 --> 00:07:33,390
+And over here will be some
+other neuron's dendrite.
+
+142
+00:07:33,390 --> 00:07:38,220
+And likewise, over here
+some other neuron's axon
+
+143
+00:07:38,220 --> 00:07:45,855
+is coming in here and hitting
+the dendrite of our the one
+
+144
+00:07:45,855 --> 00:07:47,517
+that occupies most
+of our picture.
+
+145
+00:07:53,220 --> 00:07:57,260
+So if there is enough
+stimulation from this side
+
+146
+00:07:57,260 --> 00:08:01,060
+in the axonal tree,
+or the dendritic tree,
+
+147
+00:08:01,060 --> 00:08:04,620
+then a spike will
+go down that axon.
+
+148
+00:08:04,620 --> 00:08:07,820
+It acts like a
+transmission line.
+
+149
+00:08:07,820 --> 00:08:12,370
+And then after that
+happens, the neuron
+
+150
+00:08:12,370 --> 00:08:15,000
+will go quiet for a while as
+it's recovering its strength.
+
+151
+00:08:15,000 --> 00:08:16,550
+That's called the
+refractory period.
+
+152
+00:08:19,560 --> 00:08:23,230
+Now, if we look at that
+connection in a little more
+
+153
+00:08:23,230 --> 00:08:30,000
+detail, this little piece right
+here sort of looks like this.
+
+154
+00:08:30,000 --> 00:08:32,820
+Here's the axon coming in.
+
+155
+00:08:32,820 --> 00:08:35,870
+It's got a whole bunch
+of little vesicles in it.
+
+156
+00:08:35,870 --> 00:08:39,049
+And then there's a
+dendrite over here.
+
+157
+00:08:39,049 --> 00:08:42,730
+And when the axon is stimulated,
+it dumps all these vesicles
+
+158
+00:08:42,730 --> 00:08:45,202
+into this inner synaptic space.
+
+159
+00:08:45,202 --> 00:08:47,410
+For a long time, it wasn't
+known whether those things
+
+160
+00:08:47,410 --> 00:08:49,430
+were actually separated.
+
+161
+00:08:49,430 --> 00:08:51,110
+I think it was
+Raamon and Cahal who
+
+162
+00:08:51,110 --> 00:08:54,410
+demonstrated that one
+neuron is actually
+
+163
+00:08:54,410 --> 00:08:56,030
+not part of the next one.
+
+164
+00:08:56,030 --> 00:09:01,610
+They're actually separated
+by these synaptic gaps.
+
+165
+00:09:01,610 --> 00:09:04,120
+So there it is.
+
+166
+00:09:04,120 --> 00:09:06,770
+How can we model,
+that sort of thing?
+
+167
+00:09:06,770 --> 00:09:08,440
+Well, here's what's
+usually done.
+
+168
+00:09:08,440 --> 00:09:11,320
+Here's what is done in
+the neural net literature.
+
+169
+00:09:17,070 --> 00:09:20,960
+First of all, we've got
+some kind of binary input,
+
+170
+00:09:20,960 --> 00:09:23,370
+because these things either
+fire or they don't fire.
+
+171
+00:09:23,370 --> 00:09:26,060
+So it's an all-or-none
+kind of situation.
+
+172
+00:09:26,060 --> 00:09:29,510
+So over here, we have
+some kind of input value.
+
+173
+00:09:29,510 --> 00:09:31,000
+We'll call it x1.
+
+174
+00:09:31,000 --> 00:09:34,010
+And is either a 0 or 1.
+
+175
+00:09:34,010 --> 00:09:35,910
+So it comes in here.
+
+176
+00:09:35,910 --> 00:09:40,450
+And then it gets multiplied
+times some kind of weight.
+
+177
+00:09:40,450 --> 00:09:42,635
+We'll call it w1.
+
+178
+00:09:45,620 --> 00:09:49,910
+So this part here is modeling
+this synaptic connection.
+
+179
+00:09:49,910 --> 00:09:51,890
+It may be more or less strong.
+
+180
+00:09:51,890 --> 00:09:53,850
+And if it's more strong,
+this weight goes up.
+
+181
+00:09:53,850 --> 00:09:56,510
+And if it's less strong,
+this weight goes down.
+
+182
+00:09:56,510 --> 00:10:01,220
+So that reflects the
+influence of the synapse
+
+183
+00:10:01,220 --> 00:10:05,900
+on whether or not the whole
+axon decides it's stimulated.
+
+184
+00:10:05,900 --> 00:10:12,110
+Then we got other inputs down
+here-- x sub n, also 0 or 1.
+
+185
+00:10:12,110 --> 00:10:15,180
+It's also multiplied
+by a weight.
+
+186
+00:10:15,180 --> 00:10:17,570
+We'll call that w sub n.
+
+187
+00:10:17,570 --> 00:10:20,560
+And now, we have to
+somehow represent
+
+188
+00:10:20,560 --> 00:10:26,960
+the way in which these inputs
+are collected together--
+
+189
+00:10:26,960 --> 00:10:29,290
+how they have collective force.
+
+190
+00:10:29,290 --> 00:10:30,960
+And we're going to
+model that very, very
+
+191
+00:10:30,960 --> 00:10:37,610
+simply just by saying, OK,
+we'll run it through a summer
+
+192
+00:10:37,610 --> 00:10:39,660
+like so.
+
+193
+00:10:39,660 --> 00:10:43,390
+But then we have to decide if
+the collective influence of all
+
+194
+00:10:43,390 --> 00:10:48,630
+those inputs is sufficient
+to make the neuron fire.
+
+195
+00:10:48,630 --> 00:10:51,430
+So we're going to
+do that by running
+
+196
+00:10:51,430 --> 00:10:56,110
+this guy through a
+threshold box like so.
+
+197
+00:10:56,110 --> 00:10:59,930
+Here is what the box looks like
+in terms of the relationship
+
+198
+00:10:59,930 --> 00:11:02,540
+between input and the output.
+
+199
+00:11:02,540 --> 00:11:04,430
+And what you can see
+here is that nothing
+
+200
+00:11:04,430 --> 00:11:09,040
+happens until the input
+exceeds some threshold t.
+
+201
+00:11:09,040 --> 00:11:13,960
+If that happens, then
+the output z is a 1.
+
+202
+00:11:13,960 --> 00:11:16,270
+Otherwise, it's a 0.
+
+203
+00:11:16,270 --> 00:11:20,040
+So binary, binary out-- we
+model the synaptic weights
+
+204
+00:11:20,040 --> 00:11:21,530
+by these multipliers.
+
+205
+00:11:21,530 --> 00:11:26,850
+We model the cumulative effect
+of all that input to the neuron
+
+206
+00:11:26,850 --> 00:11:28,500
+by a summer.
+
+207
+00:11:28,500 --> 00:11:31,749
+We decide if it's going to be
+an all-or-none 1 by running it
+
+208
+00:11:31,749 --> 00:11:33,290
+through this threshold
+box and seeing
+
+209
+00:11:33,290 --> 00:11:39,370
+if the sum of the products add
+up to more than the threshold.
+
+210
+00:11:39,370 --> 00:11:41,610
+If so, we get a 1.
+
+211
+00:11:41,610 --> 00:11:46,820
+So what, in the end,
+are we in fact modeling?
+
+212
+00:11:46,820 --> 00:11:54,900
+Well, with this model,
+we have number 1, all
+
+213
+00:11:54,900 --> 00:12:12,890
+or none-- number 2, cumulative
+influence-- number 3, oh, I,
+
+214
+00:12:12,890 --> 00:12:14,171
+suppose synaptic weight.
+
+215
+00:12:20,432 --> 00:12:21,890
+But that's not all
+that there might
+
+216
+00:12:21,890 --> 00:12:24,940
+be to model in a real neuron.
+
+217
+00:12:24,940 --> 00:12:27,142
+We might want to deal with
+the refractory period.
+
+218
+00:12:39,180 --> 00:12:43,470
+In these biological models that
+we build neural nets out of,
+
+219
+00:12:43,470 --> 00:12:45,385
+we might want to model
+axonal bifurcation.
+
+220
+00:12:53,280 --> 00:12:56,330
+We do get some division
+in the axon of the neuron.
+
+221
+00:12:56,330 --> 00:12:59,070
+And it turns out that that
+pulse will either go down
+
+222
+00:12:59,070 --> 00:13:01,200
+one branch or the other.
+
+223
+00:13:01,200 --> 00:13:02,970
+And which branch it
+goes down depends
+
+224
+00:13:02,970 --> 00:13:06,870
+on electrical activity in
+the vicinity of the division.
+
+225
+00:13:06,870 --> 00:13:09,560
+So these things might actually
+be a fantastic coincidence
+
+226
+00:13:09,560 --> 00:13:10,840
+detectors.
+
+227
+00:13:10,840 --> 00:13:12,006
+But we're not modeling that.
+
+228
+00:13:12,006 --> 00:13:15,630
+We don't know how it works.
+
+229
+00:13:15,630 --> 00:13:17,290
+So axonal bifurcation
+might be modeled.
+
+230
+00:13:17,290 --> 00:13:21,900
+We might also have a
+look at time patterns.
+
+231
+00:13:26,402 --> 00:13:27,860
+See, what we don't
+know is we don't
+
+232
+00:13:27,860 --> 00:13:32,240
+know if the timing of the
+arrival of these pulses
+
+233
+00:13:32,240 --> 00:13:34,290
+in the dendritic
+tree has anything
+
+234
+00:13:34,290 --> 00:13:38,050
+to do with what that neuron
+is going to recognize--
+
+235
+00:13:38,050 --> 00:13:40,320
+so a lot of unknowns here.
+
+236
+00:13:40,320 --> 00:13:42,650
+And now, I'm going
+to show you how
+
+237
+00:13:42,650 --> 00:13:45,010
+to answer a question
+about neurobiology
+
+238
+00:13:45,010 --> 00:13:47,590
+with 80% probability
+you'll get it right.
+
+239
+00:13:47,590 --> 00:13:51,910
+Just say, we don't know.
+
+240
+00:13:51,910 --> 00:13:53,890
+And that will be with
+80% probability what
+
+241
+00:13:53,890 --> 00:13:55,270
+the neurobiologist would say.
+
+242
+00:13:58,700 --> 00:14:03,240
+So this is a model inspired
+by what goes on in our heads.
+
+243
+00:14:03,240 --> 00:14:07,240
+But it's far from clear
+if what we're modeling
+
+244
+00:14:07,240 --> 00:14:13,280
+is the essence of why those guys
+make possible what we can do.
+
+245
+00:14:13,280 --> 00:14:15,280
+Nevertheless, that's where
+we're going to start.
+
+246
+00:14:15,280 --> 00:14:16,571
+That's where we're going to go.
+
+247
+00:14:16,571 --> 00:14:20,500
+So we've got this model
+of what a neuron does.
+
+248
+00:14:20,500 --> 00:14:25,180
+So what about what does a
+collection of these neurons do?
+
+249
+00:14:25,180 --> 00:14:31,830
+Well, we can think of your skull
+as a big box full of neurons.
+
+250
+00:14:37,680 --> 00:14:39,170
+Maybe a better way
+to think of this
+
+251
+00:14:39,170 --> 00:14:42,030
+is that your head
+is full of neurons.
+
+252
+00:14:42,030 --> 00:14:51,490
+And they in turn are full of
+weights and thresholds like so.
+
+253
+00:14:51,490 --> 00:14:56,676
+So into this box come a variety
+of inputs x1 through xm.
+
+254
+00:15:00,080 --> 00:15:01,780
+And these find their
+way to the inside
+
+255
+00:15:01,780 --> 00:15:04,790
+of this gaggle of neurons.
+
+256
+00:15:04,790 --> 00:15:13,320
+And out here come a bunch
+of outputs c1 through zn.
+
+257
+00:15:13,320 --> 00:15:17,110
+And there a whole bunch
+of these maybe like so.
+
+258
+00:15:17,110 --> 00:15:19,680
+And there are a lot
+of inputs like so.
+
+259
+00:15:19,680 --> 00:15:23,630
+And somehow these inputs
+through the influence
+
+260
+00:15:23,630 --> 00:15:29,260
+of the weights of the thresholds
+come out as a set of outputs.
+
+261
+00:15:29,260 --> 00:15:31,350
+So we can write
+that down a little
+
+262
+00:15:31,350 --> 00:15:36,770
+fancier by just saying
+that z is a vector, which
+
+263
+00:15:36,770 --> 00:15:42,220
+is a function of, certainly
+the input vector, but also
+
+264
+00:15:42,220 --> 00:15:45,510
+the weight vector and
+the threshold vector.
+
+265
+00:15:45,510 --> 00:15:47,780
+So that's all a neural net is.
+
+266
+00:15:47,780 --> 00:15:49,430
+And when we train
+a neural net, all
+
+267
+00:15:49,430 --> 00:15:52,210
+we're going to be able to
+do is adjust those weights
+
+268
+00:15:52,210 --> 00:15:57,430
+and thresholds so that what
+we get out is what we want.
+
+269
+00:15:57,430 --> 00:16:00,570
+So a neural net is a
+function approximator.
+
+270
+00:16:00,570 --> 00:16:02,270
+It's good to think about that.
+
+271
+00:16:02,270 --> 00:16:03,478
+It's a function approximator.
+
+272
+00:16:05,420 --> 00:16:11,560
+So maybe we've got some sample
+data that gives us an output
+
+273
+00:16:11,560 --> 00:16:17,865
+vector that's desired as
+another function of the input,
+
+274
+00:16:17,865 --> 00:16:20,240
+forgetting about what the
+weights and the thresholds are.
+
+275
+00:16:20,240 --> 00:16:22,550
+That's what we want to get out.
+
+276
+00:16:22,550 --> 00:16:24,990
+And so how well we're
+doing can be figured out
+
+277
+00:16:24,990 --> 00:16:31,440
+by comparing the desired
+value with the actual value.
+
+278
+00:16:31,440 --> 00:16:33,520
+So we might think
+then that we can
+
+279
+00:16:33,520 --> 00:16:38,450
+get a handle on how well
+we're doing by constructing
+
+280
+00:16:38,450 --> 00:16:45,770
+some performance function, which
+is determined by the desired
+
+281
+00:16:45,770 --> 00:16:50,960
+vector and the input
+vector-- sorry,
+
+282
+00:16:50,960 --> 00:16:54,330
+the desired vector and
+the actual output vector
+
+283
+00:16:54,330 --> 00:16:58,370
+for some particular input
+or for some set of inputs.
+
+284
+00:16:58,370 --> 00:17:01,340
+And the question is what
+should that function be?
+
+285
+00:17:01,340 --> 00:17:03,770
+How should we
+measure performance
+
+286
+00:17:03,770 --> 00:17:06,980
+given that we have
+what we want out here
+
+287
+00:17:06,980 --> 00:17:09,670
+and what we actually
+got out here?
+
+288
+00:17:09,670 --> 00:17:12,349
+Well, one simple
+thing to do is just
+
+289
+00:17:12,349 --> 00:17:16,520
+to measure the magnitude
+of the difference.
+
+290
+00:17:16,520 --> 00:17:18,130
+That makes sense.
+
+291
+00:17:18,130 --> 00:17:24,180
+But of course, that would give
+us a performance function that
+
+292
+00:17:24,180 --> 00:17:26,119
+is a function of the
+distance between those
+
+293
+00:17:26,119 --> 00:17:28,289
+vectors would look like this.
+
+294
+00:17:32,000 --> 00:17:35,880
+But this turns out
+to be mathematically
+
+295
+00:17:35,880 --> 00:17:36,980
+inconvenient in the end.
+
+296
+00:17:36,980 --> 00:17:38,730
+So how do you think we're going
+to turn it up a little bit?
+
+297
+00:17:38,730 --> 00:17:39,910
+AUDIENCE: Normalize it?
+
+298
+00:17:39,910 --> 00:17:41,118
+PATRICK WINSTON: What's that?
+
+299
+00:17:41,118 --> 00:17:42,120
+AUDIENCE: Normalize it?
+
+300
+00:17:42,120 --> 00:17:43,750
+PATRICK WINSTON:
+Well, I don't know.
+
+301
+00:17:43,750 --> 00:17:46,372
+How about just we square it?
+
+302
+00:17:46,372 --> 00:17:49,890
+And that way we're going to go
+from this little sharp point
+
+303
+00:17:49,890 --> 00:17:54,800
+down there to something
+that looks more like that.
+
+304
+00:17:54,800 --> 00:17:58,300
+So it's best when the
+difference is 0, of course.
+
+305
+00:17:58,300 --> 00:18:02,380
+And it gets worse as
+you move away from 0.
+
+306
+00:18:02,380 --> 00:18:04,080
+But what we're
+trying to do here is
+
+307
+00:18:04,080 --> 00:18:07,370
+we're trying to get
+to a minimum value.
+
+308
+00:18:07,370 --> 00:18:09,360
+And I hope you'll forgive me.
+
+309
+00:18:09,360 --> 00:18:11,170
+I just don't like
+the direction we're
+
+310
+00:18:11,170 --> 00:18:14,040
+going here, because I like to
+think in terms of improvement
+
+311
+00:18:14,040 --> 00:18:16,740
+as going uphill
+instead of down hill.
+
+312
+00:18:16,740 --> 00:18:21,070
+So I'm going to dress this up
+one more step-- put a minus
+
+313
+00:18:21,070 --> 00:18:22,580
+sign out there.
+
+314
+00:18:22,580 --> 00:18:25,540
+And then our performance
+function looks like this.
+
+315
+00:18:25,540 --> 00:18:26,810
+It's always negative.
+
+316
+00:18:26,810 --> 00:18:29,640
+And the best value it
+can possibly be is zero.
+
+317
+00:18:29,640 --> 00:18:33,040
+So that's what we're going to
+use just because I am who I am.
+
+318
+00:18:33,040 --> 00:18:34,590
+And it doesn't matter, right?
+
+319
+00:18:34,590 --> 00:18:37,260
+Still, you're trying to
+either minimize or maximize
+
+320
+00:18:37,260 --> 00:18:40,490
+some performance function.
+
+321
+00:18:40,490 --> 00:18:41,660
+OK, so what do we got to do?
+
+322
+00:18:41,660 --> 00:18:46,630
+I guess what we could do is we
+could treat this thing-- well,
+
+323
+00:18:46,630 --> 00:18:49,000
+we already know what to do.
+
+324
+00:18:49,000 --> 00:18:51,860
+I'm not even sure why we're
+devoting our lecture to this,
+
+325
+00:18:51,860 --> 00:18:55,580
+because it's clear that
+what we're trying to do
+
+326
+00:18:55,580 --> 00:18:59,840
+is we're trying to take our
+weights and our thresholds
+
+327
+00:18:59,840 --> 00:19:03,110
+and adjust them so as
+to maximize performance.
+
+328
+00:19:03,110 --> 00:19:05,570
+So we can make a
+little contour map here
+
+329
+00:19:05,570 --> 00:19:09,020
+with a simple neural net
+with just two weights in it.
+
+330
+00:19:09,020 --> 00:19:11,562
+And maybe it looks like
+this-- contour map.
+
+331
+00:19:14,990 --> 00:19:18,810
+And at any given time
+we've got a particular w1
+
+332
+00:19:18,810 --> 00:19:20,470
+and particular w2.
+
+333
+00:19:20,470 --> 00:19:23,570
+And we're trying to
+find a better w1 and w2.
+
+334
+00:19:23,570 --> 00:19:26,550
+So here we are right now.
+
+335
+00:19:26,550 --> 00:19:28,760
+And there's the contour map.
+
+336
+00:19:28,760 --> 00:19:29,940
+And it's a 6034.
+
+337
+00:19:29,940 --> 00:19:31,634
+So what do we do?
+
+338
+00:19:31,634 --> 00:19:33,030
+AUDIENCE: Climb.
+
+339
+00:19:33,030 --> 00:19:35,520
+PATRICK WINSTON: Simple matter
+of hill climbing, right?
+
+340
+00:19:35,520 --> 00:19:38,360
+So we'll take a step
+in every direction.
+
+341
+00:19:38,360 --> 00:19:41,860
+If we take a step in that
+direction, not so hot.
+
+342
+00:19:41,860 --> 00:19:44,100
+That actually goes pretty bad.
+
+343
+00:19:44,100 --> 00:19:46,550
+These two are really ugly.
+
+344
+00:19:46,550 --> 00:19:48,280
+Ah, but that one--
+that one takes us
+
+345
+00:19:48,280 --> 00:19:50,430
+up the hill a little bit.
+
+346
+00:19:50,430 --> 00:19:54,120
+So we're done,
+except that I just
+
+347
+00:19:54,120 --> 00:19:55,870
+mentioned that
+Hinton's neural net had
+
+348
+00:19:55,870 --> 00:19:57,962
+60 million parameters in it.
+
+349
+00:19:57,962 --> 00:20:00,420
+So we're not going to hill
+climb with 60 million parameters
+
+350
+00:20:00,420 --> 00:20:03,812
+because it explodes
+exponentially
+
+351
+00:20:03,812 --> 00:20:05,270
+in the number of
+weights you've got
+
+352
+00:20:05,270 --> 00:20:08,936
+to deal with-- the number
+of steps you can take.
+
+353
+00:20:08,936 --> 00:20:10,936
+So this approach is
+computationally intractable.
+
+354
+00:20:13,560 --> 00:20:19,280
+Fortunately, you've all taken
+1801 or the equivalent thereof.
+
+355
+00:20:19,280 --> 00:20:21,690
+So you have a better idea.
+
+356
+00:20:21,690 --> 00:20:24,770
+Instead of just taking a
+step in every direction, what
+
+357
+00:20:24,770 --> 00:20:27,590
+we're going to do is
+we're going to take
+
+358
+00:20:27,590 --> 00:20:30,150
+some partial derivatives.
+
+359
+00:20:30,150 --> 00:20:33,160
+And we're going to
+see what they suggest
+
+360
+00:20:33,160 --> 00:20:36,720
+to us in terms of how we're
+going to get around in space.
+
+361
+00:20:36,720 --> 00:20:39,130
+So we might have a partial
+of that performance function
+
+362
+00:20:39,130 --> 00:20:42,969
+up there with respect to w1.
+
+363
+00:20:42,969 --> 00:20:44,760
+And we might also take
+a partial derivative
+
+364
+00:20:44,760 --> 00:20:48,450
+of that guy with respect to w2.
+
+365
+00:20:48,450 --> 00:20:50,480
+And these will tell us
+how much improvement
+
+366
+00:20:50,480 --> 00:20:53,510
+we're getting by making a little
+movement in those directions,
+
+367
+00:20:53,510 --> 00:20:55,220
+right?
+
+368
+00:20:55,220 --> 00:20:57,408
+How much a change is
+given that we're just
+
+369
+00:20:57,408 --> 00:20:58,532
+going right along the axis.
+
+370
+00:21:01,180 --> 00:21:07,020
+So maybe what we ought
+to do is if this guy is
+
+371
+00:21:07,020 --> 00:21:08,910
+much bigger than
+this guy, it would
+
+372
+00:21:08,910 --> 00:21:12,120
+suggest we mostly want to
+move in this direction,
+
+373
+00:21:12,120 --> 00:21:13,990
+or to put it in 1801
+terms, what we're
+
+374
+00:21:13,990 --> 00:21:16,550
+going to do is we're going
+to follow the gradient.
+
+375
+00:21:16,550 --> 00:21:21,320
+And so the change
+in the w vector
+
+376
+00:21:21,320 --> 00:21:25,776
+is going to equal to this
+partial derivative times
+
+377
+00:21:25,776 --> 00:21:30,010
+i plus this partial
+derivative times j.
+
+378
+00:21:30,010 --> 00:21:32,600
+So what we're going to end up
+doing in this particular case
+
+379
+00:21:32,600 --> 00:21:36,610
+by following that formula is
+moving off in that direction
+
+380
+00:21:36,610 --> 00:21:40,310
+right up to the steepest
+part of the hill.
+
+381
+00:21:40,310 --> 00:21:43,840
+And how much we
+move is a question.
+
+382
+00:21:43,840 --> 00:21:47,400
+So let's just have a rate
+constant R that decides how
+
+383
+00:21:47,400 --> 00:21:50,110
+big our step is going to be.
+
+384
+00:21:50,110 --> 00:21:53,080
+And now you think we were done.
+
+385
+00:21:53,080 --> 00:21:55,740
+Well, too bad for our side.
+
+386
+00:21:55,740 --> 00:21:57,380
+We're not done.
+
+387
+00:21:57,380 --> 00:21:59,410
+There's a reason
+why we can't use--
+
+388
+00:21:59,410 --> 00:22:04,214
+create ascent, or in the case
+that I've drawn our gradient,
+
+389
+00:22:04,214 --> 00:22:06,005
+descent if we take the
+performance function
+
+390
+00:22:06,005 --> 00:22:07,220
+the other way.
+
+391
+00:22:07,220 --> 00:22:09,128
+Why can't we use it?
+
+392
+00:22:09,128 --> 00:22:10,086
+AUDIENCE: Local maxima.
+
+393
+00:22:12,237 --> 00:22:14,070
+PATRICK WINSTON: The
+remark is local maxima.
+
+394
+00:22:14,070 --> 00:22:15,683
+And that is certainly true.
+
+395
+00:22:15,683 --> 00:22:17,016
+But it's not our first obstacle.
+
+396
+00:22:19,860 --> 00:22:21,892
+Why doesn't gradient
+ascent work?
+
+397
+00:22:26,301 --> 00:22:28,250
+AUDIENCE: So you're
+using a step function.
+
+398
+00:22:28,250 --> 00:22:28,550
+PATRICK WINSTON: Ah,
+there's something
+
+399
+00:22:28,550 --> 00:22:30,580
+wrong with our function.
+
+400
+00:22:30,580 --> 00:22:31,690
+That's right.
+
+401
+00:22:31,690 --> 00:22:35,590
+It's non-linear, but
+rather, it's discontinuous.
+
+402
+00:22:35,590 --> 00:22:39,100
+So gradient ascent requires
+a continuous space,
+
+403
+00:22:39,100 --> 00:22:40,870
+continuous surface.
+
+404
+00:22:40,870 --> 00:22:43,880
+So too bad our side.
+
+405
+00:22:43,880 --> 00:22:46,010
+It isn't.
+
+406
+00:22:46,010 --> 00:22:48,910
+So what to do?
+
+407
+00:22:48,910 --> 00:22:52,840
+Well, nobody knew what
+to do for 25 years.
+
+408
+00:22:52,840 --> 00:22:55,120
+People were screwing around
+with training neural nets
+
+409
+00:22:55,120 --> 00:23:01,340
+for 25 years before Paul
+Werbos sadly at Harvard in 1974
+
+410
+00:23:01,340 --> 00:23:03,010
+gave us the answer.
+
+411
+00:23:03,010 --> 00:23:05,120
+And now I want to tell
+you what the answer is.
+
+412
+00:23:05,120 --> 00:23:09,920
+The first part of the answer is
+those thresholds are annoying.
+
+413
+00:23:09,920 --> 00:23:15,440
+They're just extra
+baggage to deal with.
+
+414
+00:23:15,440 --> 00:23:19,310
+What we really like instead of
+c being a function of xw and t
+
+415
+00:23:19,310 --> 00:23:23,465
+was we'd like c prime
+to be a function f
+
+416
+00:23:23,465 --> 00:23:27,875
+prime of x and the weights.
+
+417
+00:23:27,875 --> 00:23:30,000
+But we've got to account
+for the threshold somehow.
+
+418
+00:23:30,000 --> 00:23:31,960
+So here's how you do that.
+
+419
+00:23:31,960 --> 00:23:36,220
+What you do is
+you say let us add
+
+420
+00:23:36,220 --> 00:23:40,320
+another input to this neuron.
+
+421
+00:23:40,320 --> 00:23:44,515
+And it's going to
+have a weight w0.
+
+422
+00:23:49,160 --> 00:23:52,120
+And it's going to be
+connected to an input that's
+
+423
+00:23:52,120 --> 00:23:55,340
+always minus 1.
+
+424
+00:23:55,340 --> 00:23:56,732
+You with me so far?
+
+425
+00:23:56,732 --> 00:23:58,190
+Now what we're
+going to do is we're
+
+426
+00:23:58,190 --> 00:24:04,070
+going to say, let w0 equal t.
+
+427
+00:24:06,578 --> 00:24:08,702
+What does that do to the
+movement of the threshold?
+
+428
+00:24:11,660 --> 00:24:13,760
+What it does is it
+takes that threshold
+
+429
+00:24:13,760 --> 00:24:16,060
+and moves it back to 0.
+
+430
+00:24:16,060 --> 00:24:19,750
+So this little trick here
+takes this pink threshold
+
+431
+00:24:19,750 --> 00:24:24,550
+and redoes it so that the new
+threshold box looks like this.
+
+432
+00:24:30,370 --> 00:24:31,480
+Think about it.
+
+433
+00:24:31,480 --> 00:24:35,930
+If this is t, and this is
+minus 1, then this is minus t.
+
+434
+00:24:35,930 --> 00:24:38,490
+And so this thing ought to
+fire if everything's over--
+
+435
+00:24:38,490 --> 00:24:39,750
+if the sum is over 0.
+
+436
+00:24:39,750 --> 00:24:41,080
+So it makes sense.
+
+437
+00:24:41,080 --> 00:24:43,420
+And it gets rid of the
+threshold thing for us.
+
+438
+00:24:43,420 --> 00:24:46,920
+So now we can just
+think about weights.
+
+439
+00:24:46,920 --> 00:24:53,740
+But still, we've got
+that step function there.
+
+440
+00:24:53,740 --> 00:24:55,714
+And that's not good.
+
+441
+00:24:55,714 --> 00:24:57,130
+So what we're going
+to do is we're
+
+442
+00:24:57,130 --> 00:25:00,700
+going to smooth that guy out.
+
+443
+00:25:00,700 --> 00:25:03,846
+So this is trick number two.
+
+444
+00:25:03,846 --> 00:25:05,220
+Instead of a step
+function, we're
+
+445
+00:25:05,220 --> 00:25:07,610
+going to have this
+thing we lovingly
+
+446
+00:25:07,610 --> 00:25:09,840
+call a sigmoid
+function, because it's
+
+447
+00:25:09,840 --> 00:25:12,110
+kind of from an s-type shape.
+
+448
+00:25:12,110 --> 00:25:18,280
+And the function we're going
+to use is this one-- one,
+
+449
+00:25:18,280 --> 00:25:23,710
+well, better make it a little
+bit different-- 1 over 1 plus
+
+450
+00:25:23,710 --> 00:25:27,230
+e to the minus
+whatever the input is.
+
+451
+00:25:27,230 --> 00:25:30,070
+Let's call the input alpha.
+
+452
+00:25:30,070 --> 00:25:32,610
+Does that makes sense?
+
+453
+00:25:32,610 --> 00:25:37,560
+Is alpha is 0, then it's 1
+over 1 plus 1 plus one half.
+
+454
+00:25:37,560 --> 00:25:40,960
+If alpha is extremely big,
+then even the minus alpha
+
+455
+00:25:40,960 --> 00:25:42,060
+is extremely small.
+
+456
+00:25:42,060 --> 00:25:44,100
+And it becomes one.
+
+457
+00:25:44,100 --> 00:25:47,460
+It goes up to an asymptotic
+value of one here.
+
+458
+00:25:47,460 --> 00:25:50,510
+On the other hand, if alpha
+is extremely negative,
+
+459
+00:25:50,510 --> 00:25:53,840
+than the minus alpha
+is extremely positive.
+
+460
+00:25:53,840 --> 00:25:56,470
+And it goes to 0 asymptotically.
+
+461
+00:25:56,470 --> 00:25:59,830
+So we got the right
+look to that function.
+
+462
+00:25:59,830 --> 00:26:01,680
+It's a very convenient function.
+
+463
+00:26:01,680 --> 00:26:05,990
+Did God say that neurons
+ought to be-- that threshold
+
+464
+00:26:05,990 --> 00:26:08,080
+ought to work like that?
+
+465
+00:26:08,080 --> 00:26:09,140
+No, God didn't say so.
+
+466
+00:26:09,140 --> 00:26:11,760
+Who said so?
+
+467
+00:26:11,760 --> 00:26:13,540
+The math says so.
+
+468
+00:26:13,540 --> 00:26:16,960
+It has the right shape
+and look and the math.
+
+469
+00:26:16,960 --> 00:26:19,522
+And it turns out to
+have the right math,
+
+470
+00:26:19,522 --> 00:26:20,605
+as you'll see in a moment.
+
+471
+00:26:23,530 --> 00:26:24,357
+So let's see.
+
+472
+00:26:24,357 --> 00:26:25,450
+Where are we?
+
+473
+00:26:25,450 --> 00:26:26,950
+We decided that
+what we'd like to do
+
+474
+00:26:26,950 --> 00:26:29,022
+is take these
+partial derivatives.
+
+475
+00:26:29,022 --> 00:26:31,230
+We know that it was awkward
+to have those thresholds.
+
+476
+00:26:31,230 --> 00:26:32,294
+So we got rid of them.
+
+477
+00:26:32,294 --> 00:26:34,460
+And we noted that it was
+impossible to have the step
+
+478
+00:26:34,460 --> 00:26:34,960
+function.
+
+479
+00:26:34,960 --> 00:26:36,450
+So we got rid of it.
+
+480
+00:26:36,450 --> 00:26:38,520
+Now, we're a situation
+where we can actually
+
+481
+00:26:38,520 --> 00:26:41,170
+take those partial derivatives,
+and see if it gives us
+
+482
+00:26:41,170 --> 00:26:43,180
+a way of training
+the neural net so as
+
+483
+00:26:43,180 --> 00:26:46,155
+to bring the actual output into
+alignment with what we desire.
+
+484
+00:26:48,525 --> 00:26:49,900
+So to deal with
+that, we're going
+
+485
+00:26:49,900 --> 00:26:54,120
+to have to work with the
+world's simplest neural net.
+
+486
+00:26:54,120 --> 00:26:57,896
+Now, if we've got one
+neuron, it's not a net.
+
+487
+00:26:57,896 --> 00:27:00,020
+But if we've got two-word
+neurons, we've got a net.
+
+488
+00:27:00,020 --> 00:27:02,560
+And it turns out that's the
+world's simplest neuron.
+
+489
+00:27:02,560 --> 00:27:05,880
+So we're going to look at it--
+not 60 million parameters,
+
+490
+00:27:05,880 --> 00:27:11,390
+but just a few, actually,
+just two parameters.
+
+491
+00:27:11,390 --> 00:27:13,350
+So let's draw it out.
+
+492
+00:27:13,350 --> 00:27:16,090
+We've got input x.
+
+493
+00:27:16,090 --> 00:27:18,560
+That goes into a multiplier.
+
+494
+00:27:18,560 --> 00:27:22,790
+And it gets multiplied times w1.
+
+495
+00:27:22,790 --> 00:27:27,700
+And that goes into a
+sigmoid box like so.
+
+496
+00:27:27,700 --> 00:27:30,750
+We'll call this p1, by the
+way, product number one.
+
+497
+00:27:30,750 --> 00:27:33,270
+Out here comes y.
+
+498
+00:27:33,270 --> 00:27:37,030
+Y gets multiplied
+times another weight.
+
+499
+00:27:37,030 --> 00:27:40,630
+We'll call that w2.
+
+500
+00:27:40,630 --> 00:27:44,940
+The neck produces another
+product which we'll call p2.
+
+501
+00:27:44,940 --> 00:27:49,200
+And that goes into
+a sigmoid box.
+
+502
+00:27:49,200 --> 00:27:51,920
+And then that comes out as z.
+
+503
+00:27:51,920 --> 00:27:54,230
+And z is the number
+that we use to determine
+
+504
+00:27:54,230 --> 00:27:55,820
+how well we're doing.
+
+505
+00:27:55,820 --> 00:28:00,270
+And our performance
+function p is
+
+506
+00:28:00,270 --> 00:28:02,944
+going to be one
+half minus one half,
+
+507
+00:28:02,944 --> 00:28:04,360
+because I like
+things are going in
+
+508
+00:28:04,360 --> 00:28:08,330
+a direction, times the
+difference between the desired
+
+509
+00:28:08,330 --> 00:28:11,006
+output and the actual
+output squared.
+
+510
+00:28:14,480 --> 00:28:18,364
+So now let's decide what
+those partial derivatives
+
+511
+00:28:18,364 --> 00:28:19,030
+are going to be.
+
+512
+00:28:25,220 --> 00:28:26,180
+Let me do it over here.
+
+513
+00:28:32,976 --> 00:28:34,350
+So what are we
+trying to compute?
+
+514
+00:28:34,350 --> 00:28:39,100
+Partial of the performance
+function p with respect to w2.
+
+515
+00:28:42,553 --> 00:28:43,052
+OK.
+
+516
+00:28:47,970 --> 00:28:50,324
+Well, let's see.
+
+517
+00:28:50,324 --> 00:28:51,990
+We're trying to figure
+out how much this
+
+518
+00:28:51,990 --> 00:28:54,536
+wiggles when we wiggle that.
+
+519
+00:28:57,390 --> 00:29:01,176
+But you know it goes
+through this variable p2.
+
+520
+00:29:01,176 --> 00:29:02,800
+And so maybe what we
+could do is figure
+
+521
+00:29:02,800 --> 00:29:05,750
+out how much this wiggles--
+how much z wiggles
+
+522
+00:29:05,750 --> 00:29:08,830
+when we wiggle p2
+and then how much p2
+
+523
+00:29:08,830 --> 00:29:13,290
+wiggles when we wiggle w2.
+
+524
+00:29:13,290 --> 00:29:15,580
+I just multiplied
+those together.
+
+525
+00:29:15,580 --> 00:29:16,080
+I forget.
+
+526
+00:29:16,080 --> 00:29:18,840
+What's that called?
+
+527
+00:29:18,840 --> 00:29:20,310
+N180-- something or other.
+
+528
+00:29:20,310 --> 00:29:21,310
+AUDIENCE: The chain rule
+
+529
+00:29:21,310 --> 00:29:22,754
+PATRICK WINSTON: The chain rule.
+
+530
+00:29:22,754 --> 00:29:24,170
+So what we're going
+to do is we're
+
+531
+00:29:24,170 --> 00:29:27,230
+going to rewrite that partial
+derivative using chain rule.
+
+532
+00:29:27,230 --> 00:29:29,200
+And all it's doing is
+saying that there's
+
+533
+00:29:29,200 --> 00:29:31,250
+an intermediate variable.
+
+534
+00:29:31,250 --> 00:29:35,380
+And we can compute how much
+that end wiggles with respect
+
+535
+00:29:35,380 --> 00:29:39,755
+how much that end
+wiggles by multiplying
+
+536
+00:29:39,755 --> 00:29:41,545
+how much the other guys wiggle.
+
+537
+00:29:41,545 --> 00:29:42,420
+Let me write it down.
+
+538
+00:29:42,420 --> 00:29:45,420
+It makes more sense
+in mathematics.
+
+539
+00:29:45,420 --> 00:29:48,260
+So that's going to be
+able to the partial of p
+
+540
+00:29:48,260 --> 00:29:58,650
+with respect to z times the
+partial of z with respect
+
+541
+00:29:58,650 --> 00:29:59,950
+to p2.
+
+542
+00:30:04,140 --> 00:30:06,200
+Keep me on track here.
+
+543
+00:30:06,200 --> 00:30:09,490
+Partial of z with respect to w2.
+
+544
+00:30:12,310 --> 00:30:15,920
+Now, I'm going to do something
+for which I will hate myself.
+
+545
+00:30:15,920 --> 00:30:17,780
+I'm going to erase
+something on the board.
+
+546
+00:30:17,780 --> 00:30:18,780
+I don't like to do that.
+
+547
+00:30:18,780 --> 00:30:21,900
+But you know what I'm
+going to do, don't you?
+
+548
+00:30:21,900 --> 00:30:27,910
+I'm going to say this is
+true by the chain rule.
+
+549
+00:30:27,910 --> 00:30:30,550
+But look, I can
+take this guy here
+
+550
+00:30:30,550 --> 00:30:34,060
+and screw around with it
+with the chain rule too.
+
+551
+00:30:34,060 --> 00:30:35,880
+And in fact, what
+I'm going to do
+
+552
+00:30:35,880 --> 00:30:39,996
+is I'm going to replace
+that with partial of z
+
+553
+00:30:39,996 --> 00:30:48,139
+with respect to p2 and partial
+of p2 with respect to w2.
+
+554
+00:30:48,139 --> 00:30:49,430
+So I didn't erase it after all.
+
+555
+00:30:49,430 --> 00:30:52,110
+But you can see what
+I'm going to do next.
+
+556
+00:30:52,110 --> 00:30:53,610
+Now, I'm going to
+do same thing with
+
+557
+00:30:53,610 --> 00:30:55,780
+the other partial derivative.
+
+558
+00:30:55,780 --> 00:30:58,890
+But this time, instead of
+writing down and writing over,
+
+559
+00:30:58,890 --> 00:31:02,580
+I'm just going to expand it
+all out in one go, I think.
+
+560
+00:31:05,200 --> 00:31:10,620
+So partial of p
+with respect to w1
+
+561
+00:31:10,620 --> 00:31:15,140
+is equal to the partial
+of p with respect to z,
+
+562
+00:31:15,140 --> 00:31:21,810
+the partial of z with respect
+to p2, the partial of p2
+
+563
+00:31:21,810 --> 00:31:23,700
+with respect to what?
+
+564
+00:31:23,700 --> 00:31:26,260
+Y?
+
+565
+00:31:26,260 --> 00:31:35,170
+Partial of y with respect
+to p1-- partial of p1
+
+566
+00:31:35,170 --> 00:31:38,950
+with respect to w1.
+
+567
+00:31:38,950 --> 00:31:43,680
+So that's going like a zipper
+down that string of variables
+
+568
+00:31:43,680 --> 00:31:45,940
+expanding each by
+using the chain
+
+569
+00:31:45,940 --> 00:31:48,490
+rule until we got to the end.
+
+570
+00:31:48,490 --> 00:31:50,330
+So there are some
+expressions that provide
+
+571
+00:31:50,330 --> 00:31:51,910
+those partial derivatives.
+
+572
+00:31:56,660 --> 00:32:03,030
+But now, if you'll
+forgive me, it
+
+573
+00:32:03,030 --> 00:32:05,370
+was convenient to write
+them out that way.
+
+574
+00:32:05,370 --> 00:32:07,050
+That matched the
+intuition in my head.
+
+575
+00:32:07,050 --> 00:32:08,674
+But I'm just going
+to turn them around.
+
+576
+00:32:11,080 --> 00:32:12,960
+It's just a product.
+
+577
+00:32:12,960 --> 00:32:14,790
+I'm just going to
+turn them around.
+
+578
+00:32:14,790 --> 00:32:22,610
+So partial p2, partial
+w2, times partial of z,
+
+579
+00:32:22,610 --> 00:32:28,360
+partial p2, times the
+partial of p with respect
+
+580
+00:32:28,360 --> 00:32:30,040
+to z-- same thing.
+
+581
+00:32:30,040 --> 00:32:31,860
+And now, this one.
+
+582
+00:32:31,860 --> 00:32:34,190
+Keep me on track, because
+if there's a mutation here,
+
+583
+00:32:34,190 --> 00:32:35,740
+it will be fatal.
+
+584
+00:32:35,740 --> 00:32:41,860
+Partial of p1-- partial
+of w1, partial of y,
+
+585
+00:32:41,860 --> 00:32:52,180
+partial p1, partial of p2,
+partial of y, partial of z.
+
+586
+00:32:52,180 --> 00:32:56,920
+There's a partial of p2,
+partial of a performance
+
+587
+00:32:56,920 --> 00:32:58,142
+function with respect to z.
+
+588
+00:33:01,380 --> 00:33:04,740
+Now, all we have to do is figure
+out what those partials are.
+
+589
+00:33:04,740 --> 00:33:08,709
+And we have solved
+this simple neural net.
+
+590
+00:33:08,709 --> 00:33:09,750
+So it's going to be easy.
+
+591
+00:33:14,530 --> 00:33:15,880
+Where is my board space?
+
+592
+00:33:15,880 --> 00:33:22,360
+Let's see, partial of p2
+with respect to-- what?
+
+593
+00:33:22,360 --> 00:33:23,220
+That's the product.
+
+594
+00:33:23,220 --> 00:33:25,740
+The partial of z-- the
+performance function
+
+595
+00:33:25,740 --> 00:33:27,130
+with respect to z.
+
+596
+00:33:27,130 --> 00:33:30,201
+Oh, now I can see why I
+wrote it down this way.
+
+597
+00:33:30,201 --> 00:33:30,700
+Let's see.
+
+598
+00:33:30,700 --> 00:33:33,699
+It's going to be d minus e.
+
+599
+00:33:33,699 --> 00:33:34,990
+We can do that one in our head.
+
+600
+00:33:41,110 --> 00:33:43,634
+What about the partial
+of p2 with respect to w2.
+
+601
+00:33:46,520 --> 00:33:50,250
+Well, p2 is equal to y
+times w2, so that's easy.
+
+602
+00:33:50,250 --> 00:33:51,050
+That's just y.
+
+603
+00:33:57,830 --> 00:34:00,110
+Now, all we have to do
+is figure out the partial
+
+604
+00:34:00,110 --> 00:34:02,110
+of z with respect to p2.
+
+605
+00:34:02,110 --> 00:34:07,020
+Oh, crap, it's going
+through this threshold box.
+
+606
+00:34:07,020 --> 00:34:11,070
+So I don't know exactly what
+that partial derivative is.
+
+607
+00:34:11,070 --> 00:34:13,780
+So we'll have to
+figure that out, right?
+
+608
+00:34:13,780 --> 00:34:18,414
+Because the function relating
+them is this guy here.
+
+609
+00:34:18,414 --> 00:34:20,955
+And so we have to figure out
+the partial of that with respect
+
+610
+00:34:20,955 --> 00:34:24,030
+to alpha.
+
+611
+00:34:24,030 --> 00:34:26,120
+All right, so we got to do it.
+
+612
+00:34:26,120 --> 00:34:28,330
+There's no way around it.
+
+613
+00:34:28,330 --> 00:34:32,620
+So we have to destroy something.
+
+614
+00:34:32,620 --> 00:34:36,440
+OK, we're going to
+destroy our neuron.
+
+615
+00:34:49,989 --> 00:34:52,060
+So the function
+we're dealing with
+
+616
+00:34:52,060 --> 00:34:55,620
+is, we'll call it
+beta, equal to 1 over 1
+
+617
+00:34:55,620 --> 00:35:00,100
+plus e to the minus alpha.
+
+618
+00:35:00,100 --> 00:35:02,711
+And what we want
+is the derivative
+
+619
+00:35:02,711 --> 00:35:07,050
+with respect to alpha of beta.
+
+620
+00:35:07,050 --> 00:35:13,080
+And that's equal to d by
+d alpha of-- you know,
+
+621
+00:35:13,080 --> 00:35:16,530
+I can never remember
+those quotient formulas.
+
+622
+00:35:16,530 --> 00:35:19,260
+So I am going to rewrite
+it a little different way.
+
+623
+00:35:19,260 --> 00:35:23,518
+I am going to write it as 1
+minus e to the minus alpha
+
+624
+00:35:23,518 --> 00:35:28,340
+to the minus 1, because I
+can't remember the formula
+
+625
+00:35:28,340 --> 00:35:31,490
+for differentiating a quotient.
+
+626
+00:35:31,490 --> 00:35:33,030
+OK, so let's differentiate it.
+
+627
+00:35:33,030 --> 00:35:45,572
+So that's equal to 1 minus e to
+the minus alpha to the minus 2.
+
+628
+00:35:48,380 --> 00:35:51,140
+And we got that minus comes
+out of that part of it.
+
+629
+00:35:51,140 --> 00:35:56,660
+Then we got to differentiate
+the inside of that expression.
+
+630
+00:35:56,660 --> 00:35:59,410
+And when we differentiate the
+inside of that expression,
+
+631
+00:35:59,410 --> 00:36:01,156
+we get e to the minus alpha.
+
+632
+00:36:01,156 --> 00:36:02,142
+AUDIENCE: Dr. Winston--
+
+633
+00:36:02,142 --> 00:36:03,130
+PATRICK WINSTON: Yeah?
+
+634
+00:36:03,130 --> 00:36:05,267
+AUDIENCE: That should be 1 plus.
+
+635
+00:36:05,267 --> 00:36:06,850
+PATRICK WINSTON: Oh,
+sorry, thank you.
+
+636
+00:36:06,850 --> 00:36:09,183
+That was one of those fatal
+mistakes you just prevented.
+
+637
+00:36:09,183 --> 00:36:10,680
+So that's 1 plus.
+
+638
+00:36:10,680 --> 00:36:12,400
+That's 1 plus here too.
+
+639
+00:36:12,400 --> 00:36:15,590
+OK, so we've
+differentiated that.
+
+640
+00:36:15,590 --> 00:36:17,170
+We've turned that
+into a minus 2.
+
+641
+00:36:17,170 --> 00:36:18,890
+We brought the
+minus sign outside.
+
+642
+00:36:18,890 --> 00:36:21,320
+Then we're differentiating
+the inside.
+
+643
+00:36:21,320 --> 00:36:23,640
+The derivative and the
+exponential is an exponential.
+
+644
+00:36:23,640 --> 00:36:25,979
+Then we got to
+differentiate that guy.
+
+645
+00:36:25,979 --> 00:36:27,770
+And that just helps us
+get rid of the minus
+
+646
+00:36:27,770 --> 00:36:29,690
+sign we introduced.
+
+647
+00:36:29,690 --> 00:36:32,380
+So that's the derivative.
+
+648
+00:36:32,380 --> 00:36:36,640
+I'm not sure how much
+that helps except that I'm
+
+649
+00:36:36,640 --> 00:36:40,040
+going to perform a parlor
+trick here and rewrite
+
+650
+00:36:40,040 --> 00:36:43,510
+that expression thusly.
+
+651
+00:36:43,510 --> 00:36:47,170
+We want to say
+that's going to be
+
+652
+00:36:47,170 --> 00:36:53,988
+e to the minus alpha over
+1 plus e to the minus
+
+653
+00:36:53,988 --> 00:37:01,415
+alpha times 1 over 1 plus
+e to the minus alpha.
+
+654
+00:37:01,415 --> 00:37:03,919
+That OK?
+
+655
+00:37:03,919 --> 00:37:05,460
+I've got a lot of
+nodding heads here.
+
+656
+00:37:05,460 --> 00:37:08,465
+So I think I'm on safe ground.
+
+657
+00:37:08,465 --> 00:37:10,590
+But now, I'm going to
+perform another parlor trick.
+
+658
+00:37:13,700 --> 00:37:19,770
+I am going to add 1, which
+means I also have to subtract 1.
+
+659
+00:37:24,270 --> 00:37:24,840
+All right?
+
+660
+00:37:24,840 --> 00:37:27,520
+That's legitimate isn't it?
+
+661
+00:37:27,520 --> 00:37:32,540
+So now, I can rewrite
+this as 1 plus e
+
+662
+00:37:32,540 --> 00:37:38,820
+to the minus alpha over 1
+plus e to the minus alpha
+
+663
+00:37:38,820 --> 00:37:48,085
+minus 1 over 1 plus e to the
+minus alpha times 1 over 1 plus
+
+664
+00:37:48,085 --> 00:37:51,660
+e to the minus alpha.
+
+665
+00:37:51,660 --> 00:37:53,200
+Any high school
+kid could do that.
+
+666
+00:37:53,200 --> 00:37:55,580
+I think I'm on safe ground.
+
+667
+00:37:55,580 --> 00:38:02,150
+Oh, wait, this is beta.
+
+668
+00:38:02,150 --> 00:38:04,464
+This is beta.
+
+669
+00:38:04,464 --> 00:38:05,940
+AUDIENCE: That's the wrong side.
+
+670
+00:38:05,940 --> 00:38:08,440
+PATRICK WINSTON: Oh,
+sorry, wrong side.
+
+671
+00:38:08,440 --> 00:38:11,320
+Better make this
+beta and this 1.
+
+672
+00:38:11,320 --> 00:38:13,964
+Any high school kid could do it.
+
+673
+00:38:13,964 --> 00:38:16,490
+OK, so what we've
+got then is that this
+
+674
+00:38:16,490 --> 00:38:22,310
+is equal to 1 minus
+beta times beta.
+
+675
+00:38:22,310 --> 00:38:23,590
+That's the derivative.
+
+676
+00:38:23,590 --> 00:38:25,950
+And that's weird
+because the derivative
+
+677
+00:38:25,950 --> 00:38:27,960
+of the output with
+respect to the input
+
+678
+00:38:27,960 --> 00:38:31,520
+is given exclusively
+in terms of the output.
+
+679
+00:38:31,520 --> 00:38:33,020
+It's strange.
+
+680
+00:38:33,020 --> 00:38:34,350
+It doesn't really matter.
+
+681
+00:38:34,350 --> 00:38:36,240
+But it's a curiosity.
+
+682
+00:38:36,240 --> 00:38:39,560
+And what we get out of this is
+that partial derivative there--
+
+683
+00:38:39,560 --> 00:38:47,680
+that's equal to well,
+the output is p2.
+
+684
+00:38:47,680 --> 00:38:48,680
+No, the output is z.
+
+685
+00:38:48,680 --> 00:38:52,340
+So it's z time 1 minus e.
+
+686
+00:38:52,340 --> 00:38:54,380
+So whenever we see
+the derivative of one
+
+687
+00:38:54,380 --> 00:38:57,300
+of these sigmoids with
+respect to its input,
+
+688
+00:38:57,300 --> 00:38:59,500
+we can just write the output
+times one minus alpha,
+
+689
+00:38:59,500 --> 00:39:00,230
+and we've got it.
+
+690
+00:39:00,230 --> 00:39:02,290
+So that's why it's
+mathematically convenient.
+
+691
+00:39:02,290 --> 00:39:04,081
+It's mathematically
+convenient because when
+
+692
+00:39:04,081 --> 00:39:08,640
+we do this differentiation, we
+get a very simple expression
+
+693
+00:39:08,640 --> 00:39:10,597
+in terms of the output.
+
+694
+00:39:10,597 --> 00:39:11,930
+We get a very simple expression.
+
+695
+00:39:11,930 --> 00:39:13,015
+That's all we really need.
+
+696
+00:39:16,050 --> 00:39:20,360
+So would you like to
+see a demonstration?
+
+697
+00:39:20,360 --> 00:39:22,800
+It's a demonstration of
+the world's smallest neural
+
+698
+00:39:22,800 --> 00:39:23,494
+net in action.
+
+699
+00:39:31,080 --> 00:39:32,430
+Where is neural nets?
+
+700
+00:39:32,430 --> 00:39:32,930
+Here we go.
+
+701
+00:39:37,707 --> 00:39:38,790
+So there's our neural net.
+
+702
+00:39:38,790 --> 00:39:40,248
+And what we're
+going to do is we're
+
+703
+00:39:40,248 --> 00:39:42,100
+going to train it to
+do absolutely nothing.
+
+704
+00:39:42,100 --> 00:39:44,308
+What we're going to do is
+train it to make the output
+
+705
+00:39:44,308 --> 00:39:47,460
+the same as the input.
+
+706
+00:39:47,460 --> 00:39:49,660
+Not what I'd call a fantastic
+leap of intelligence.
+
+707
+00:39:49,660 --> 00:39:50,785
+But let's see what happens.
+
+708
+00:39:58,930 --> 00:39:59,430
+Wow!
+
+709
+00:39:59,430 --> 00:40:00,263
+Nothing's happening.
+
+710
+00:40:07,050 --> 00:40:09,120
+Well, it finally
+got to the point
+
+711
+00:40:09,120 --> 00:40:12,530
+where the maximum error,
+not the performance,
+
+712
+00:40:12,530 --> 00:40:14,590
+but the maximum error
+went below a threshold
+
+713
+00:40:14,590 --> 00:40:16,600
+that I had previously
+determined.
+
+714
+00:40:16,600 --> 00:40:18,810
+So if you look at the
+input here and compare that
+
+715
+00:40:18,810 --> 00:40:21,200
+with the desired output
+on the far right,
+
+716
+00:40:21,200 --> 00:40:24,060
+you see it produces an output,
+which compared with the desired
+
+717
+00:40:24,060 --> 00:40:26,010
+output, is pretty close.
+
+718
+00:40:26,010 --> 00:40:29,070
+So we can test the
+other way like so.
+
+719
+00:40:29,070 --> 00:40:30,950
+And we can see that
+the desired output
+
+720
+00:40:30,950 --> 00:40:34,300
+is pretty close to the actual
+output in that case too.
+
+721
+00:40:34,300 --> 00:40:37,130
+And it took 694 iterations
+to get that done.
+
+722
+00:40:37,130 --> 00:40:37,952
+Let's try it again.
+
+723
+00:40:56,090 --> 00:40:59,190
+To 823-- of course, this is all
+a consequence of just starting
+
+724
+00:40:59,190 --> 00:41:01,265
+off with random weights.
+
+725
+00:41:01,265 --> 00:41:03,890
+By the way, if you started with
+all the weights being the same,
+
+726
+00:41:03,890 --> 00:41:04,780
+what would happen?
+
+727
+00:41:04,780 --> 00:41:07,495
+Nothing because it would
+always stay the same.
+
+728
+00:41:07,495 --> 00:41:09,120
+So you've got to put
+some randomization
+
+729
+00:41:09,120 --> 00:41:11,580
+in in the beginning.
+
+730
+00:41:11,580 --> 00:41:12,670
+So it took a long time.
+
+731
+00:41:12,670 --> 00:41:15,450
+Maybe the problem is our
+rate constant is too small.
+
+732
+00:41:15,450 --> 00:41:18,106
+So let's crank up the
+rate counts a little bit
+
+733
+00:41:18,106 --> 00:41:18,980
+and see what happens.
+
+734
+00:41:22,430 --> 00:41:23,730
+That was pretty fast.
+
+735
+00:41:23,730 --> 00:41:26,510
+Let's see if it was a
+consequence of random chance.
+
+736
+00:41:29,510 --> 00:41:30,920
+Run.
+
+737
+00:41:30,920 --> 00:41:38,110
+No, it's pretty fast there--
+57 iterations-- third try-- 67.
+
+738
+00:41:38,110 --> 00:41:42,020
+So it looks like at my initial
+rate constant was too small.
+
+739
+00:41:42,020 --> 00:41:45,240
+So if 0.5 was not
+as good as 5.0,
+
+740
+00:41:45,240 --> 00:41:47,698
+why don't we crank it up
+to 50 and see what happens.
+
+741
+00:41:51,830 --> 00:41:54,702
+Oh, in this case, 124--
+let's try it again.
+
+742
+00:41:58,470 --> 00:42:02,546
+Ah, in this case 117-- so
+it's actually gotten worse.
+
+743
+00:42:02,546 --> 00:42:03,920
+And not only has
+it gotten worse.
+
+744
+00:42:03,920 --> 00:42:09,270
+You'll see there's a little a
+bit of instability showing up
+
+745
+00:42:09,270 --> 00:42:12,510
+as it courses along its
+way toward a solution.
+
+746
+00:42:12,510 --> 00:42:15,200
+So what it looks like is that
+if you've got a rate constant
+
+747
+00:42:15,200 --> 00:42:17,040
+that's too small,
+it takes forever.
+
+748
+00:42:17,040 --> 00:42:19,020
+If you've get a rate
+constant that's too big,
+
+749
+00:42:19,020 --> 00:42:25,310
+it can of jump too far, as in
+my diagram which is somewhere
+
+750
+00:42:25,310 --> 00:42:29,207
+underneath the board, you can
+go all the way across the hill
+
+751
+00:42:29,207 --> 00:42:30,290
+and get to the other side.
+
+752
+00:42:30,290 --> 00:42:31,900
+So you have to be careful
+about the rate constant.
+
+753
+00:42:31,900 --> 00:42:33,399
+So what you really
+want to do is you
+
+754
+00:42:33,399 --> 00:42:36,010
+want your rate constant
+to vary with what
+
+755
+00:42:36,010 --> 00:42:43,920
+is happening as you progress
+toward an optimal performance.
+
+756
+00:42:43,920 --> 00:42:46,420
+So if your performance is going
+down when you make the jump,
+
+757
+00:42:46,420 --> 00:42:48,572
+you know you've got a rate
+constant that's too big.
+
+758
+00:42:48,572 --> 00:42:50,780
+If your performance is going
+up when you make a jump,
+
+759
+00:42:50,780 --> 00:42:52,404
+maybe you want to
+increase-- bump it up
+
+760
+00:42:52,404 --> 00:42:57,460
+a little bit until it
+doesn't look so good.
+
+761
+00:42:57,460 --> 00:42:58,960
+So is that all there is to it?
+
+762
+00:42:58,960 --> 00:43:03,010
+Well, not quite, because
+this is the world's simplest
+
+763
+00:43:03,010 --> 00:43:04,002
+neural net.
+
+764
+00:43:04,002 --> 00:43:05,710
+And maybe we ought to
+look at the world's
+
+765
+00:43:05,710 --> 00:43:08,450
+second simplest neural net.
+
+766
+00:43:08,450 --> 00:43:13,982
+Now, let's call this--
+well, let's call this x.
+
+767
+00:43:13,982 --> 00:43:18,410
+What we're going to do is we're
+going to have a second input.
+
+768
+00:43:18,410 --> 00:43:19,850
+And I don't know.
+
+769
+00:43:19,850 --> 00:43:21,096
+Maybe this is screwy.
+
+770
+00:43:21,096 --> 00:43:22,720
+I'm just going to
+use color coding here
+
+771
+00:43:22,720 --> 00:43:26,734
+to differentiate between
+the two inputs and the stuff
+
+772
+00:43:26,734 --> 00:43:27,400
+they go through.
+
+773
+00:43:34,010 --> 00:43:39,666
+Maybe I'll call this z2 and
+this z1 and this x1 and x2.
+
+774
+00:43:42,300 --> 00:43:45,140
+Now, if I do that-- if I've
+got two inputs and two outputs,
+
+775
+00:43:45,140 --> 00:43:47,760
+then my performance
+function is going
+
+776
+00:43:47,760 --> 00:43:51,800
+to have two numbers in it-- the
+two desired values and the two
+
+777
+00:43:51,800 --> 00:43:53,560
+actual values.
+
+778
+00:43:53,560 --> 00:43:55,350
+And I'm going to
+have two inputs.
+
+779
+00:43:55,350 --> 00:43:57,680
+But it's the same stuff.
+
+780
+00:43:57,680 --> 00:44:01,031
+I just repeat what I did in
+white, only I make it orange.
+
+781
+00:44:07,440 --> 00:44:12,654
+Oh, but what happens if--
+what happens if I do this?
+
+782
+00:44:28,850 --> 00:44:31,750
+Say put little cross
+connections in there.
+
+783
+00:44:31,750 --> 00:44:35,030
+So these two streams
+are going to interact.
+
+784
+00:44:35,030 --> 00:44:37,340
+And then there might
+be some-- this y can
+
+785
+00:44:37,340 --> 00:44:43,290
+go into another multiplier
+here and go into a summer here.
+
+786
+00:44:43,290 --> 00:44:46,220
+And likewise, this
+y can go up here
+
+787
+00:44:46,220 --> 00:44:50,920
+and into a multiplier like so.
+
+788
+00:44:50,920 --> 00:45:01,330
+And there are weights all
+over the place like so.
+
+789
+00:45:01,330 --> 00:45:05,070
+This guy goes up in here.
+
+790
+00:45:05,070 --> 00:45:06,430
+And now what happens?
+
+791
+00:45:06,430 --> 00:45:08,800
+Now, we've got a
+disaster on our hands,
+
+792
+00:45:08,800 --> 00:45:11,900
+because there are all kinds
+of paths through this network.
+
+793
+00:45:11,900 --> 00:45:16,260
+And you can imagine that if this
+was not just two neurons deep,
+
+794
+00:45:16,260 --> 00:45:19,170
+but three neurons
+deep, what I would find
+
+795
+00:45:19,170 --> 00:45:22,300
+is expressions that
+look like that.
+
+796
+00:45:22,300 --> 00:45:25,890
+But you could go this way,
+and then down through, and out
+
+797
+00:45:25,890 --> 00:45:27,470
+here.
+
+798
+00:45:27,470 --> 00:45:33,150
+Or you could go this way and
+then back up through here.
+
+799
+00:45:33,150 --> 00:45:37,470
+So it looks like there is an
+exponentially growing number
+
+800
+00:45:37,470 --> 00:45:39,910
+of paths through that network.
+
+801
+00:45:39,910 --> 00:45:41,820
+And so we're back to
+an exponential blowup.
+
+802
+00:45:41,820 --> 00:45:42,570
+And it won't work.
+
+803
+00:45:50,890 --> 00:45:53,396
+Yeah, it won't
+work except that we
+
+804
+00:45:53,396 --> 00:45:55,270
+need to let the math
+sing to us a little bit.
+
+805
+00:45:55,270 --> 00:45:57,670
+And we need to look
+at the picture.
+
+806
+00:45:57,670 --> 00:46:01,190
+And the reason I turned
+this guy around was actually
+
+807
+00:46:01,190 --> 00:46:06,580
+because from a point of view
+of letting the math sing to us,
+
+808
+00:46:06,580 --> 00:46:11,500
+this piece here is the
+same as this piece here.
+
+809
+00:46:11,500 --> 00:46:13,570
+So part of what we
+needed to do to calculate
+
+810
+00:46:13,570 --> 00:46:16,064
+the partial derivative
+with respect to w1
+
+811
+00:46:16,064 --> 00:46:17,730
+has already been done
+when we calculated
+
+812
+00:46:17,730 --> 00:46:22,550
+the partial derivative
+with respect to w2.
+
+813
+00:46:22,550 --> 00:46:26,970
+And not only that,
+if we calculated
+
+814
+00:46:26,970 --> 00:46:29,200
+the partial wit respect
+to these green w's
+
+815
+00:46:29,200 --> 00:46:32,460
+at both levels, what
+we would discover
+
+816
+00:46:32,460 --> 00:46:37,840
+is that sort of repetition
+occurs over and over again.
+
+817
+00:46:37,840 --> 00:46:41,330
+And now, I'm going to try
+to give you an intuitive
+
+818
+00:46:41,330 --> 00:46:44,070
+idea of what's going on here
+rather than just write down
+
+819
+00:46:44,070 --> 00:46:46,720
+the math and salute it.
+
+820
+00:46:46,720 --> 00:46:49,980
+And here's a way to think
+about it from an intuitive
+
+821
+00:46:49,980 --> 00:46:50,748
+point of view.
+
+822
+00:46:53,740 --> 00:46:56,960
+Whatever happens to this
+performance function
+
+823
+00:46:56,960 --> 00:47:04,440
+that's back of these p's
+here, the stuff over there can
+
+824
+00:47:04,440 --> 00:47:07,150
+influence p only
+by going through,
+
+825
+00:47:07,150 --> 00:47:09,830
+and influence performance
+only going through this column
+
+826
+00:47:09,830 --> 00:47:12,460
+of p's.
+
+827
+00:47:12,460 --> 00:47:13,960
+And there's a fixed
+number of those.
+
+828
+00:47:13,960 --> 00:47:16,335
+So it depends on the width,
+not the depth of the network.
+
+829
+00:47:19,350 --> 00:47:26,030
+So the influence of that
+stuff back there on p
+
+830
+00:47:26,030 --> 00:47:28,620
+is going to end up going
+through these guys.
+
+831
+00:47:28,620 --> 00:47:34,840
+And it's going to end
+up being so that we're
+
+832
+00:47:34,840 --> 00:47:38,050
+going to discover that a lot of
+what we need to compute in one
+
+833
+00:47:38,050 --> 00:47:43,150
+column has already been computed
+in the column on the right.
+
+834
+00:47:43,150 --> 00:47:47,430
+So it isn't going to
+explode exponentially,
+
+835
+00:47:47,430 --> 00:47:50,643
+because the influence-- let
+me say it one more time.
+
+836
+00:47:54,120 --> 00:47:58,440
+The influences of changes of
+changes in p on the performance
+
+837
+00:47:58,440 --> 00:48:01,370
+is all we care about when
+we come back to this part
+
+838
+00:48:01,370 --> 00:48:05,450
+of the network, because
+this stuff cannot influence
+
+839
+00:48:05,450 --> 00:48:09,859
+the performance except by going
+through this column of p's.
+
+840
+00:48:09,859 --> 00:48:11,650
+So it's not going to
+blow up exponentially.
+
+841
+00:48:11,650 --> 00:48:14,560
+We're going to be able to
+reuse a lot of the computation.
+
+842
+00:48:14,560 --> 00:48:17,040
+So it's the reuse principle.
+
+843
+00:48:17,040 --> 00:48:21,350
+Have we ever seen the reuse
+principle at work before.
+
+844
+00:48:21,350 --> 00:48:22,109
+Not exactly.
+
+845
+00:48:22,109 --> 00:48:23,650
+But you remember
+that little business
+
+846
+00:48:23,650 --> 00:48:25,770
+about the extended list?
+
+847
+00:48:25,770 --> 00:48:31,184
+We know that we've
+seen-- we know
+
+848
+00:48:31,184 --> 00:48:32,350
+we've seen something before.
+
+849
+00:48:32,350 --> 00:48:34,450
+So we can stop computing.
+
+850
+00:48:34,450 --> 00:48:35,810
+It's like that.
+
+851
+00:48:35,810 --> 00:48:37,870
+We're going to be able
+to reuse the computation.
+
+852
+00:48:37,870 --> 00:48:40,721
+We've already done it to
+prevent an exponential blowup.
+
+853
+00:48:40,721 --> 00:48:42,720
+By the way, for those of
+you who know about fast
+
+854
+00:48:42,720 --> 00:48:45,880
+Fourier transform-- same
+kind of idea-- reuse
+
+855
+00:48:45,880 --> 00:48:48,570
+of partial results.
+
+856
+00:48:48,570 --> 00:48:52,590
+So in the end, what can
+we say about this stuff?
+
+857
+00:48:52,590 --> 00:49:02,725
+In the end, what we can say
+is that it's linear in depth.
+
+858
+00:49:05,710 --> 00:49:08,680
+That is to say if we
+increase the number of layers
+
+859
+00:49:08,680 --> 00:49:10,720
+to so-called depth,
+then we're going
+
+860
+00:49:10,720 --> 00:49:12,430
+to increase the
+amount of computation
+
+861
+00:49:12,430 --> 00:49:15,990
+necessary in a linear way,
+because the computation we
+
+862
+00:49:15,990 --> 00:49:20,420
+need in any column
+is going to be fixed.
+
+863
+00:49:20,420 --> 00:49:26,900
+What about how it goes
+with respect to the width?
+
+864
+00:49:31,070 --> 00:49:33,500
+Well, with respect to
+the width, any neuron
+
+865
+00:49:33,500 --> 00:49:36,902
+here can be connected to
+any neuron in the next row.
+
+866
+00:49:36,902 --> 00:49:38,860
+So the amount of work
+we're going to have to do
+
+867
+00:49:38,860 --> 00:49:41,550
+will be proportional to
+the number of connections.
+
+868
+00:49:41,550 --> 00:49:47,210
+So with respect to width,
+it's going to be w-squared.
+
+869
+00:49:47,210 --> 00:49:52,260
+But the fact is that in the end,
+this stuff is readily computed.
+
+870
+00:49:52,260 --> 00:49:58,120
+And this, phenomenally enough,
+was overlooked for 25 years.
+
+871
+00:49:58,120 --> 00:50:00,740
+So what is it in the end?
+
+872
+00:50:00,740 --> 00:50:02,490
+In the end, it's an
+extremely simple idea.
+
+873
+00:50:02,490 --> 00:50:03,670
+All great ideas are simple.
+
+874
+00:50:03,670 --> 00:50:05,150
+How come there
+aren't more of them?
+
+875
+00:50:05,150 --> 00:50:08,272
+Well, because frequently,
+that simplicity
+
+876
+00:50:08,272 --> 00:50:09,730
+involves finding
+a couple of tricks
+
+877
+00:50:09,730 --> 00:50:12,150
+and making a couple
+of observations.
+
+878
+00:50:12,150 --> 00:50:14,950
+So usually, we humans
+are hardly ever
+
+879
+00:50:14,950 --> 00:50:16,944
+go beyond one trick
+or one observation.
+
+880
+00:50:16,944 --> 00:50:18,360
+But if you cascade
+a few together,
+
+881
+00:50:18,360 --> 00:50:20,270
+sometimes something
+miraculous falls out
+
+882
+00:50:20,270 --> 00:50:23,250
+that looks in retrospect
+extremely simple.
+
+883
+00:50:23,250 --> 00:50:25,856
+So that's why we got the
+reuse principle at work--
+
+884
+00:50:25,856 --> 00:50:27,510
+and our reuse computation.
+
+885
+00:50:27,510 --> 00:50:29,580
+In this case, the
+miracle was a consequence
+
+886
+00:50:29,580 --> 00:50:31,590
+of two tricks plus
+an observation.
+
+887
+00:50:31,590 --> 00:50:33,960
+And the overall idea
+is all great ideas
+
+888
+00:50:33,960 --> 00:50:37,500
+are simple and easy to
+overlook for a quarter century.
