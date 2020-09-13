@@ -8,3 +8,16 @@ Working through course materials for [MIT 6.034](https://ocw.mit.edu/courses/ele
     * [Online](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-034-artificial-intelligence-fall-2010/index.htm)
     * [In this repo](6-034-fall-2010)
 * [Text book](https://courses.csail.mit.edu/6.034f/ai3/rest.pdf) (hosted by MIT.edu so it feels legit)
+
+The course materials were written with python < 3.  There's prolly a better conversion tool, going to list out some replacements for find and replace conversions*:
+
+* Find: `xmlrpclib` Replace: `xmlrpc`
+* Find: `print (.*)` Replace: `print($1)`
+* Find: `print$` Replace: `print()`
+* Find: `raw_input` Replace: `input`
+* Find: `xrange` Replace: `range`
+* Find: `raise (\w+), (.+)$` Replace: `raise $1($2)`
+* Find: `apply\((\w+), (\w+)\)` Replace: `$1(*$2)`
+
+*Currently written for JetBrains find and replace, might change to a python script later. 
+I prefer this over a because I'm curious to find out the changes needed
