@@ -4,8 +4,8 @@ import difflib
 TRANSLATIONS = {
     "xmlrpclib": "xmlrpc",
     r"print (.*)": r"print(\1)",
-    "print$`": "print()",
-    "raw_input`": "input",
+    "print$": "print()",
+    "raw_input": "input",
     "xrange": "range",
     r"raise (\w+), (.+)$": r"raise \1(\2)",
     r"apply\((\w+), (\w+)\)": r"\1(*\2)",
