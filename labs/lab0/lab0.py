@@ -29,32 +29,69 @@ ANSWER_1 = "2"
 # Section 2: Programming warmup _____________________________________________
 
 # Problem 2.1: Warm-Up Stretch
+import math
 
 
 def cube(x):
-    raise NotImplementedError
+    return x ** 3
 
 
+# Cheat way
+def factorial_import(x):
+    return math.factorial(x)
+
+
+# Probably a more intended way
 def factorial(x):
-    raise NotImplementedError
+    if x < 0:
+        raise ValueError("x must be non-negative")
+
+    out = 1
+    for i in range(1, x + 1):
+        out *= i
+
+    return out
 
 
 def count_pattern(pattern, lst):
-    raise NotImplementedError
+    n_matches = 0
+    for i in range(len(lst)):
+        check_lst = lst[i : i + len(pattern)]
+        if len(pattern) != len(check_lst):
+            break
+
+        match = True
+        for p, l in zip(pattern, check_lst):
+            if p != l:
+                match = False
+                break
+
+        if match:
+            n_matches += 1
+
+    return n_matches
 
 
 # Problem 2.2: Expression depth
 
 
-def depth(expr):
-    raise NotImplementedError
+def depth(expr, cur_depth=0):
+    if isinstance(expr, (list, tuple)):
+        cur_depth += 1
+        return max(depth(e, cur_depth) for e in expr)
+    else:
+        return cur_depth
 
 
 # Problem 2.3: Tree indexing
 
 
 def tree_ref(tree, index):
-    raise NotImplementedError
+    tree_subset = tree.copy()
+    for i in index:
+        tree_subset = tree_subset[i]
+
+    return tree_subset
 
 
 # Section 3: Symbolic algebra
@@ -64,19 +101,3 @@ def tree_ref(tree, index):
 
 from algebra import Sum, Product, simplify_if_possible
 from algebra_utils import distribution, encode_sumprod, decode_sumprod
-
-# Section 4: Survey _________________________________________________________
-
-# Please answer these questions inside the double quotes.
-
-# When did you take 6.01?
-WHEN_DID_YOU_TAKE_601 = ""
-
-# How many hours did you spend per 6.01 lab?
-HOURS_PER_601_LAB = ""
-
-# How well did you learn 6.01?
-HOW_WELL_I_LEARNED_601 = ""
-
-# How many hours did this lab take?
-HOURS = ""
