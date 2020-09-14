@@ -6,7 +6,7 @@ TRANSLATIONS = {
     r"print (.*)": r"print(\1)",
     "print$`": "print()",
     "raw_input`": "input",
-    "xrange`": "range",
+    "xrange": "range",
     r"raise (\w+), (.+)$": r"raise \1(\2)",
     r"apply\((\w+), (\w+)\)": r"\1(*\2)",
 }
