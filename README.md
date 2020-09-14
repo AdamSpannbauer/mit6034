@@ -12,9 +12,8 @@ Working through course materials for [MIT 6.034](https://ocw.mit.edu/courses/ele
 * [Text book](https://courses.csail.mit.edu/6.034f/ai3/rest.pdf) (hosted by MIT.edu so it feels legit)
 
 ### Working exercises
-* Create a folder of each lab (I'm using convention of storing lab folders in `labs` dir)
+* Create a folder of each lab (I'm using convention of storing lab folders in `labs` dir; if you fork this, clear the contents of `labs` so you can work labs from scratch rather than having my code in there)
     * Labs can be found as zip files in [`6-034-fall-2010/contents/assignments`](6-034-fall-2010/contents/assignments)
-* Make a copy of the original lab file (i.e. copy `lab0.py` to `lab0_og.py`) for posterity
 * Fill out solutions as instructed in the associated pdf in [`6-034-fall-2010/contents/assignments`](6-034-fall-2010/contents/assignments)
 * Run lab tests in unzipped lab dir
     * A modified tester was made in root of repo (`tester.py`)
