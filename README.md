@@ -23,10 +23,7 @@ Working through course materials for [MIT 6.034](https://ocw.mit.edu/courses/ele
             * `~/mit6034 $ tester.py -l labs/lab0`
 
 ### Python Version 2 vs 3
-The course materials were written with python < 3.  
-`cvt2py3.py` is a script to convert files to python 3.  
-Almost definitely a better tool to do this change. 
-I did this custom script cause I was curious to find out the changes needed.
+The course materials were written with python < 3. `cvt2py3.py` is a script to convert files to python 3. Almost definitely a better tool to do this change. I did this custom script cause I was curious to find out the changes needed.
 * `cvt2py3.py` usage: 
     * `~/mit6034 $ cvt2py3.py -i python2_file.py`
     * `~/mit6034 $ cvt2py3.py -i labs/lab0/tests.py`
