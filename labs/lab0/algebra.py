@@ -35,7 +35,7 @@
 # Sum([1, 2, 3])
 
 
-### Expression classes _____________________________________________________
+# Expression classes _____________________________________________________
 
 # Expressions will be represented as "Sum()" and "Product()" objects.
 # These objects can be treated just like lists (they inherit from the
@@ -51,8 +51,10 @@
 
 
 class Expression:
-    "This abstract class does nothing on its own."
-    pass
+    """This abstract class does nothing on its own."""
+
+    def simplify(self):
+        raise NotImplementedError
 
 
 class Sum(list, Expression):
