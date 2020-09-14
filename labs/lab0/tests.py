@@ -310,7 +310,7 @@ def evaluator(lst, context={}):
                 retVal += evaluator(elt, context)
             else:
                 retVal += elt
-        #        print retVal
+        #        print(retVal)
         return retVal
 
     elif isinstance(lst, Product):
@@ -324,7 +324,7 @@ def evaluator(lst, context={}):
             else:
                 retVal *= elt
 
-        #        print retVal
+        #        print(retVal)
         return retVal
 
 
