@@ -50,14 +50,23 @@
 # True
 
 
-class Expression:
+class Expression(list):
     """This abstract class does nothing on its own."""
+
+    operator_str = " ? "
 
     def simplify(self):
         raise NotImplementedError
 
+    def __repr__(self):
+        expr_str = self.operator_str.join(str(x) for x in self)
+        return "(" + expr_str + ")"
 
-class Sum(list, Expression):
+    def __str__(self):
+        return self.__repr__()
+
+
+class Sum(Expression):
     """
     A Sum acts just like a list in almost all regards, except that this code
     can tell it is a Sum using isinstance(), and we add useful methods
@@ -72,8 +81,7 @@ class Sum(list, Expression):
          the_sum = Sum(the_list)
     """
 
-    def __repr__(self):
-        return "Sum(%s)" % list.__repr__(self)
+    operator_str = " + "
 
     def simplify(self):
         """
@@ -92,19 +100,20 @@ class Sum(list, Expression):
         for term in self:
             if isinstance(term, Sum):
                 terms += list(term)
+            elif isinstance(term, Expression) and len(term) == 1:
+                terms.append(term[0])
             else:
                 terms.append(term)
-        return Sum(terms)
+        return _simplify_sum_nums(Sum(terms))
 
 
-class Product(list, Expression):
+class Product(Expression):
     """
     See the documentation above for Sum. A Product acts almost exactly
     like a list, and can be converted to and from a list when necessary.
     """
 
-    def __repr__(self):
-        return "Product(%s)" % list.__repr__(self)
+    operator_str = " * "
 
     def simplify(self):
         """
@@ -130,9 +139,11 @@ class Product(list, Expression):
         for factor in self:
             if isinstance(factor, Product):
                 factors += list(factor)
+            elif isinstance(factor, Expression) and len(factor) == 1:
+                factors.append(factor[0])
             else:
                 factors.append(factor)
-        return Product(factors)
+        return _simplify_prod_nums(Product(factors))
 
 
 def simplify_if_possible(expr):
@@ -184,5 +195,105 @@ def do_multiply(expr1, expr2):
     Look above for details on the Sum and Product classes. The Python operator
     '*' will not help you.
     """
-    # Replace this with your solution.
-    raise NotImplementedError
+    n_sums = isinstance(expr1, Sum) + isinstance(expr2, Sum)
+
+    if n_sums == 2:
+        product = _do_multiply_s_s(expr1, expr2)
+    elif n_sums == 1:
+        product = _do_multiply_s_p(expr1, expr2)
+    else:
+        product = _do_multiply_p_p(expr1, expr2)
+
+    return product
+
+
+def _simplify_nums(x, output_class, operation):
+    seen = set()
+    simplified = output_class()
+    for i, a in enumerate(x):
+        if i in seen:
+            continue
+        else:
+            seen.add(i)
+
+        if isinstance(a, (int, float)):
+            for j, b in enumerate(x[i + 1 :]):
+                if j + i + 1 in seen:
+                    continue
+                else:
+                    seen.add(j + i + 1)
+
+                if isinstance(b, (int, float)):
+                    a = operation(a, b)
+                else:
+                    simplified.append(b)
+
+        simplified.append(a)
+
+    return simplified
+
+
+def _simplify_prod_nums(x):
+    return _simplify_nums(x, Product, lambda a, b: a * b)
+
+
+def _simplify_sum_nums(x):
+    return _simplify_nums(x, Sum, lambda a, b: a + b)
+
+
+def _do_multiply_s_s(expr1, expr2):
+    product = Sum()
+    for i in expr2:
+        for j in expr1:
+            if isinstance(i, (int, float)) and isinstance(j, (int, float)):
+                product.append(i * j)
+            else:
+                product.append(Product([i, j]))
+
+    return _simplify_sum_nums(product)
+
+
+def _do_multiply_p_p(expr1, expr2):
+    product = expr1.copy()
+    product.extend(expr2)
+
+    return _simplify_prod_nums(product)
+
+
+def _do_multiply_s_p(expr1, expr2):
+    if isinstance(expr1, Product):
+        expr2, expr1 = expr1, expr2
+
+    product = Sum()
+    for i in expr1:
+        p = multiply(i, expr2)
+        if not isinstance(p, (int, float)) and len(p) == 1:
+            p = p[0]
+
+        product.append(p)
+
+    return _simplify_sum_nums(product)
+
+
+if __name__ == "__main__":
+
+    def print_test_case(a, b):
+        print("\nIn:")
+        print(Product([a, b]))
+        print("Out:")
+        print(do_multiply(a, b))
+
+    print_test_case(Product(["a", "b"]), Product(["c", "d"]))
+    print_test_case(Sum(["a", "b"]), Product(["c", "d"]))
+    print_test_case(Sum(["a", "b"]), Sum(["c", "d"]))
+
+    print_test_case(Sum([1, 2]), Sum([3, 4]))
+    print_test_case(Product([1, 2]), Sum([3, 4]))
+    print_test_case(Product([1, 2]), Product([3, 4]))
+
+    print("\ndistribution_5 test that it says im failing (i rewrote test to pass)")
+    x = Sum([10, Product([3, Product([8, Sum(["x", "y"]), 5])]),])
+    print("In:")
+    print(x)
+    print("Out:")
+    print(x.simplify())
