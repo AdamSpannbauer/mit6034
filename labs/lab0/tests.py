@@ -303,7 +303,7 @@ def evaluator(lst, context={}):
     if isinstance(lst, Sum):
         retVal = 0
         for elt in lst:
-            if elt in context.keys():
+            if isinstance(elt, str) and elt in context.keys():
                 elt = context[elt]
 
             if isinstance(elt, Expression):
@@ -316,7 +316,7 @@ def evaluator(lst, context={}):
     elif isinstance(lst, Product):
         retVal = 1
         for elt in lst:
-            if elt in context.keys():
+            if isinstance(elt, str) and elt in context.keys():
                 elt = context[elt]
 
             if isinstance(elt, Expression):
