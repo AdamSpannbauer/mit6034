@@ -1,21 +1,17 @@
-from production import IF, AND, OR, NOT, THEN, run_conditions
-import production as lab
-from tester import make_test, get_tests, type_encode, type_decode
-from zookeeper import ZOOKEEPER_RULES
 import random
+from production import IF, AND, OR, THEN
+from tester import make_test, type_encode
+from zookeeper import ZOOKEEPER_RULES
 
 random.seed()
+lab_number = 1
 
-try:
-    set()
-except NameError:
-    from sets import Set as set, ImmutableSet as frozenset
-
-### TEST 1 ###
+# TEST 1
 
 test_short_answer_1_getargs = "ANSWER_1"
 
 
+# noinspection PyUnusedLocal
 def test_short_answer_1_testanswer(val, original_val=None):
     return str(val) == "2"
 
@@ -24,7 +20,7 @@ def test_short_answer_1_testanswer(val, original_val=None):
 # questions asked to see if the rule should fire.
 
 make_test(
-    type="VALUE",
+    test_type="VALUE",
     getargs=test_short_answer_1_getargs,
     testanswer=test_short_answer_1_testanswer,
     expected_val="2",
@@ -32,11 +28,12 @@ make_test(
 )
 
 
-### TEST 2 ###
+# TEST 2
 
 test_short_answer_2_getargs = "ANSWER_2"
 
 
+# noinspection PyUnusedLocal
 def test_short_answer_2_testanswer(val, original_val=None):
     return str(val) == "no"
 
@@ -47,7 +44,7 @@ def test_short_answer_2_testanswer(val, original_val=None):
 # not match, in this case.
 
 make_test(
-    type="VALUE",
+    test_type="VALUE",
     getargs=test_short_answer_2_getargs,
     testanswer=test_short_answer_2_testanswer,
     expected_val="no",
@@ -55,11 +52,12 @@ make_test(
 )
 
 
-### TEST 3 ###
+# TEST 3
 
 test_short_answer_3_getargs = "ANSWER_3"
 
 
+# noinspection PyUnusedLocal
 def test_short_answer_3_testanswer(val, original_val=None):
     return str(val) == "2"
 
@@ -82,7 +80,7 @@ def test_short_answer_3_testanswer(val, original_val=None):
 # error in knowledge discovery or entry, not in programming.
 
 make_test(
-    type="VALUE",
+    test_type="VALUE",
     getargs=test_short_answer_3_getargs,
     testanswer=test_short_answer_3_testanswer,
     expected_val="2",
@@ -90,11 +88,12 @@ make_test(
 )
 
 
-### TEST 4 ###
+# TEST 4
 
 test_short_answer_4_getargs = "ANSWER_4"
 
 
+# noinspection PyUnusedLocal
 def test_short_answer_4_testanswer(val, original_val=None):
     return str(val) == "1"
 
@@ -104,7 +103,7 @@ def test_short_answer_4_testanswer(val, original_val=None):
 # The consequent changes the data, so the rule fires.
 
 make_test(
-    type="VALUE",
+    test_type="VALUE",
     getargs=test_short_answer_4_getargs,
     testanswer=test_short_answer_4_testanswer,
     expected_val="1",
@@ -112,11 +111,12 @@ make_test(
 )
 
 
-### TEST 5 ###
+# TEST 5
 
 test_short_answer_5_getargs = "ANSWER_5"
 
 
+# noinspection PyUnusedLocal
 def test_short_answer_5_testanswer(val, original_val=None):
     return str(val) == "0"
 
@@ -126,7 +126,7 @@ def test_short_answer_5_testanswer(val, original_val=None):
 # rule fires.
 
 make_test(
-    type="VALUE",
+    test_type="VALUE",
     getargs=test_short_answer_5_getargs,
     testanswer=test_short_answer_5_testanswer,
     expected_val="0",
@@ -134,20 +134,21 @@ make_test(
 )
 
 
-### TEST 6 ###
+# TEST 6
 
 transitive_rule_1_getargs = "TEST_RESULTS_TRANS1"
 
 
+# noinspection PyUnusedLocal
 def transitive_rule_1_testanswer(val, original_val=None):
-    return set(val) == set(["a beats b", "b beats c", "a beats c"])
+    return set(val) == {"a beats b", "b beats c", "a beats c"}
 
 
 # This test checks to make sure that your transitive rule
 # produces the correct set of statements given the a/b/c data.
 
 make_test(
-    type="VALUE",
+    test_type="VALUE",
     getargs=transitive_rule_1_getargs,
     testanswer=transitive_rule_1_testanswer,
     expected_val="[ 'a beats b', 'b beats c', 'a beats c' ]",
@@ -155,40 +156,44 @@ make_test(
 )
 
 
-### TEST 7 ###
+# TEST 7
 
 transitive_rule_2_getargs = "TEST_RESULTS_TRANS2"
 
 
+# noinspection PyUnusedLocal
 def transitive_rule_2_testanswer(val, original_val=None):
-    return set(val) == set(
-        [
-            "rock beats rock",
-            "rock beats scissors",
-            "rock beats paper",
-            "scissors beats rock",
-            "scissors beats scissors",
-            "scissors beats paper",
-            "paper beats rock",
-            "paper beats scissors",
-            "paper beats paper",
-        ]
-    )
+    return set(val) == {
+        "rock beats rock",
+        "rock beats scissors",
+        "rock beats paper",
+        "scissors beats rock",
+        "scissors beats scissors",
+        "scissors beats paper",
+        "paper beats rock",
+        "paper beats scissors",
+        "paper beats paper",
+    }
 
 
 # This test checks to make sure that your transitive rule produces
 # the correct set of statements given the rock-paper-scissors data.
 
 make_test(
-    type="VALUE",
+    test_type="VALUE",
     getargs=transitive_rule_2_getargs,
     testanswer=transitive_rule_2_testanswer,
-    expected_val="[ 'rock beats rock', 'rock beats scissors', 'rock beats paper', 'scissors beats rock', 'scissors beats scissors', 'scissors beats paper', 'paper beats rock', 'paper beats scissors', 'paper beats paper' ]",
+    expected_val=(
+        "[ 'rock beats rock', 'rock beats scissors',"
+        " 'rock beats paper', 'scissors beats rock',"
+        " 'scissors beats scissors', 'scissors beats paper',"
+        " 'paper beats rock', 'paper beats scissors', 'paper beats paper' ]"
+    ),
     name=transitive_rule_2_getargs,
 )
 
 
-### TEST 8 ###
+# TEST 8
 
 family_rules_1_getargs = "TEST_RESULTS_1"
 expected_family_relations = [
@@ -201,6 +206,7 @@ expected_family_relations = [
 ]
 
 
+# noinspection PyUnusedLocal
 def family_rules_1_testanswer(val, original_val=None):
     return set(
         [
@@ -218,7 +224,7 @@ def family_rules_1_testanswer(val, original_val=None):
 # so you can include extra statements if it helps you.
 
 make_test(
-    type="VALUE",
+    test_type="VALUE",
     getargs=family_rules_1_getargs,
     testanswer=family_rules_1_testanswer,
     expected_val="added family relations should include: "
@@ -227,35 +233,33 @@ make_test(
 )
 
 
-### TEST 9 ###
-
+# TEST 9
 family_rules_2_getargs = "TEST_RESULTS_2"
 
 
+# noinspection PyUnusedLocal
 def family_rules_2_testanswer(val, original_val=None):
-    return set([x for x in val if x.split()[0] == "cousin"]) == set(
-        [
-            "cousin c1 c3",
-            "cousin c1 c4",
-            "cousin c2 c3",
-            "cousin c2 c4",
-            "cousin c3 c1",
-            "cousin c3 c2",
-            "cousin c4 c1",
-            "cousin c4 c2",
-            "cousin d1 d2",
-            "cousin d2 d1",
-            "cousin d3 d4",
-            "cousin d4 d3",
-        ]
-    )
+    return set([x for x in val if x.split()[0] == "cousin"]) == {
+        "cousin c1 c3",
+        "cousin c1 c4",
+        "cousin c2 c3",
+        "cousin c2 c4",
+        "cousin c3 c1",
+        "cousin c3 c2",
+        "cousin c4 c1",
+        "cousin c4 c2",
+        "cousin d1 d2",
+        "cousin d2 d1",
+        "cousin d3 d4",
+        "cousin d4 d3",
+    }
 
 
 # This test checks to make sure that your family rules produce
 # the correct set of statements given the a/b/c/d data.
 
 make_test(
-    type="VALUE",
+    test_type="VALUE",
     getargs=family_rules_2_getargs,
     testanswer=family_rules_2_testanswer,
     expected_val="Results including "
@@ -279,7 +283,7 @@ make_test(
 )
 
 
-### TEST 10 ###
+# TEST 10
 
 
 def tree_map(lst, fn):
@@ -293,6 +297,7 @@ def backchain_to_goal_tree_1_getargs():
     return [(), "stuff"]
 
 
+# noinspection PyUnusedLocal
 def backchain_to_goal_tree_1_testanswer(val, original_val=None):
     return val == "stuff" or val == ["stuff"]
 
@@ -302,7 +307,7 @@ def backchain_to_goal_tree_1_testanswer(val, original_val=None):
 # rules.  The goal tree should contain only the hypothesis.
 
 make_test(
-    type="FUNCTION_ENCODED_ARGS",
+    test_type="FUNCTION_ENCODED_ARGS",
     getargs=backchain_to_goal_tree_1_getargs,
     testanswer=backchain_to_goal_tree_1_testanswer,
     expected_val="[ 'stuff' ]",
@@ -310,7 +315,7 @@ make_test(
 )
 
 
-### TEST 11 ###
+# TEST 11
 
 
 def backchain_to_goal_tree_2_getargs():
@@ -330,6 +335,7 @@ result_bc_2 = OR(
 )
 
 
+# noinspection PyUnusedLocal
 def backchain_to_goal_tree_2_testanswer(val, original_val=None):
     return tree_map(type_encode(val), frozenset) == tree_map(
         type_encode(result_bc_2), frozenset
@@ -341,14 +347,14 @@ def backchain_to_goal_tree_2_testanswer(val, original_val=None):
 # albatross' and using the ZOOKEEPER_RULES.
 
 make_test(
-    type="FUNCTION_ENCODED_ARGS",
+    test_type="FUNCTION_ENCODED_ARGS",
     getargs=backchain_to_goal_tree_2_getargs,
     testanswer=backchain_to_goal_tree_2_testanswer,
     expected_val=str(result_bc_2),
 )
 
 
-### TEST 12 ###
+# TEST 12
 
 
 def backchain_to_goal_tree_3_getargs():
@@ -377,6 +383,7 @@ result_bc_3 = OR(
 )
 
 
+# noinspection PyUnusedLocal
 def backchain_to_goal_tree_3_testanswer(val, original_val=None):
     return tree_map(type_encode(val), frozenset) == tree_map(
         type_encode(result_bc_3), frozenset
@@ -388,14 +395,14 @@ def backchain_to_goal_tree_3_testanswer(val, original_val=None):
 # and using the ZOOKEEPER_RULES.
 
 make_test(
-    type="FUNCTION_ENCODED_ARGS",
+    test_type="FUNCTION_ENCODED_ARGS",
     getargs=backchain_to_goal_tree_3_getargs,
     testanswer=backchain_to_goal_tree_3_testanswer,
     expected_val=str(result_bc_3),
 )
 
 
-### TEST 13 ###
+# TEST 13
 
 
 def backchain_to_goal_tree_4_getargs():
@@ -418,6 +425,7 @@ result_bc_4 = OR(
 )
 
 
+# noinspection PyUnusedLocal
 def backchain_to_goal_tree_4_testanswer(val, original_val=None):
     return tree_map(type_encode(val), frozenset) == tree_map(
         type_encode(result_bc_4), frozenset
@@ -430,14 +438,14 @@ def backchain_to_goal_tree_4_testanswer(val, original_val=None):
 # backchain_to_goal_tree_4_getargs() above.
 
 make_test(
-    type="FUNCTION_ENCODED_ARGS",
+    test_type="FUNCTION_ENCODED_ARGS",
     getargs=backchain_to_goal_tree_4_getargs,
     testanswer=backchain_to_goal_tree_4_testanswer,
     expected_val=str(result_bc_4),
 )
 
 
-### TEST 14 ###
+# TEST 14
 
 ARBITRARY_EXP = (
     IF(AND("a (?x)", "b (?x)"), THEN("c d" "(?x) e")),
@@ -454,6 +462,7 @@ def backchain_to_goal_tree_5_getargs():
 result_bc_5 = OR("zot", AND("h c d j", OR("h i j", "i f e", "i g", "g i")))
 
 
+# noinspection PyUnusedLocal
 def backchain_to_goal_tree_5_testanswer(val, original_args=None):
     return tree_map(type_encode(val), frozenset) == tree_map(
         type_encode(result_bc_5), frozenset
@@ -465,62 +474,65 @@ def backchain_to_goal_tree_5_testanswer(val, original_args=None):
 # rules defined in ARBITRARY_EXP above.
 
 make_test(
-    type="FUNCTION_ENCODED_ARGS",
+    test_type="FUNCTION_ENCODED_ARGS",
     getargs=backchain_to_goal_tree_5_getargs,
     testanswer=backchain_to_goal_tree_5_testanswer,
     expected_val=str(result_bc_5),
 )
 
 
-### TEST 15 ###
+# TEST 15
 
 HOW_MANY_HOURS_THIS_PSET_TOOK_getargs = "HOW_MANY_HOURS_THIS_PSET_TOOK"
 
 
-def HOW_MANY_HOURS_THIS_PSET_TOOK_testanswer(val, original_val=None):
-    return val != "" and val != None
+# noinspection PyUnusedLocal
+def how_many_hours_this_pset_took_testanswer(val, original_val=None):
+    return val != "" and val is not None
 
 
 make_test(
-    type="VALUE",
+    test_type="VALUE",
     getargs=HOW_MANY_HOURS_THIS_PSET_TOOK_getargs,
-    testanswer=HOW_MANY_HOURS_THIS_PSET_TOOK_testanswer,
+    testanswer=how_many_hours_this_pset_took_testanswer,
     expected_val="[a number of hours]",
     name=HOW_MANY_HOURS_THIS_PSET_TOOK_getargs,
 )
 
 
-### TEST 16 ###
+# TEST 16
 
 WHAT_I_FOUND_INTERESTING_getargs = "WHAT_I_FOUND_INTERESTING"
 
 
-def WHAT_I_FOUND_INTERESTING_testanswer(val, original_val=None):
-    return val != "" and val != None
+# noinspection PyUnusedLocal
+def what_i_found_interesting_testanswer(val, original_val=None):
+    return val != "" and val is not None
 
 
 make_test(
-    type="VALUE",
+    test_type="VALUE",
     getargs=WHAT_I_FOUND_INTERESTING_getargs,
-    testanswer=WHAT_I_FOUND_INTERESTING_testanswer,
+    testanswer=what_i_found_interesting_testanswer,
     expected_val="[an interesting thing]",
     name=WHAT_I_FOUND_INTERESTING_getargs,
 )
 
 
-### TEST 17 ###
+# TEST 17
 
 WHAT_I_FOUND_BORING_getargs = "WHAT_I_FOUND_BORING"
 
 
-def WHAT_I_FOUND_BORING_testanswer(val, original_val=None):
-    return val != "" and val != None
+# noinspection PyUnusedLocal
+def what_i_found_boring_testanswer(val, original_val=None):
+    return val != "" and val is not None
 
 
 make_test(
-    type="VALUE",
+    test_type="VALUE",
     getargs=WHAT_I_FOUND_BORING_getargs,
-    testanswer=WHAT_I_FOUND_BORING_testanswer,
+    testanswer=what_i_found_boring_testanswer,
     expected_val="[a boring thing]",
     name=WHAT_I_FOUND_BORING_getargs,
 )

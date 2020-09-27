@@ -1,6 +1,6 @@
 from production import IF, AND, THEN, FAIL, OR
 
-## ZOOKEEPER RULES
+# ZOOKEEPER RULES
 ZOOKEEPER_RULES = (
     IF(AND("(?x) has hair"), THEN("(?x) is a mammal")),  # Z1
     IF(AND("(?x) gives milk"), THEN("(?x) is a mammal")),  # Z2

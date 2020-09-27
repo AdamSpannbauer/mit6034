@@ -8,7 +8,7 @@
 # discussed in class.
 from production import IF, AND, OR, NOT, THEN, forward_chain
 
-## Section 1: Forward chaining ##
+# Section 1: Forward chaining ##
 
 # Problem 1.2: Multiple choice
 
