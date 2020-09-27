@@ -1,6 +1,6 @@
 import random
 from production import IF, AND, OR, THEN
-from tester import make_test, type_encode
+from tester import make_test, type_encode, get_tests
 from zookeeper import ZOOKEEPER_RULES
 
 random.seed()

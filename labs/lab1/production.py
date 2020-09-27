@@ -1,6 +1,6 @@
 import re
 from six import string_types
-from .utils import (
+from utils import (
     AIStringToPyTemplate,
     AIStringToRegex,
     NoClobberDict,

@@ -55,7 +55,7 @@ AIRegex = re.compile(r"\(\?(\S+)\)")
 
 # noinspection PyPep8Naming
 def AIStringToRegex(AIStr):
-    return AIRegex.sub(r"(?P<\1>\S+)", AIStr) + "$"
+    return AIRegex.sub(r"(?P<\1>\\S+)", AIStr) + "$"
 
 
 # noinspection PyPep8Naming
