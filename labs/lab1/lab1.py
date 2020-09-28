@@ -17,7 +17,7 @@ from production import IF, AND, OR, NOT, THEN, forward_chain
 #    2. the consequent
 #    3. both
 
-ANSWER_1 = "your answer here"
+ANSWER_1 = "2"
 
 # A rule-based system about Monty Python's "Dead Parrot" sketch
 # uses the following rules:
@@ -37,10 +37,10 @@ ANSWER_1 = "your answer here"
 
 # Will this system produce the datum 'Polly is pining for the
 # fjords'?  Answer 'yes' or 'no'.
-ANSWER_2 = "your answer here"
+ANSWER_2 = "no"
 
 # Which rule contains a programming error? Answer '1' or '2'.
-ANSWER_3 = "your answer here"
+ANSWER_3 = "2"
 
 # If you're uncertain of these answers, look in tests.py for an
 # explanation.
@@ -69,11 +69,11 @@ ANSWER_3 = "your answer here"
 # what is asked.  After we start the system running, which rule
 # fires first?
 
-ANSWER_4 = "your answer here"
+ANSWER_4 = "1"
 
 # Which rule fires second?
-
-ANSWER_5 = "your answer here"
+# Rule 2 'matches' but doesn't 'fire' because it doesn't change our data
+ANSWER_5 = "0"
 
 
 # Problem 1.3.1: Poker hands
@@ -92,7 +92,7 @@ poker_data = (
 # which poker hands beat which, transitively. For example, it
 # should be able to deduce that a three-of-a-kind beats a pair,
 # because a three-of-a-kind beats two-pair, which beats a pair.
-transitive_rule = IF(AND(), THEN())
+transitive_rule = IF(AND("(?x) beats (?y)", "(?y) beats (?z)"), THEN("(?x) beats (?z)"))
 
 # You can test your rule like this:
 # print(forward_chain([transitive_rule], poker_data))
@@ -115,7 +115,54 @@ TEST_RESULTS_TRANS2 = forward_chain(
 
 # Then, put them together into a list in order, and call it
 # family_rules.
-family_rules = []  # fill me in
+
+self_identity_rule = IF(
+    OR("male (?x)", "female (?x)", "parent (?x) (?y)"), THEN("self (?x) (?x)")
+)
+
+sibling_rule = IF(
+    AND("parent (?x) (?y)", "parent (?x) (?z)", NOT("self (?y) (?z)")),
+    THEN("sibling (?y) (?z)", "sibling (?z) (?y)"),
+)
+
+brother_rule = IF(AND("male (?x)", "sibling (?x) (?y)"), THEN("brother (?x) (?y)"))
+sister_rule = IF(AND("female (?x)", "sibling (?x) (?y)"), THEN("sister (?x) (?y)"))
+
+father_rule = IF(AND("male (?x)", "parent (?x) (?y)"), THEN("father (?x) (?y)"))
+mother_rule = IF(AND("female (?x)", "parent (?x) (?y)"), THEN("mother (?x) (?y)"))
+
+son_rule = IF(AND("male (?x)", "parent (?y) (?x)"), THEN("son (?x) (?y)"))
+daughter_rule = IF(AND("female (?x)", "parent (?y) (?x)"), THEN("daughter (?x) (?y)"))
+
+cousin_rule = IF(
+    AND(
+        "parent (?x) (?y)",
+        "parent (?z) (?k)",
+        "sibling (?x) (?z)",
+        NOT("self (?x) (?y)"),
+    ),
+    THEN("cousin (?y) (?k)", "cousin (?k) (?y)"),
+)
+
+grandparent_rule = IF(
+    AND("parent (?x) (?y)", "parent (?y) (?z)"), THEN("grandparent (?x) (?z)")
+)
+
+grandchild_rule = IF("grandparent (?x) (?y)", THEN("grandchild (?y) (?x)"))
+
+family_rules = [
+    self_identity_rule,
+    sibling_rule,
+    brother_rule,
+    sister_rule,
+    father_rule,
+    mother_rule,
+    son_rule,
+    daughter_rule,
+    cousin_rule,
+    grandparent_rule,
+    grandchild_rule,
+]  # fill me in
 
 # Some examples to try it on:
 # Note: These are used for testing, so DO NOT CHANGE
@@ -213,17 +260,19 @@ TEST_DATA_2 = [
 
 TEST_RESULTS_2 = forward_chain(family_rules, TEST_DATA_2, verbose=False)
 
-TEST_RESULTS_6 = forward_chain(family_rules, simpsons_data, verbose=False)
+# TEST_RESULTS_6 = forward_chain(family_rules, simpsons_data, verbose=False)
 
-## Section 2: Goal trees and backward chaining ##
+# Section 2: Goal trees and backward chaining
 
 # Problem 2 is found in backchain.py.
 
 from backchain import backchain_to_goal_tree
 
-##; Section 3: Survey ##
+# Section 3: Survey
 # Please answer these questions inside the double quotes.
 
-HOW_MANY_HOURS_THIS_PSET_TOOK = ""
-WHAT_I_FOUND_INTERESTING = ""
-WHAT_I_FOUND_BORING = ""
+HOW_MANY_HOURS_THIS_PSET_TOOK = (
+    "idk lost track of what was work and what was debugging tests"
+)
+WHAT_I_FOUND_INTERESTING = "the actual work"
+WHAT_I_FOUND_BORING = "debugging tests"

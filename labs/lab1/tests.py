@@ -448,7 +448,7 @@ make_test(
 # TEST 14
 
 ARBITRARY_EXP = (
-    IF(AND("a (?x)", "b (?x)"), THEN("c d" "(?x) e")),
+    IF(AND("a (?x)", "b (?x)"), THEN("c d (?x) e")),
     IF(OR("(?y) f e", "(?y) g"), THEN("h (?y) j")),
     IF(AND("h c d j", "h i j"), THEN("zot")),
     IF("(?z) i", THEN("i (?z)")),
